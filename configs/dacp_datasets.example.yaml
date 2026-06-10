@@ -1,0 +1,24 @@
+experiments:
+  credit_fraud:
+    dataset_path: "data/raw/creditcard.csv"
+    dataset_name: "Credit Card Fraud Detection"
+    domain: "financial"
+    policy_template: "credit_fraud"
+    chunk_mode: false
+    chunk_size: 16777216
+
+  nyc_tlc_yellow_sample:
+    dataset_path: "data/raw/yellow_tripdata_2024-01.parquet"
+    dataset_name: "NYC TLC Yellow Taxi Sample"
+    domain: "transportation"
+    policy_template: "nyc_tlc"
+    chunk_mode: true
+    chunk_size: 67108864
+
+  mimic_like_local:
+    dataset_path: "data/raw/mimic_like_sample.csv"
+    dataset_name: "MIMIC-like Local Sample"
+    domain: "medical"
+    policy_template: "mimic_like"
+    chunk_mode: true
+    chunk_size: 16777216

@@ -1,0 +1,31 @@
+{
+  "experiments": [
+    {
+      "dataset_path": "data/raw/creditcard.csv",
+      "dataset_name": "Credit Card Fraud Detection",
+      "domain": "financial",
+      "policy_template": "credit_fraud",
+      "output_dir": "results/dacp_data/creditcard_fraud",
+      "chunk_mode": true,
+      "chunk_size": 16777216
+    },
+    {
+      "dataset_path": "data/raw/yellow_tripdata_2024-01.parquet",
+      "dataset_name": "NYC TLC Yellow Taxi 2024-01",
+      "domain": "transportation",
+      "policy_template": "nyc_tlc",
+      "output_dir": "results/dacp_data/nyc_tlc_yellow_2024_01",
+      "chunk_mode": true,
+      "chunk_size": 67108864
+    },
+    {
+      "dataset_path": "data/raw/mimic_like_sample.csv",
+      "dataset_name": "MIMIC-like Local Sample",
+      "domain": "medical",
+      "policy_template": "mimic_like",
+      "output_dir": "results/dacp_data/mimic_like",
+      "chunk_mode": true,
+      "chunk_size": 16777216
+    }
+  ]
+}
