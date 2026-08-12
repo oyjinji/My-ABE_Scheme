@@ -1,0 +1,193 @@
+backend,experiment,max,mean,median,metric,min,p95,p99,sample_count,stddev,u
+Linear Scan,exp07_filter_suite,531200.0,531200.0,531200.0,build_ns,531200.0,531200.0,,1,0.0,16
+Linear Scan,exp07_filter_suite,0.0,0.0,0.0,expansions,0.0,0.0,,1,0.0,16
+Linear Scan,exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,16
+Linear Scan,exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,16
+Linear Scan,exp07_filter_suite,789.0,789.0,789.0,filter_bytes,789.0,789.0,,1,0.0,16
+Linear Scan,exp07_filter_suite,28737.5,28737.5,28737.5,hit_query_ns,28737.5,28737.5,,1,0.0,16
+Linear Scan,exp07_filter_suite,30.0,30.0,30.0,metadata_bytes,30.0,30.0,,1,0.0,16
+Linear Scan,exp07_filter_suite,1235.0,1235.0,1235.0,miss_query_ns,1235.0,1235.0,,1,0.0,16
+Linear Scan,exp07_filter_suite,74303.40557275542,74303.40557275542,74303.40557275542,mixed_throughput_qps,74303.40557275542,74303.40557275542,,1,0.0,16
+Linear Scan,exp07_filter_suite,576.0,576.0,576.0,pstore_bytes,576.0,576.0,,1,0.0,16
+Linear Scan,exp07_filter_suite,0.0,0.0,0.0,retries,0.0,0.0,,1,0.0,16
+Linear Scan,exp07_filter_suite,1395.0,1395.0,1395.0,total_index_bytes,1395.0,1395.0,,1,0.0,16
+Exact Hash,exp07_filter_suite,471300.0,471300.0,471300.0,build_ns,471300.0,471300.0,,1,0.0,16
+Exact Hash,exp07_filter_suite,0.0,0.0,0.0,expansions,0.0,0.0,,1,0.0,16
+Exact Hash,exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,16
+Exact Hash,exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,16
+Exact Hash,exp07_filter_suite,789.0,789.0,789.0,filter_bytes,789.0,789.0,,1,0.0,16
+Exact Hash,exp07_filter_suite,30575.0,30575.0,30575.0,hit_query_ns,30575.0,30575.0,,1,0.0,16
+Exact Hash,exp07_filter_suite,29.0,29.0,29.0,metadata_bytes,29.0,29.0,,1,0.0,16
+Exact Hash,exp07_filter_suite,1375.0,1375.0,1375.0,miss_query_ns,1375.0,1375.0,,1,0.0,16
+Exact Hash,exp07_filter_suite,69672.92432746275,69672.92432746275,69672.92432746275,mixed_throughput_qps,69672.92432746275,69672.92432746275,,1,0.0,16
+Exact Hash,exp07_filter_suite,576.0,576.0,576.0,pstore_bytes,576.0,576.0,,1,0.0,16
+Exact Hash,exp07_filter_suite,0.0,0.0,0.0,retries,0.0,0.0,,1,0.0,16
+Exact Hash,exp07_filter_suite,1394.0,1394.0,1394.0,total_index_bytes,1394.0,1394.0,,1,0.0,16
+Bloom+Exact-PStore,exp07_filter_suite,574800.0,574800.0,574800.0,build_ns,574800.0,574800.0,,1,0.0,16
+Bloom+Exact-PStore,exp07_filter_suite,0.0,0.0,0.0,expansions,0.0,0.0,,1,0.0,16
+Bloom+Exact-PStore,exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,16
+Bloom+Exact-PStore,exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,16
+Bloom+Exact-PStore,exp07_filter_suite,809.0,809.0,809.0,filter_bytes,809.0,809.0,,1,0.0,16
+Bloom+Exact-PStore,exp07_filter_suite,37706.25,37706.25,37706.25,hit_query_ns,37706.25,37706.25,,1,0.0,16
+Bloom+Exact-PStore,exp07_filter_suite,66.0,66.0,66.0,metadata_bytes,66.0,66.0,,1,0.0,16
+Bloom+Exact-PStore,exp07_filter_suite,8345.0,8345.0,8345.0,miss_query_ns,8345.0,8345.0,,1,0.0,16
+Bloom+Exact-PStore,exp07_filter_suite,46741.106206180215,46741.106206180215,46741.106206180215,mixed_throughput_qps,46741.106206180215,46741.106206180215,,1,0.0,16
+Bloom+Exact-PStore,exp07_filter_suite,576.0,576.0,576.0,pstore_bytes,576.0,576.0,,1,0.0,16
+Bloom+Exact-PStore,exp07_filter_suite,0.0,0.0,0.0,retries,0.0,0.0,,1,0.0,16
+Bloom+Exact-PStore,exp07_filter_suite,1451.0,1451.0,1451.0,total_index_bytes,1451.0,1451.0,,1,0.0,16
+Attribute-BF (greedy),exp07_filter_suite,8458100.0,8458100.0,8458100.0,build_ns,8458100.0,8458100.0,,1,0.0,16
+Attribute-BF (greedy),exp07_filter_suite,4.0,4.0,4.0,expansions,4.0,4.0,,1,0.0,16
+Attribute-BF (greedy),exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,16
+Attribute-BF (greedy),exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,16
+Attribute-BF (greedy),exp07_filter_suite,360.0,360.0,360.0,filter_bytes,360.0,360.0,,1,0.0,16
+Attribute-BF (greedy),exp07_filter_suite,65581.25,65581.25,65581.25,hit_query_ns,65581.25,65581.25,,1,0.0,16
+Attribute-BF (greedy),exp07_filter_suite,104.0,104.0,104.0,metadata_bytes,104.0,104.0,,1,0.0,16
+Attribute-BF (greedy),exp07_filter_suite,25810.0,25810.0,25810.0,miss_query_ns,25810.0,25810.0,,1,0.0,16
+Attribute-BF (greedy),exp07_filter_suite,22995.847971893963,22995.847971893963,22995.847971893963,mixed_throughput_qps,22995.847971893963,22995.847971893963,,1,0.0,16
+Attribute-BF (greedy),exp07_filter_suite,576.0,576.0,576.0,pstore_bytes,576.0,576.0,,1,0.0,16
+Attribute-BF (greedy),exp07_filter_suite,32.0,32.0,32.0,retries,32.0,32.0,,1,0.0,16
+Attribute-BF (greedy),exp07_filter_suite,1040.0,1040.0,1040.0,total_index_bytes,1040.0,1040.0,,1,0.0,16
+Original-ABF,exp07_filter_suite,16945700.0,16945700.0,16945700.0,build_ns,16945700.0,16945700.0,,1,0.0,16
+Original-ABF,exp07_filter_suite,2.0,2.0,2.0,expansions,2.0,2.0,,1,0.0,16
+Original-ABF,exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,16
+Original-ABF,exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,16
+Original-ABF,exp07_filter_suite,864.0,864.0,864.0,filter_bytes,864.0,864.0,,1,0.0,16
+Original-ABF,exp07_filter_suite,53537.5,53537.5,53537.5,hit_query_ns,53537.5,53537.5,,1,0.0,16
+Original-ABF,exp07_filter_suite,97.0,97.0,97.0,metadata_bytes,97.0,97.0,,1,0.0,16
+Original-ABF,exp07_filter_suite,23780.0,23780.0,23780.0,miss_query_ns,23780.0,23780.0,,1,0.0,16
+Original-ABF,exp07_filter_suite,27022.969524095482,27022.969524095482,27022.969524095482,mixed_throughput_qps,27022.969524095482,27022.969524095482,,1,0.0,16
+Original-ABF,exp07_filter_suite,832.0,832.0,832.0,pstore_bytes,832.0,832.0,,1,0.0,16
+Original-ABF,exp07_filter_suite,23.0,23.0,23.0,retries,23.0,23.0,,1,0.0,16
+Original-ABF,exp07_filter_suite,1793.0,1793.0,1793.0,total_index_bytes,1793.0,1793.0,,1,0.0,16
+as-ACF/Cuckoo,exp07_filter_suite,1032100.0,1032100.0,1032100.0,build_ns,1032100.0,1032100.0,,1,0.0,16
+as-ACF/Cuckoo,exp07_filter_suite,1.0,1.0,1.0,expansions,1.0,1.0,,1,0.0,16
+as-ACF/Cuckoo,exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,16
+as-ACF/Cuckoo,exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,16
+as-ACF/Cuckoo,exp07_filter_suite,457.0,457.0,457.0,filter_bytes,457.0,457.0,,1,0.0,16
+as-ACF/Cuckoo,exp07_filter_suite,67068.75,67068.75,67068.75,hit_query_ns,67068.75,67068.75,,1,0.0,16
+as-ACF/Cuckoo,exp07_filter_suite,104.0,104.0,104.0,metadata_bytes,104.0,104.0,,1,0.0,16
+as-ACF/Cuckoo,exp07_filter_suite,28525.0,28525.0,28525.0,miss_query_ns,28525.0,28525.0,,1,0.0,16
+as-ACF/Cuckoo,exp07_filter_suite,21903.139449987833,21903.139449987833,21903.139449987833,mixed_throughput_qps,21903.139449987833,21903.139449987833,,1,0.0,16
+as-ACF/Cuckoo,exp07_filter_suite,576.0,576.0,576.0,pstore_bytes,576.0,576.0,,1,0.0,16
+as-ACF/Cuckoo,exp07_filter_suite,0.0,0.0,0.0,retries,0.0,0.0,,1,0.0,16
+as-ACF/Cuckoo,exp07_filter_suite,1137.0,1137.0,1137.0,total_index_bytes,1137.0,1137.0,,1,0.0,16
+XOR-Retrieval,exp07_filter_suite,1758200.0,1758200.0,1758200.0,build_ns,1758200.0,1758200.0,,1,0.0,16
+XOR-Retrieval,exp07_filter_suite,0.0,0.0,0.0,expansions,0.0,0.0,,1,0.0,16
+XOR-Retrieval,exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,16
+XOR-Retrieval,exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,16
+XOR-Retrieval,exp07_filter_suite,189.0,189.0,189.0,filter_bytes,189.0,189.0,,1,0.0,16
+XOR-Retrieval,exp07_filter_suite,52068.75,52068.75,52068.75,hit_query_ns,52068.75,52068.75,,1,0.0,16
+XOR-Retrieval,exp07_filter_suite,80.0,80.0,80.0,metadata_bytes,80.0,80.0,,1,0.0,16
+XOR-Retrieval,exp07_filter_suite,16765.0,16765.0,16765.0,miss_query_ns,16765.0,16765.0,,1,0.0,16
+XOR-Retrieval,exp07_filter_suite,30811.36597055803,30811.36597055803,30811.36597055803,mixed_throughput_qps,30811.36597055803,30811.36597055803,,1,0.0,16
+XOR-Retrieval,exp07_filter_suite,576.0,576.0,576.0,pstore_bytes,576.0,576.0,,1,0.0,16
+XOR-Retrieval,exp07_filter_suite,3.0,3.0,3.0,retries,3.0,3.0,,1,0.0,16
+XOR-Retrieval,exp07_filter_suite,845.0,845.0,845.0,total_index_bytes,845.0,845.0,,1,0.0,16
+FX-ABF,exp07_filter_suite,1391500.0,1391500.0,1391500.0,build_ns,1391500.0,1391500.0,,1,0.0,16
+FX-ABF,exp07_filter_suite,0.0,0.0,0.0,expansions,0.0,0.0,,1,0.0,16
+FX-ABF,exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,16
+FX-ABF,exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,16
+FX-ABF,exp07_filter_suite,189.0,189.0,189.0,filter_bytes,189.0,189.0,,1,0.0,16
+FX-ABF,exp07_filter_suite,66931.25,66931.25,66931.25,hit_query_ns,66931.25,66931.25,,1,0.0,16
+FX-ABF,exp07_filter_suite,129.0,129.0,129.0,metadata_bytes,129.0,129.0,,1,0.0,16
+FX-ABF,exp07_filter_suite,31335.0,31335.0,31335.0,miss_query_ns,31335.0,31335.0,,1,0.0,16
+FX-ABF,exp07_filter_suite,21206.40904806786,21206.40904806786,21206.40904806786,mixed_throughput_qps,21206.40904806786,21206.40904806786,,1,0.0,16
+FX-ABF,exp07_filter_suite,576.0,576.0,576.0,pstore_bytes,576.0,576.0,,1,0.0,16
+FX-ABF,exp07_filter_suite,1.0,1.0,1.0,retries,1.0,1.0,,1,0.0,16
+FX-ABF,exp07_filter_suite,894.0,894.0,894.0,total_index_bytes,894.0,894.0,,1,0.0,16
+Linear Scan,exp07_filter_suite,1882300.0,1882300.0,1882300.0,build_ns,1882300.0,1882300.0,,1,0.0,32
+Linear Scan,exp07_filter_suite,0.0,0.0,0.0,expansions,0.0,0.0,,1,0.0,32
+Linear Scan,exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,32
+Linear Scan,exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,32
+Linear Scan,exp07_filter_suite,1573.0,1573.0,1573.0,filter_bytes,1573.0,1573.0,,1,0.0,32
+Linear Scan,exp07_filter_suite,31425.0,31425.0,31425.0,hit_query_ns,31425.0,31425.0,,1,0.0,32
+Linear Scan,exp07_filter_suite,30.0,30.0,30.0,metadata_bytes,30.0,30.0,,1,0.0,32
+Linear Scan,exp07_filter_suite,1765.0,1765.0,1765.0,miss_query_ns,1765.0,1765.0,,1,0.0,32
+Linear Scan,exp07_filter_suite,60259.11419102139,60259.11419102139,60259.11419102139,mixed_throughput_qps,60259.11419102139,60259.11419102139,,1,0.0,32
+Linear Scan,exp07_filter_suite,1152.0,1152.0,1152.0,pstore_bytes,1152.0,1152.0,,1,0.0,32
+Linear Scan,exp07_filter_suite,0.0,0.0,0.0,retries,0.0,0.0,,1,0.0,32
+Linear Scan,exp07_filter_suite,2755.0,2755.0,2755.0,total_index_bytes,2755.0,2755.0,,1,0.0,32
+Exact Hash,exp07_filter_suite,1037600.0,1037600.0,1037600.0,build_ns,1037600.0,1037600.0,,1,0.0,32
+Exact Hash,exp07_filter_suite,0.0,0.0,0.0,expansions,0.0,0.0,,1,0.0,32
+Exact Hash,exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,32
+Exact Hash,exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,32
+Exact Hash,exp07_filter_suite,1573.0,1573.0,1573.0,filter_bytes,1573.0,1573.0,,1,0.0,32
+Exact Hash,exp07_filter_suite,52720.0,52720.0,52720.0,hit_query_ns,52720.0,52720.0,,1,0.0,32
+Exact Hash,exp07_filter_suite,29.0,29.0,29.0,metadata_bytes,29.0,29.0,,1,0.0,32
+Exact Hash,exp07_filter_suite,1600.0,1600.0,1600.0,miss_query_ns,1600.0,1600.0,,1,0.0,32
+Exact Hash,exp07_filter_suite,36818.85125184094,36818.85125184094,36818.85125184094,mixed_throughput_qps,36818.85125184094,36818.85125184094,,1,0.0,32
+Exact Hash,exp07_filter_suite,1152.0,1152.0,1152.0,pstore_bytes,1152.0,1152.0,,1,0.0,32
+Exact Hash,exp07_filter_suite,0.0,0.0,0.0,retries,0.0,0.0,,1,0.0,32
+Exact Hash,exp07_filter_suite,2754.0,2754.0,2754.0,total_index_bytes,2754.0,2754.0,,1,0.0,32
+Bloom+Exact-PStore,exp07_filter_suite,1166600.0,1166600.0,1166600.0,build_ns,1166600.0,1166600.0,,1,0.0,32
+Bloom+Exact-PStore,exp07_filter_suite,0.0,0.0,0.0,expansions,0.0,0.0,,1,0.0,32
+Bloom+Exact-PStore,exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,32
+Bloom+Exact-PStore,exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,32
+Bloom+Exact-PStore,exp07_filter_suite,1613.0,1613.0,1613.0,filter_bytes,1613.0,1613.0,,1,0.0,32
+Bloom+Exact-PStore,exp07_filter_suite,42320.0,42320.0,42320.0,hit_query_ns,42320.0,42320.0,,1,0.0,32
+Bloom+Exact-PStore,exp07_filter_suite,67.0,67.0,67.0,metadata_bytes,67.0,67.0,,1,0.0,32
+Bloom+Exact-PStore,exp07_filter_suite,7470.0,7470.0,7470.0,miss_query_ns,7470.0,7470.0,,1,0.0,32
+Bloom+Exact-PStore,exp07_filter_suite,40168.70857601928,40168.70857601928,40168.70857601928,mixed_throughput_qps,40168.70857601928,40168.70857601928,,1,0.0,32
+Bloom+Exact-PStore,exp07_filter_suite,1152.0,1152.0,1152.0,pstore_bytes,1152.0,1152.0,,1,0.0,32
+Bloom+Exact-PStore,exp07_filter_suite,0.0,0.0,0.0,retries,0.0,0.0,,1,0.0,32
+Bloom+Exact-PStore,exp07_filter_suite,2832.0,2832.0,2832.0,total_index_bytes,2832.0,2832.0,,1,0.0,32
+Attribute-BF (greedy),exp07_filter_suite,27895700.0,27895700.0,27895700.0,build_ns,27895700.0,27895700.0,,1,0.0,32
+Attribute-BF (greedy),exp07_filter_suite,8.0,8.0,8.0,expansions,8.0,8.0,,1,0.0,32
+Attribute-BF (greedy),exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,32
+Attribute-BF (greedy),exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,32
+Attribute-BF (greedy),exp07_filter_suite,891.0,891.0,891.0,filter_bytes,891.0,891.0,,1,0.0,32
+Attribute-BF (greedy),exp07_filter_suite,53350.05,53350.05,53350.05,hit_query_ns,53350.05,53350.05,,1,0.0,32
+Attribute-BF (greedy),exp07_filter_suite,104.0,104.0,104.0,metadata_bytes,104.0,104.0,,1,0.0,32
+Attribute-BF (greedy),exp07_filter_suite,21055.0,21055.0,21055.0,miss_query_ns,21055.0,21055.0,,1,0.0,32
+Attribute-BF (greedy),exp07_filter_suite,26879.895921042993,26879.895921042993,26879.895921042993,mixed_throughput_qps,26879.895921042993,26879.895921042993,,1,0.0,32
+Attribute-BF (greedy),exp07_filter_suite,1152.0,1152.0,1152.0,pstore_bytes,1152.0,1152.0,,1,0.0,32
+Attribute-BF (greedy),exp07_filter_suite,64.0,64.0,64.0,retries,64.0,64.0,,1,0.0,32
+Attribute-BF (greedy),exp07_filter_suite,2147.0,2147.0,2147.0,total_index_bytes,2147.0,2147.0,,1,0.0,32
+Original-ABF,exp07_filter_suite,128447301.0,128447301.0,128447301.0,build_ns,128447301.0,128447301.0,,1,0.0,32
+Original-ABF,exp07_filter_suite,10.0,10.0,10.0,expansions,10.0,10.0,,1,0.0,32
+Original-ABF,exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,32
+Original-ABF,exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,32
+Original-ABF,exp07_filter_suite,2640.0,2640.0,2640.0,filter_bytes,2640.0,2640.0,,1,0.0,32
+Original-ABF,exp07_filter_suite,55335.0,55335.0,55335.0,hit_query_ns,55335.0,55335.0,,1,0.0,32
+Original-ABF,exp07_filter_suite,97.0,97.0,97.0,metadata_bytes,97.0,97.0,,1,0.0,32
+Original-ABF,exp07_filter_suite,22150.0,22150.0,22150.0,miss_query_ns,22150.0,22150.0,,1,0.0,32
+Original-ABF,exp07_filter_suite,25811.44737691166,25811.44737691166,25811.44737691166,mixed_throughput_qps,25811.44737691166,25811.44737691166,,1,0.0,32
+Original-ABF,exp07_filter_suite,1664.0,1664.0,1664.0,pstore_bytes,1664.0,1664.0,,1,0.0,32
+Original-ABF,exp07_filter_suite,87.0,87.0,87.0,retries,87.0,87.0,,1,0.0,32
+Original-ABF,exp07_filter_suite,4401.0,4401.0,4401.0,total_index_bytes,4401.0,4401.0,,1,0.0,32
+as-ACF/Cuckoo,exp07_filter_suite,1349900.0,1349900.0,1349900.0,build_ns,1349900.0,1349900.0,,1,0.0,32
+as-ACF/Cuckoo,exp07_filter_suite,0.0,0.0,0.0,expansions,0.0,0.0,,1,0.0,32
+as-ACF/Cuckoo,exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,32
+as-ACF/Cuckoo,exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,32
+as-ACF/Cuckoo,exp07_filter_suite,712.0,712.0,712.0,filter_bytes,712.0,712.0,,1,0.0,32
+as-ACF/Cuckoo,exp07_filter_suite,53075.0,53075.0,53075.0,hit_query_ns,53075.0,53075.0,,1,0.0,32
+as-ACF/Cuckoo,exp07_filter_suite,104.0,104.0,104.0,metadata_bytes,104.0,104.0,,1,0.0,32
+as-ACF/Cuckoo,exp07_filter_suite,15495.0,15495.0,15495.0,miss_query_ns,15495.0,15495.0,,1,0.0,32
+as-ACF/Cuckoo,exp07_filter_suite,29167.274318214964,29167.274318214964,29167.274318214964,mixed_throughput_qps,29167.274318214964,29167.274318214964,,1,0.0,32
+as-ACF/Cuckoo,exp07_filter_suite,1152.0,1152.0,1152.0,pstore_bytes,1152.0,1152.0,,1,0.0,32
+as-ACF/Cuckoo,exp07_filter_suite,0.0,0.0,0.0,retries,0.0,0.0,,1,0.0,32
+as-ACF/Cuckoo,exp07_filter_suite,1968.0,1968.0,1968.0,total_index_bytes,1968.0,1968.0,,1,0.0,32
+XOR-Retrieval,exp07_filter_suite,2090300.0,2090300.0,2090300.0,build_ns,2090300.0,2090300.0,,1,0.0,32
+XOR-Retrieval,exp07_filter_suite,0.0,0.0,0.0,expansions,0.0,0.0,,1,0.0,32
+XOR-Retrieval,exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,32
+XOR-Retrieval,exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,32
+XOR-Retrieval,exp07_filter_suite,378.0,378.0,378.0,filter_bytes,378.0,378.0,,1,0.0,32
+XOR-Retrieval,exp07_filter_suite,53495.0,53495.0,53495.0,hit_query_ns,53495.0,53495.0,,1,0.0,32
+XOR-Retrieval,exp07_filter_suite,80.0,80.0,80.0,metadata_bytes,80.0,80.0,,1,0.0,32
+XOR-Retrieval,exp07_filter_suite,16955.0,16955.0,16955.0,miss_query_ns,16955.0,16955.0,,1,0.0,32
+XOR-Retrieval,exp07_filter_suite,28388.928317955997,28388.928317955997,28388.928317955997,mixed_throughput_qps,28388.928317955997,28388.928317955997,,1,0.0,32
+XOR-Retrieval,exp07_filter_suite,1152.0,1152.0,1152.0,pstore_bytes,1152.0,1152.0,,1,0.0,32
+XOR-Retrieval,exp07_filter_suite,1.0,1.0,1.0,retries,1.0,1.0,,1,0.0,32
+XOR-Retrieval,exp07_filter_suite,1610.0,1610.0,1610.0,total_index_bytes,1610.0,1610.0,,1,0.0,32
+FX-ABF,exp07_filter_suite,2153400.0,2153400.0,2153400.0,build_ns,2153400.0,2153400.0,,1,0.0,32
+FX-ABF,exp07_filter_suite,0.0,0.0,0.0,expansions,0.0,0.0,,1,0.0,32
+FX-ABF,exp07_filter_suite,0.0,0.0,0.0,false_accepts,0.0,0.0,,1,0.0,32
+FX-ABF,exp07_filter_suite,0.0,0.0,0.0,false_negatives,0.0,0.0,,1,0.0,32
+FX-ABF,exp07_filter_suite,378.0,378.0,378.0,filter_bytes,378.0,378.0,,1,0.0,32
+FX-ABF,exp07_filter_suite,72830.0,72830.0,72830.0,hit_query_ns,72830.0,72830.0,,1,0.0,32
+FX-ABF,exp07_filter_suite,129.0,129.0,129.0,metadata_bytes,129.0,129.0,,1,0.0,32
+FX-ABF,exp07_filter_suite,32040.0,32040.0,32040.0,miss_query_ns,32040.0,32040.0,,1,0.0,32
+FX-ABF,exp07_filter_suite,19071.231047964146,19071.231047964146,19071.231047964146,mixed_throughput_qps,19071.231047964146,19071.231047964146,,1,0.0,32
+FX-ABF,exp07_filter_suite,1152.0,1152.0,1152.0,pstore_bytes,1152.0,1152.0,,1,0.0,32
+FX-ABF,exp07_filter_suite,0.0,0.0,0.0,retries,0.0,0.0,,1,0.0,32
+FX-ABF,exp07_filter_suite,1659.0,1659.0,1659.0,total_index_bytes,1659.0,1659.0,,1,0.0,32

@@ -1,0 +1,73 @@
+u,backend,total_index_bytes,samples
+16,Attribute-BF (greedy),1009.4,10
+16,Bloom+Exact-PStore,1451.0,10
+16,Exact Hash,1394.0,10
+16,FX-ABF,894.0,10
+16,Linear Scan,1395.0,10
+16,Original-ABF,1800.2,10
+16,XOR-Retrieval,845.0,10
+16,as-ACF/Cuckoo,1085.2,10
+32,Attribute-BF (greedy),2147.9,10
+32,Bloom+Exact-PStore,2832.0,10
+32,Exact Hash,2754.0,10
+32,FX-ABF,1661.7,10
+32,Linear Scan,2755.0,10
+32,Original-ABF,3978.6,10
+32,XOR-Retrieval,1612.7,10
+32,as-ACF/Cuckoo,1997.7,10
+64,Attribute-BF (greedy),4672.1,10
+64,Bloom+Exact-PStore,5592.0,10
+64,Exact Hash,5474.0,10
+64,FX-ABF,3189.0,10
+64,Linear Scan,5475.0,10
+64,Original-ABF,9415.9,10
+64,XOR-Retrieval,3140.0,10
+64,as-ACF/Cuckoo,3917.0,10
+128,Attribute-BF (greedy),10851.9,10
+128,Bloom+Exact-PStore,11112.0,10
+128,Exact Hash,10914.0,10
+128,FX-ABF,6304.8,10
+128,Linear Scan,10915.0,10
+128,Original-ABF,22896.4,10
+128,XOR-Retrieval,6191.0,10
+128,as-ACF/Cuckoo,7627.0,10
+256,Attribute-BF (greedy),26928.0,10
+256,Bloom+Exact-PStore,22152.0,10
+256,Exact Hash,21794.0,10
+256,FX-ABF,12343.0,10
+256,Linear Scan,21795.0,10
+256,Original-ABF,56557.2,10
+256,XOR-Retrieval,12294.0,10
+256,as-ACF/Cuckoo,15047.0,10
+512,Attribute-BF (greedy),64881.0,10
+512,Bloom+Exact-PStore,44488.0,10
+512,Exact Hash,43810.0,10
+512,FX-ABF,25222.0,10
+512,Linear Scan,43811.0,10
+512,Original-ABF,143866.0,10
+512,XOR-Retrieval,25173.0,10
+512,as-ACF/Cuckoo,30133.0,10
+1024,Attribute-BF (greedy),154491.0,10
+1024,Bloom+Exact-PStore,89160.0,10
+1024,Exact Hash,87842.0,10
+1024,FX-ABF,50314.0,10
+1024,Linear Scan,87843.0,10
+1024,Original-ABF,340412.4,10
+1024,XOR-Retrieval,50265.0,10
+1024,as-ACF/Cuckoo,60316.0,10
+2048,Attribute-BF (greedy),398747.0,10
+2048,Bloom+Exact-PStore,178504.0,10
+2048,Exact Hash,175906.0,10
+2048,FX-ABF,100488.0,10
+2048,Linear Scan,175907.0,10
+2048,Original-ABF,857767.6,10
+2048,XOR-Retrieval,100439.0,10
+2048,as-ACF/Cuckoo,120670.0,10
+4096,Attribute-BF (greedy),936480.0,10
+4096,Bloom+Exact-PStore,357192.0,10
+4096,Exact Hash,352034.0,10
+4096,FX-ABF,200836.0,10
+4096,Linear Scan,352035.0,10
+4096,Original-ABF,2150299.0,10
+4096,XOR-Retrieval,200787.0,10
+4096,as-ACF/Cuckoo,241378.0,10

@@ -1,0 +1,52 @@
+mode: smoke
+master_seed: 20260811
+pairing_group: MNT224
+
+exp01:
+  n: [64, 256]
+  ratios: [0.01, 0.05, 0.10]
+  sampling: {warmup: 1, repeats: 2, placements: 2}
+  large_endpoint:
+    enabled: false
+    n: 1024
+    sampling: {warmup: 1, repeats: 1, placements: 1}
+
+exp02:
+  n: 512
+  r_v: [1, 16, 128, 256]
+  sampling: {warmup: 1, repeats: 2, placements: 2}
+
+exp04:
+  n: 512
+  r_v: [1, 16, 128, 256]
+  privacy_epoch: privacy-smoke-v2
+  revocation_epoch: 1
+  N: 8
+  ell: 16
+  r: 4
+  sampling: {warmup: 1, repeats: 2, placements: 2}
+
+exp05:
+  revocation_ratio: 0.05
+  S: 5
+  ell: 16
+  policy_unique_attributes: 12
+  revocation_epoch: 1
+  next_privacy_epoch: privacy-2
+  direct_comparison:
+    n: [8, 16, 32]
+    sampling: {warmup: 1, repeats: 2, placements: 2}
+  dual_scalability:
+    n: [64, 256]
+    sampling: {warmup: 1, repeats: 2, placements: 2}
+    large_endpoint:
+      enabled: false
+      n: 1024
+      sampling: {warmup: 1, repeats: 1, placements: 1}
+
+exp06:
+  S: [5, 20, 80]
+  privacy_epoch: privacy-1
+  next_privacy_epoch: privacy-2
+  sampling: {warmup: 1, repeats: 3}
+

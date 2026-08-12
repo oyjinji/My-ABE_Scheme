@@ -1,0 +1,7 @@
+charm-crypto==0.63
+cryptography>=2.8
+PyYAML>=5.3
+pandas>=2.0
+matplotlib>=3.7
+numpy>=1.24
+pytest>=8.0

@@ -1,0 +1,49 @@
+ell,backend,pairing_count,samples
+16,Exact Hash,17.0,10
+16,FX-ABF,17.0,10
+16,Linear Scan,17.0,10
+16,Original-ABF,17.0,10
+16,XOR-Retrieval,17.0,10
+16,as-ACF/Cuckoo,17.0,10
+32,Exact Hash,17.0,10
+32,FX-ABF,17.0,10
+32,Linear Scan,17.0,10
+32,Original-ABF,17.0,10
+32,XOR-Retrieval,17.0,10
+32,as-ACF/Cuckoo,17.0,10
+64,Exact Hash,17.0,10
+64,FX-ABF,17.0,10
+64,Linear Scan,17.0,10
+64,Original-ABF,17.0,10
+64,XOR-Retrieval,17.0,10
+64,as-ACF/Cuckoo,17.0,10
+128,Exact Hash,17.0,10
+128,FX-ABF,17.0,10
+128,Linear Scan,17.0,10
+128,Original-ABF,17.0,10
+128,XOR-Retrieval,17.0,10
+128,as-ACF/Cuckoo,17.0,10
+256,Exact Hash,17.0,10
+256,FX-ABF,17.0,10
+256,Linear Scan,17.0,10
+256,Original-ABF,17.0,10
+256,XOR-Retrieval,17.0,10
+256,as-ACF/Cuckoo,17.0,10
+512,Exact Hash,17.0,10
+512,FX-ABF,17.0,10
+512,Linear Scan,17.0,10
+512,Original-ABF,17.0,10
+512,XOR-Retrieval,17.0,10
+512,as-ACF/Cuckoo,17.0,10
+1024,Exact Hash,17.0,10
+1024,FX-ABF,17.0,10
+1024,Linear Scan,17.0,10
+1024,Original-ABF,17.0,10
+1024,XOR-Retrieval,17.0,10
+1024,as-ACF/Cuckoo,17.0,10
+2048,Exact Hash,17.0,10
+2048,FX-ABF,17.0,10
+2048,Linear Scan,17.0,10
+2048,Original-ABF,17.0,10
+2048,XOR-Retrieval,17.0,10
+2048,as-ACF/Cuckoo,17.0,10

@@ -1,0 +1,3 @@
+run_id=smoke-20260729T025927.343212Z-bc9affb2
+mode=smoke
+affinity={'status': 'fixed', 'cpu': 0}

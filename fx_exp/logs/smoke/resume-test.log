@@ -1,0 +1,3 @@
+run resume-test profile=smoke resume=False
+example key-1 ok
+run resume-test profile=smoke resume=True

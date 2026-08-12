@@ -1,0 +1,3 @@
+run_id=standard-20260729T030653.543455Z-8fd0aa8b
+mode=standard
+affinity={'status': 'fixed', 'cpu': 0}

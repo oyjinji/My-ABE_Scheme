@@ -1,0 +1,11 @@
+ell,distribution,pstore_bytes,samples
+16,fixed:1,576.0,1
+23,heavy-repeat,604.0,1
+32,fixed:1,1152.0,1
+50,zipf,712.0,1
+62,heavy-repeat,1272.0,1
+64,fixed:4,768.0,1
+76,uniform,816.0,1
+119,zipf,1500.0,1
+128,fixed:4,1536.0,1
+135,uniform,1564.0,1

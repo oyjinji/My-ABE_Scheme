@@ -1,0 +1,16 @@
+mode: retrieval-smoke
+master_seed: 20260730
+u:
+- 128
+- 512
+independent_seeds: 3
+delta: 64
+query_count: 1000
+warmup_batches: 2
+measured_batches: 3
+retrievals:
+- Legacy ABF retrieval
+- Bloomier retrieval
+- Cuckoo payload table
+- Plain XOR retrieval
+- FX-ABF retrieval

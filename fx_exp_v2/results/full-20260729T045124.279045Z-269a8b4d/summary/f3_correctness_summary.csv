@@ -1,0 +1,41 @@
+filter_name,u,metric,count,mean,median,std,min,max,p95,ci95_low,ci95_high
+Bloom+Locator,4096,member_false_negative_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Bloom+Locator,4096,filter_candidate_positive_count,20,624.4,632.0,33.44343220865252,554.0,669.0,663.3,605.0,649.5
+Bloom+Locator,4096,locator_attempt_count,20,624.4,632.0,33.44343220865252,554.0,669.0,663.3,605.0,649.5
+Bloom+Locator,4096,pstore_aead_attempt_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Bloom+Locator,4096,pstore_aead_reject_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Bloom+Locator,4096,final_false_accept_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Bloom+Locator,4096,observed_filter_fpr,20,0.0031219999999999998,0.00316,0.0001672171610432626,0.00277,0.003345,0.0033165,0.003025,0.0032475
+Bloom+Locator,4096,observed_end_to_end_false_accept_rate,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cuckoo+Locator,4096,member_false_negative_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cuckoo+Locator,4096,filter_candidate_positive_count,20,12.05,12.5,2.9995613714429368,7.0,17.0,16.05,11.0,13.5
+Cuckoo+Locator,4096,locator_attempt_count,20,12.05,12.5,2.9995613714429368,7.0,17.0,16.05,11.0,13.5
+Cuckoo+Locator,4096,pstore_aead_attempt_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cuckoo+Locator,4096,pstore_aead_reject_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cuckoo+Locator,4096,final_false_accept_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cuckoo+Locator,4096,observed_filter_fpr,20,6.024999999999999e-05,6.25e-05,1.4997806857214685e-05,3.5e-05,8.5e-05,8.025000000000001e-05,5.5e-05,6.749999999999999e-05
+Cuckoo+Locator,4096,observed_end_to_end_false_accept_rate,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FX-ABF,4096,member_false_negative_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FX-ABF,4096,filter_candidate_positive_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FX-ABF,4096,locator_attempt_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FX-ABF,4096,pstore_aead_attempt_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FX-ABF,4096,pstore_aead_reject_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FX-ABF,4096,final_false_accept_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FX-ABF,4096,observed_filter_fpr,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FX-ABF,4096,observed_end_to_end_false_accept_rate,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Legacy ABF,4096,member_false_negative_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Legacy ABF,4096,filter_candidate_positive_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Legacy ABF,4096,locator_attempt_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Legacy ABF,4096,pstore_aead_attempt_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Legacy ABF,4096,pstore_aead_reject_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Legacy ABF,4096,final_false_accept_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Legacy ABF,4096,observed_filter_fpr,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Legacy ABF,4096,observed_end_to_end_false_accept_rate,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Xor+Locator,4096,member_false_negative_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Xor+Locator,4096,filter_candidate_positive_count,20,3.0,3.0,1.4867838833500564,1.0,6.0,5.050000000000001,2.0,4.0
+Xor+Locator,4096,locator_attempt_count,20,3.0,3.0,1.4867838833500564,1.0,6.0,5.050000000000001,2.0,4.0
+Xor+Locator,4096,pstore_aead_attempt_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Xor+Locator,4096,pstore_aead_reject_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Xor+Locator,4096,final_false_accept_count,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Xor+Locator,4096,observed_filter_fpr,20,1.5000000000000002e-05,1.5e-05,7.4339194167502825e-06,5e-06,3e-05,2.5250000000000004e-05,1e-05,2e-05
+Xor+Locator,4096,observed_end_to_end_false_accept_rate,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,11 @@
+u,distribution,tag_bytes,samples
+16,fixed:1,256.0,1
+16,fixed:4,256.0,1
+16,heavy-repeat,256.0,1
+16,uniform,256.0,1
+16,zipf,256.0,1
+32,fixed:1,512.0,1
+32,fixed:4,512.0,1
+32,heavy-repeat,512.0,1
+32,uniform,512.0,1
+32,zipf,512.0,1

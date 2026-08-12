@@ -1,0 +1,4 @@
+cryptography>=2.8
+matplotlib>=3.5
+PyYAML>=5.3
+pytest>=7

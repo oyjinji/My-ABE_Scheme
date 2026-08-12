@@ -1,0 +1,17 @@
+u,backend,total_index_bytes,samples
+16,Attribute-BF (greedy),1040.0,1
+16,Bloom+Exact-PStore,1451.0,1
+16,Exact Hash,1394.0,1
+16,FX-ABF,894.0,1
+16,Linear Scan,1395.0,1
+16,Original-ABF,1793.0,1
+16,XOR-Retrieval,845.0,1
+16,as-ACF/Cuckoo,1137.0,1
+32,Attribute-BF (greedy),2147.0,1
+32,Bloom+Exact-PStore,2832.0,1
+32,Exact Hash,2754.0,1
+32,FX-ABF,1659.0,1
+32,Linear Scan,2755.0,1
+32,Original-ABF,4401.0,1
+32,XOR-Retrieval,1610.0,1
+32,as-ACF/Cuckoo,1968.0,1

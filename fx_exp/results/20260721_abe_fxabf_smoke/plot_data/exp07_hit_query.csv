@@ -1,0 +1,17 @@
+u,backend,hit_query_ns,samples
+16,Attribute-BF (greedy),59212.5625,1
+16,Bloom+Exact-PStore,46818.75,1
+16,Exact Hash,31125.0,1
+16,FX-ABF,68212.5625,1
+16,Linear Scan,29768.8125,1
+16,Original-ABF,53862.5,1
+16,XOR-Retrieval,54281.25,1
+16,as-ACF/Cuckoo,85162.5,1
+32,Attribute-BF (greedy),62540.05,1
+32,Bloom+Exact-PStore,37365.05,1
+32,Exact Hash,30665.05,1
+32,FX-ABF,83805.0,1
+32,Linear Scan,28870.0,1
+32,Original-ABF,61095.05,1
+32,XOR-Retrieval,81145.0,1
+32,as-ACF/Cuckoo,59100.05,1

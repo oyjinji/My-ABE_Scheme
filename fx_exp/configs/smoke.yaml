@@ -1,0 +1,69 @@
+profile: smoke
+master_seed: 20260721
+pairing_group: MNT224
+filter:
+  c_fx: 1.30
+  delta: 64
+  r_max: 8
+  gamma: 1.05
+  segment_length: 32
+  greedy_k: 3
+  greedy_c: 2.0
+  original_k: 3
+  original_c: 2.0
+  cuckoo_bucket_size: 4
+  cuckoo_threshold: 0.85
+  fingerprint_bits: 16
+experiments:
+  build:
+    u: [16, 32]
+    c_fx: [1.30, 1.50]
+    trials: 2
+  query:
+    u: [16, 32]
+    hit_ratios: [0.0, 0.5, 1.0]
+    queries: 20
+    trials: 1
+  storage:
+    u: [16, 32]
+    delta: [16, 32, 64]
+    trials: 1
+  pstore:
+    u: [16, 32]
+    distributions: ["fixed:1", "fixed:4", uniform, zipf, heavy-repeat]
+    trials: 1
+  filter_suite:
+    u: [16, 32]
+    queries: 20
+    trials: 1
+    backends:
+      - Linear Scan
+      - Exact Hash
+      - Bloom+Exact-PStore
+      - Attribute-BF (greedy)
+      - Original-ABF
+      - as-ACF/Cuckoo
+      - XOR-Retrieval
+      - FX-ABF
+  segments:
+    u: [16, 32]
+    segment_length: [8, 16, 32]
+    c_fx: [1.30]
+    trials: 1
+  transform:
+    N: 32
+    r: 8
+    ell: [16, 32]
+    trials: 1
+    backends: [Linear Scan, Exact Hash, Original-ABF, as-ACF/Cuckoo, XOR-Retrieval, FX-ABF]
+  rejection:
+    u: 32
+    delta: [8, 16, 32, 64]
+    queries: 100
+    trials: 1
+  sensitivity:
+    u: [32]
+    r_max: [1, 4]
+    gamma: [1.05, 1.20]
+    c_fx: [1.25, 1.40]
+    trials: 1

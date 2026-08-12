@@ -1,0 +1,2 @@
+n,N,ell,fixed_hit_rows_r,expected_pairing_count,transform_ms_mean,transform_ms_cv,relative_point_mean_max_min_range,linear_slope_ms_per_revoked_user,min_r_v,max_r_v,n_samples,interpretation
+16384,20,64,10,22,74.157371765,0.02706254857653379,0.015350270012363852,5.727743275768774e-05,1,8192,200,diagnostic only; no complexity fit or outlier removal

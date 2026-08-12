@@ -1,0 +1,14 @@
+mode: retrieval-full
+master_seed: 20260730
+u: [128, 512, 2048, 8192, 16384]
+independent_seeds: 20
+delta: 64
+query_count: 1024
+warmup_batches: 10
+measured_batches: 20
+retrievals:
+  - Legacy ABF retrieval
+  - Bloomier retrieval
+  - Cuckoo payload table
+  - Plain XOR retrieval
+  - FX-ABF retrieval

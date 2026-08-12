@@ -1,0 +1,26 @@
+mode: full
+master_seed: 20260728
+pairing_group: MNT224
+filters: [Legacy ABF, Bloom+Locator, Cuckoo+Locator, Xor+Locator, FX-ABF]
+f1:
+  u: [128, 512, 2048, 8192, 16384]
+  independent_seeds: 20
+  warmup_builds: 2
+  measured_builds_per_seed: 3
+f2:
+  ell_scaling: [32, 64, 128, 256, 512]
+  fixed_N_a: 32
+  fixed_r_a: 8
+  fixed_ell_b: 256
+  fixed_N_b: 64
+  r_scaling: [4, 8, 16, 32, 64]
+  independent_workloads: 20
+  warmup_queries: 10
+  measured_queries: 30
+f3:
+  u: 4096
+  member_queries: 20000
+  nonmember_queries: 200000
+  independent_workloads: 20
+bootstrap_resamples: 4000
+threads: 1

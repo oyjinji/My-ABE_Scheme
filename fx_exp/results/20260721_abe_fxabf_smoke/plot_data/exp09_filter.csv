@@ -1,0 +1,13 @@
+ell,backend,filter_query_ns,samples
+16,Exact Hash,284000.0,1
+16,FX-ABF,1412801.0,1
+16,Linear Scan,273100.0,1
+16,Original-ABF,993900.0,1
+16,XOR-Retrieval,795700.0,1
+16,as-ACF/Cuckoo,1206300.0,1
+32,Exact Hash,286800.0,1
+32,FX-ABF,1483101.0,1
+32,Linear Scan,329200.0,1
+32,Original-ABF,937600.0,1
+32,XOR-Retrieval,888501.0,1
+32,as-ACF/Cuckoo,1135700.0,1

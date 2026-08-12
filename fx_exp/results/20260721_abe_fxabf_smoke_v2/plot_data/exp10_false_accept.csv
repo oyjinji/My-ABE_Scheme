@@ -1,0 +1,5 @@
+delta,u,empirical_false_accept_rate,samples
+8,32,0.0,1
+16,32,0.0,1
+32,32,0.0,1
+64,32,0.0,1

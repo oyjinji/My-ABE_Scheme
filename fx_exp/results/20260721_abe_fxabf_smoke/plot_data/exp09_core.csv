@@ -1,0 +1,13 @@
+ell,backend,core_transform_ns,samples
+16,Exact Hash,64990112.0,1
+16,FX-ABF,58623311.0,1
+16,Linear Scan,60420311.0,1
+16,Original-ABF,61165511.0,1
+16,XOR-Retrieval,57485211.0,1
+16,as-ACF/Cuckoo,57962411.0,1
+32,Exact Hash,58575910.0,1
+32,FX-ABF,61527312.0,1
+32,Linear Scan,57487411.0,1
+32,Original-ABF,59245910.0,1
+32,XOR-Retrieval,60693311.0,1
+32,as-ACF/Cuckoo,59890911.0,1

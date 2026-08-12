@@ -1,0 +1,17 @@
+u,backend,build_ns,samples
+16,Attribute-BF (greedy),7543901.0,1
+16,Bloom+Exact-PStore,666300.0,1
+16,Exact Hash,1103100.0,1
+16,FX-ABF,2043200.0,1
+16,Linear Scan,545100.0,1
+16,Original-ABF,5911001.0,1
+16,XOR-Retrieval,1475801.0,1
+16,as-ACF/Cuckoo,900100.0,1
+32,Attribute-BF (greedy),26573806.0,1
+32,Bloom+Exact-PStore,1198000.0,1
+32,Exact Hash,1055900.0,1
+32,FX-ABF,2095000.0,1
+32,Linear Scan,1224300.0,1
+32,Original-ABF,65719215.0,1
+32,XOR-Retrieval,1981401.0,1
+32,as-ACF/Cuckoo,2830001.0,1

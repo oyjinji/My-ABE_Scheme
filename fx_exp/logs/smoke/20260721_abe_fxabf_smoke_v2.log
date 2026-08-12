@@ -1,0 +1,78 @@
+run 20260721_abe_fxabf_smoke_v2 profile=smoke resume=False
+exp01_03_build u=16|c=1.3|trial=0 ok
+exp01_03_build u=16|c=1.3|trial=1 ok
+exp01_03_build u=16|c=1.5|trial=0 ok
+exp01_03_build u=16|c=1.5|trial=1 ok
+exp01_03_build u=32|c=1.3|trial=0 ok
+exp01_03_build u=32|c=1.3|trial=1 ok
+exp01_03_build u=32|c=1.5|trial=0 ok
+exp01_03_build u=32|c=1.5|trial=1 ok
+exp04_query u=16|ratio=0.0|trial=0 ok
+exp04_query u=16|ratio=0.5|trial=0 ok
+exp04_query u=16|ratio=1.0|trial=0 ok
+exp04_query u=32|ratio=0.0|trial=0 ok
+exp04_query u=32|ratio=0.5|trial=0 ok
+exp04_query u=32|ratio=1.0|trial=0 ok
+exp10_rejection delta=8|trial=0 ok
+exp10_rejection delta=16|trial=0 ok
+exp10_rejection delta=32|trial=0 ok
+exp10_rejection delta=64|trial=0 ok
+exp05_storage u=16|delta=16|trial=0 ok
+exp05_storage u=16|delta=32|trial=0 ok
+exp05_storage u=16|delta=64|trial=0 ok
+exp05_storage u=32|delta=16|trial=0 ok
+exp05_storage u=32|delta=32|trial=0 ok
+exp05_storage u=32|delta=64|trial=0 ok
+exp06_pstore u=16|dist=fixed:1|trial=0 ok
+exp06_pstore u=16|dist=fixed:4|trial=0 ok
+exp06_pstore u=16|dist=uniform|trial=0 ok
+exp06_pstore u=16|dist=zipf|trial=0 ok
+exp06_pstore u=16|dist=heavy-repeat|trial=0 ok
+exp06_pstore u=32|dist=fixed:1|trial=0 ok
+exp06_pstore u=32|dist=fixed:4|trial=0 ok
+exp06_pstore u=32|dist=uniform|trial=0 ok
+exp06_pstore u=32|dist=zipf|trial=0 ok
+exp06_pstore u=32|dist=heavy-repeat|trial=0 ok
+exp07_filter_suite u=16|trial=0|backend=Linear Scan ok
+exp07_filter_suite u=16|trial=0|backend=Exact Hash ok
+exp07_filter_suite u=16|trial=0|backend=Bloom+Exact-PStore ok
+exp07_filter_suite u=16|trial=0|backend=Attribute-BF (greedy) ok
+exp07_filter_suite u=16|trial=0|backend=Original-ABF ok
+exp07_filter_suite u=16|trial=0|backend=as-ACF/Cuckoo ok
+exp07_filter_suite u=16|trial=0|backend=XOR-Retrieval ok
+exp07_filter_suite u=16|trial=0|backend=FX-ABF ok
+exp07_filter_suite u=32|trial=0|backend=Linear Scan ok
+exp07_filter_suite u=32|trial=0|backend=Exact Hash ok
+exp07_filter_suite u=32|trial=0|backend=Bloom+Exact-PStore ok
+exp07_filter_suite u=32|trial=0|backend=Attribute-BF (greedy) ok
+exp07_filter_suite u=32|trial=0|backend=Original-ABF ok
+exp07_filter_suite u=32|trial=0|backend=as-ACF/Cuckoo ok
+exp07_filter_suite u=32|trial=0|backend=XOR-Retrieval ok
+exp07_filter_suite u=32|trial=0|backend=FX-ABF ok
+exp08_segments u=16|segment=8|c=1.3|trial=0 ok
+exp08_segments u=16|segment=16|c=1.3|trial=0 ok
+exp08_segments u=16|segment=32|c=1.3|trial=0 ok
+exp08_segments u=32|segment=8|c=1.3|trial=0 ok
+exp08_segments u=32|segment=16|c=1.3|trial=0 ok
+exp08_segments u=32|segment=32|c=1.3|trial=0 ok
+exp11_sensitivity u=32|r=1|g=1.05|c=1.25|trial=0 ok
+exp11_sensitivity u=32|r=1|g=1.05|c=1.4|trial=0 ok
+exp11_sensitivity u=32|r=1|g=1.2|c=1.25|trial=0 ok
+exp11_sensitivity u=32|r=1|g=1.2|c=1.4|trial=0 ok
+exp11_sensitivity u=32|r=4|g=1.05|c=1.25|trial=0 ok
+exp11_sensitivity u=32|r=4|g=1.05|c=1.4|trial=0 ok
+exp11_sensitivity u=32|r=4|g=1.2|c=1.25|trial=0 ok
+exp11_sensitivity u=32|r=4|g=1.2|c=1.4|trial=0 ok
+exp09_transform ell=16|trial=0|backend=Linear Scan ok
+exp09_transform ell=16|trial=0|backend=Exact Hash ok
+exp09_transform ell=16|trial=0|backend=Original-ABF ok
+exp09_transform ell=16|trial=0|backend=as-ACF/Cuckoo ok
+exp09_transform ell=16|trial=0|backend=XOR-Retrieval ok
+exp09_transform ell=16|trial=0|backend=FX-ABF ok
+exp09_transform ell=32|trial=0|backend=Linear Scan ok
+exp09_transform ell=32|trial=0|backend=Exact Hash ok
+exp09_transform ell=32|trial=0|backend=Original-ABF ok
+exp09_transform ell=32|trial=0|backend=as-ACF/Cuckoo ok
+exp09_transform ell=32|trial=0|backend=XOR-Retrieval ok
+exp09_transform ell=32|trial=0|backend=FX-ABF ok
+run 20260721_abe_fxabf_smoke_v2 profile=smoke resume=True

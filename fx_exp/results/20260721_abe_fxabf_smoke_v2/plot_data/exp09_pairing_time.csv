@@ -1,0 +1,13 @@
+ell,backend,pairing_ns,samples
+16,Exact Hash,67241998.0,1
+16,FX-ABF,62051099.0,1
+16,Linear Scan,62413599.0,1
+16,Original-ABF,64702898.0,1
+16,XOR-Retrieval,64286698.0,1
+16,as-ACF/Cuckoo,63151699.0,1
+32,Exact Hash,59606300.0,1
+32,FX-ABF,83609500.0,1
+32,Linear Scan,64760400.0,1
+32,Original-ABF,69928300.0,1
+32,XOR-Retrieval,71949500.0,1
+32,as-ACF/Cuckoo,74141301.0,1

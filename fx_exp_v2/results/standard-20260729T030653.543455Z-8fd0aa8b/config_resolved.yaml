@@ -1,0 +1,44 @@
+mode: standard
+master_seed: 20260728
+pairing_group: MNT224
+filters:
+- Bloom+Locator
+- Cuckoo
+- Xor
+- FX-ABF
+f1:
+  u:
+  - 128
+  - 512
+  - 2048
+  - 8192
+  independent_seeds: 10
+  warmup_builds: 2
+  measured_builds_per_seed: 3
+f2:
+  ell_scaling:
+  - 32
+  - 64
+  - 128
+  - 256
+  - 512
+  fixed_N_a: 32
+  fixed_r_a: 8
+  fixed_ell_b: 256
+  fixed_N_b: 64
+  r_scaling:
+  - 4
+  - 8
+  - 16
+  - 32
+  - 64
+  independent_workloads: 10
+  warmup_queries: 10
+  measured_queries: 30
+f3:
+  u: 2048
+  member_queries: 10000
+  nonmember_queries: 100000
+  independent_workloads: 10
+bootstrap_resamples: 2000
+threads: 1

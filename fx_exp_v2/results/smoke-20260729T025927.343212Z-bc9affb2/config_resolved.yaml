@@ -1,0 +1,36 @@
+mode: smoke
+master_seed: 20260728
+pairing_group: MNT224
+filters:
+- Bloom+Locator
+- Cuckoo
+- Xor
+- FX-ABF
+f1:
+  u:
+  - 64
+  - 256
+  independent_seeds: 2
+  warmup_builds: 1
+  measured_builds_per_seed: 1
+f2:
+  ell_scaling:
+  - 64
+  - 128
+  fixed_N_a: 32
+  fixed_r_a: 8
+  fixed_ell_b: 128
+  fixed_N_b: 64
+  r_scaling:
+  - 4
+  - 8
+  independent_workloads: 2
+  warmup_queries: 2
+  measured_queries: 5
+f3:
+  u: 256
+  member_queries: 512
+  nonmember_queries: 1000
+  independent_workloads: 2
+bootstrap_resamples: 500
+threads: 1

@@ -1,0 +1,109 @@
+backend,ell,experiment,max,mean,median,metric,min,p95,p99,sample_count,stddev
+Linear Scan,16,exp09_transform,32.0,32.0,32.0,N,32.0,32.0,,1,0.0
+Linear Scan,16,exp09_transform,62684399.0,62684399.0,62684399.0,core_transform_ns,62684399.0,62684399.0,,1,0.0
+Linear Scan,16,exp09_transform,62684399.0,62684399.0,62684399.0,e2e_transform_ns,62684399.0,62684399.0,,1,0.0
+Linear Scan,16,exp09_transform,269100.0,269100.0,269100.0,filter_query_ns,269100.0,269100.0,,1,0.0
+Linear Scan,16,exp09_transform,1700.0,1700.0,1700.0,other_ns,1700.0,1700.0,,1,0.0
+Linear Scan,16,exp09_transform,17.0,17.0,17.0,pairing_count,17.0,17.0,,1,0.0
+Linear Scan,16,exp09_transform,62413599.0,62413599.0,62413599.0,pairing_ns,62413599.0,62413599.0,,1,0.0
+Linear Scan,16,exp09_transform,212000.0,212000.0,212000.0,pstore_processing_ns,212000.0,212000.0,,1,0.0
+Linear Scan,16,exp09_transform,8.0,8.0,8.0,r,8.0,8.0,,1,0.0
+Exact Hash,16,exp09_transform,32.0,32.0,32.0,N,32.0,32.0,,1,0.0
+Exact Hash,16,exp09_transform,67578798.0,67578798.0,67578798.0,core_transform_ns,67578798.0,67578798.0,,1,0.0
+Exact Hash,16,exp09_transform,67578798.0,67578798.0,67578798.0,e2e_transform_ns,67578798.0,67578798.0,,1,0.0
+Exact Hash,16,exp09_transform,334600.0,334600.0,334600.0,filter_query_ns,334600.0,334600.0,,1,0.0
+Exact Hash,16,exp09_transform,2200.0,2200.0,2200.0,other_ns,2200.0,2200.0,,1,0.0
+Exact Hash,16,exp09_transform,17.0,17.0,17.0,pairing_count,17.0,17.0,,1,0.0
+Exact Hash,16,exp09_transform,67241998.0,67241998.0,67241998.0,pairing_ns,67241998.0,67241998.0,,1,0.0
+Exact Hash,16,exp09_transform,237200.0,237200.0,237200.0,pstore_processing_ns,237200.0,237200.0,,1,0.0
+Exact Hash,16,exp09_transform,8.0,8.0,8.0,r,8.0,8.0,,1,0.0
+Original-ABF,16,exp09_transform,32.0,32.0,32.0,N,32.0,32.0,,1,0.0
+Original-ABF,16,exp09_transform,66172198.0,66172198.0,66172198.0,core_transform_ns,66172198.0,66172198.0,,1,0.0
+Original-ABF,16,exp09_transform,66172198.0,66172198.0,66172198.0,e2e_transform_ns,66172198.0,66172198.0,,1,0.0
+Original-ABF,16,exp09_transform,1453700.0,1453700.0,1453700.0,filter_query_ns,1453700.0,1453700.0,,1,0.0
+Original-ABF,16,exp09_transform,15600.0,15600.0,15600.0,other_ns,15600.0,15600.0,,1,0.0
+Original-ABF,16,exp09_transform,17.0,17.0,17.0,pairing_count,17.0,17.0,,1,0.0
+Original-ABF,16,exp09_transform,64702898.0,64702898.0,64702898.0,pairing_ns,64702898.0,64702898.0,,1,0.0
+Original-ABF,16,exp09_transform,202700.0,202700.0,202700.0,pstore_processing_ns,202700.0,202700.0,,1,0.0
+Original-ABF,16,exp09_transform,8.0,8.0,8.0,r,8.0,8.0,,1,0.0
+as-ACF/Cuckoo,16,exp09_transform,32.0,32.0,32.0,N,32.0,32.0,,1,0.0
+as-ACF/Cuckoo,16,exp09_transform,64027199.0,64027199.0,64027199.0,core_transform_ns,64027199.0,64027199.0,,1,0.0
+as-ACF/Cuckoo,16,exp09_transform,64027199.0,64027199.0,64027199.0,e2e_transform_ns,64027199.0,64027199.0,,1,0.0
+as-ACF/Cuckoo,16,exp09_transform,872800.0,872800.0,872800.0,filter_query_ns,872800.0,872800.0,,1,0.0
+as-ACF/Cuckoo,16,exp09_transform,2700.0,2700.0,2700.0,other_ns,2700.0,2700.0,,1,0.0
+as-ACF/Cuckoo,16,exp09_transform,17.0,17.0,17.0,pairing_count,17.0,17.0,,1,0.0
+as-ACF/Cuckoo,16,exp09_transform,63151699.0,63151699.0,63151699.0,pairing_ns,63151699.0,63151699.0,,1,0.0
+as-ACF/Cuckoo,16,exp09_transform,261100.0,261100.0,261100.0,pstore_processing_ns,261100.0,261100.0,,1,0.0
+as-ACF/Cuckoo,16,exp09_transform,8.0,8.0,8.0,r,8.0,8.0,,1,0.0
+XOR-Retrieval,16,exp09_transform,32.0,32.0,32.0,N,32.0,32.0,,1,0.0
+XOR-Retrieval,16,exp09_transform,65391798.0,65391798.0,65391798.0,core_transform_ns,65391798.0,65391798.0,,1,0.0
+XOR-Retrieval,16,exp09_transform,65391798.0,65391798.0,65391798.0,e2e_transform_ns,65391798.0,65391798.0,,1,0.0
+XOR-Retrieval,16,exp09_transform,1103000.0,1103000.0,1103000.0,filter_query_ns,1103000.0,1103000.0,,1,0.0
+XOR-Retrieval,16,exp09_transform,2100.0,2100.0,2100.0,other_ns,2100.0,2100.0,,1,0.0
+XOR-Retrieval,16,exp09_transform,17.0,17.0,17.0,pairing_count,17.0,17.0,,1,0.0
+XOR-Retrieval,16,exp09_transform,64286698.0,64286698.0,64286698.0,pairing_ns,64286698.0,64286698.0,,1,0.0
+XOR-Retrieval,16,exp09_transform,270400.0,270400.0,270400.0,pstore_processing_ns,270400.0,270400.0,,1,0.0
+XOR-Retrieval,16,exp09_transform,8.0,8.0,8.0,r,8.0,8.0,,1,0.0
+FX-ABF,16,exp09_transform,32.0,32.0,32.0,N,32.0,32.0,,1,0.0
+FX-ABF,16,exp09_transform,63519999.0,63519999.0,63519999.0,core_transform_ns,63519999.0,63519999.0,,1,0.0
+FX-ABF,16,exp09_transform,63519999.0,63519999.0,63519999.0,e2e_transform_ns,63519999.0,63519999.0,,1,0.0
+FX-ABF,16,exp09_transform,1466600.0,1466600.0,1466600.0,filter_query_ns,1466600.0,1466600.0,,1,0.0
+FX-ABF,16,exp09_transform,2300.0,2300.0,2300.0,other_ns,2300.0,2300.0,,1,0.0
+FX-ABF,16,exp09_transform,17.0,17.0,17.0,pairing_count,17.0,17.0,,1,0.0
+FX-ABF,16,exp09_transform,62051099.0,62051099.0,62051099.0,pairing_ns,62051099.0,62051099.0,,1,0.0
+FX-ABF,16,exp09_transform,252800.0,252800.0,252800.0,pstore_processing_ns,252800.0,252800.0,,1,0.0
+FX-ABF,16,exp09_transform,8.0,8.0,8.0,r,8.0,8.0,,1,0.0
+Linear Scan,32,exp09_transform,32.0,32.0,32.0,N,32.0,32.0,,1,0.0
+Linear Scan,32,exp09_transform,65076800.0,65076800.0,65076800.0,core_transform_ns,65076800.0,65076800.0,,1,0.0
+Linear Scan,32,exp09_transform,65076800.0,65076800.0,65076800.0,e2e_transform_ns,65076800.0,65076800.0,,1,0.0
+Linear Scan,32,exp09_transform,314600.0,314600.0,314600.0,filter_query_ns,314600.0,314600.0,,1,0.0
+Linear Scan,32,exp09_transform,1800.0,1800.0,1800.0,other_ns,1800.0,1800.0,,1,0.0
+Linear Scan,32,exp09_transform,17.0,17.0,17.0,pairing_count,17.0,17.0,,1,0.0
+Linear Scan,32,exp09_transform,64760400.0,64760400.0,64760400.0,pairing_ns,64760400.0,64760400.0,,1,0.0
+Linear Scan,32,exp09_transform,235200.0,235200.0,235200.0,pstore_processing_ns,235200.0,235200.0,,1,0.0
+Linear Scan,32,exp09_transform,8.0,8.0,8.0,r,8.0,8.0,,1,0.0
+Exact Hash,32,exp09_transform,32.0,32.0,32.0,N,32.0,32.0,,1,0.0
+Exact Hash,32,exp09_transform,59887600.0,59887600.0,59887600.0,core_transform_ns,59887600.0,59887600.0,,1,0.0
+Exact Hash,32,exp09_transform,59887600.0,59887600.0,59887600.0,e2e_transform_ns,59887600.0,59887600.0,,1,0.0
+Exact Hash,32,exp09_transform,279400.0,279400.0,279400.0,filter_query_ns,279400.0,279400.0,,1,0.0
+Exact Hash,32,exp09_transform,1900.0,1900.0,1900.0,other_ns,1900.0,1900.0,,1,0.0
+Exact Hash,32,exp09_transform,17.0,17.0,17.0,pairing_count,17.0,17.0,,1,0.0
+Exact Hash,32,exp09_transform,59606300.0,59606300.0,59606300.0,pairing_ns,59606300.0,59606300.0,,1,0.0
+Exact Hash,32,exp09_transform,209700.0,209700.0,209700.0,pstore_processing_ns,209700.0,209700.0,,1,0.0
+Exact Hash,32,exp09_transform,8.0,8.0,8.0,r,8.0,8.0,,1,0.0
+Original-ABF,32,exp09_transform,32.0,32.0,32.0,N,32.0,32.0,,1,0.0
+Original-ABF,32,exp09_transform,71060900.0,71060900.0,71060900.0,core_transform_ns,71060900.0,71060900.0,,1,0.0
+Original-ABF,32,exp09_transform,71060900.0,71060900.0,71060900.0,e2e_transform_ns,71060900.0,71060900.0,,1,0.0
+Original-ABF,32,exp09_transform,1130100.0,1130100.0,1130100.0,filter_query_ns,1130100.0,1130100.0,,1,0.0
+Original-ABF,32,exp09_transform,2500.0,2500.0,2500.0,other_ns,2500.0,2500.0,,1,0.0
+Original-ABF,32,exp09_transform,17.0,17.0,17.0,pairing_count,17.0,17.0,,1,0.0
+Original-ABF,32,exp09_transform,69928300.0,69928300.0,69928300.0,pairing_ns,69928300.0,69928300.0,,1,0.0
+Original-ABF,32,exp09_transform,149500.0,149500.0,149500.0,pstore_processing_ns,149500.0,149500.0,,1,0.0
+Original-ABF,32,exp09_transform,8.0,8.0,8.0,r,8.0,8.0,,1,0.0
+as-ACF/Cuckoo,32,exp09_transform,32.0,32.0,32.0,N,32.0,32.0,,1,0.0
+as-ACF/Cuckoo,32,exp09_transform,75821601.0,75821601.0,75821601.0,core_transform_ns,75821601.0,75821601.0,,1,0.0
+as-ACF/Cuckoo,32,exp09_transform,75821601.0,75821601.0,75821601.0,e2e_transform_ns,75821601.0,75821601.0,,1,0.0
+as-ACF/Cuckoo,32,exp09_transform,1676900.0,1676900.0,1676900.0,filter_query_ns,1676900.0,1676900.0,,1,0.0
+as-ACF/Cuckoo,32,exp09_transform,3400.0,3400.0,3400.0,other_ns,3400.0,3400.0,,1,0.0
+as-ACF/Cuckoo,32,exp09_transform,17.0,17.0,17.0,pairing_count,17.0,17.0,,1,0.0
+as-ACF/Cuckoo,32,exp09_transform,74141301.0,74141301.0,74141301.0,pairing_ns,74141301.0,74141301.0,,1,0.0
+as-ACF/Cuckoo,32,exp09_transform,400300.0,400300.0,400300.0,pstore_processing_ns,400300.0,400300.0,,1,0.0
+as-ACF/Cuckoo,32,exp09_transform,8.0,8.0,8.0,r,8.0,8.0,,1,0.0
+XOR-Retrieval,32,exp09_transform,32.0,32.0,32.0,N,32.0,32.0,,1,0.0
+XOR-Retrieval,32,exp09_transform,72925400.0,72925400.0,72925400.0,core_transform_ns,72925400.0,72925400.0,,1,0.0
+XOR-Retrieval,32,exp09_transform,72925400.0,72925400.0,72925400.0,e2e_transform_ns,72925400.0,72925400.0,,1,0.0
+XOR-Retrieval,32,exp09_transform,973800.0,973800.0,973800.0,filter_query_ns,973800.0,973800.0,,1,0.0
+XOR-Retrieval,32,exp09_transform,2100.0,2100.0,2100.0,other_ns,2100.0,2100.0,,1,0.0
+XOR-Retrieval,32,exp09_transform,17.0,17.0,17.0,pairing_count,17.0,17.0,,1,0.0
+XOR-Retrieval,32,exp09_transform,71949500.0,71949500.0,71949500.0,pairing_ns,71949500.0,71949500.0,,1,0.0
+XOR-Retrieval,32,exp09_transform,268400.0,268400.0,268400.0,pstore_processing_ns,268400.0,268400.0,,1,0.0
+XOR-Retrieval,32,exp09_transform,8.0,8.0,8.0,r,8.0,8.0,,1,0.0
+FX-ABF,32,exp09_transform,32.0,32.0,32.0,N,32.0,32.0,,1,0.0
+FX-ABF,32,exp09_transform,85139800.0,85139800.0,85139800.0,core_transform_ns,85139800.0,85139800.0,,1,0.0
+FX-ABF,32,exp09_transform,85139800.0,85139800.0,85139800.0,e2e_transform_ns,85139800.0,85139800.0,,1,0.0
+FX-ABF,32,exp09_transform,1528000.0,1528000.0,1528000.0,filter_query_ns,1528000.0,1528000.0,,1,0.0
+FX-ABF,32,exp09_transform,2300.0,2300.0,2300.0,other_ns,2300.0,2300.0,,1,0.0
+FX-ABF,32,exp09_transform,17.0,17.0,17.0,pairing_count,17.0,17.0,,1,0.0
+FX-ABF,32,exp09_transform,83609500.0,83609500.0,83609500.0,pairing_ns,83609500.0,83609500.0,,1,0.0
+FX-ABF,32,exp09_transform,285300.0,285300.0,285300.0,pstore_processing_ns,285300.0,285300.0,,1,0.0
+FX-ABF,32,exp09_transform,8.0,8.0,8.0,r,8.0,8.0,,1,0.0

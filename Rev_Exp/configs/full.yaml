@@ -1,0 +1,51 @@
+mode: full
+master_seed: 20260811
+pairing_group: MNT224
+
+exp01:
+  n: [1024, 4096, 16384, 65536]
+  ratios: [0.01, 0.05, 0.10]
+  sampling: {warmup: 2, repeats: 7, placements: 5}
+  large_endpoint:
+    enabled: true
+    n: 262144
+    sampling: {warmup: 1, repeats: 3, placements: 3}
+
+exp02:
+  n: 32768
+  r_v: [1, 4, 16, 64, 256, 1024, 4096, 8192, 16384]
+  sampling: {warmup: 2, repeats: 5, placements: 5}
+
+exp04:
+  n: 65536
+  r_v: [1, 4, 16, 64, 256, 1024, 4096, 8192, 32768]
+  privacy_epoch: privacy-full
+  revocation_epoch: 1
+  N: 20
+  ell: 64
+  r: 10
+  sampling: {warmup: 2, repeats: 5, placements: 5}
+
+exp05:
+  revocation_ratio: 0.05
+  S: 20
+  ell: 64
+  policy_unique_attributes: 48
+  revocation_epoch: 1
+  next_privacy_epoch: privacy-2
+  direct_comparison:
+    n: [8, 16, 32, 64, 128, 256, 512, 1024]
+    sampling: {warmup: 2, repeats: 7, placements: 3}
+  dual_scalability:
+    n: [1024, 4096, 16384, 65536]
+    sampling: {warmup: 2, repeats: 5, placements: 5}
+    large_endpoint:
+      enabled: true
+      n: 262144
+      sampling: {warmup: 1, repeats: 3, placements: 3}
+
+exp06:
+  S: [5, 10, 20, 40, 80, 160, 320, 640]
+  privacy_epoch: privacy-1
+  next_privacy_epoch: privacy-2
+  sampling: {warmup: 3, repeats: 10}

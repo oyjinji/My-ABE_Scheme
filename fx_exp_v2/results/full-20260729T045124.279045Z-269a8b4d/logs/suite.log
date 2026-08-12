@@ -1,0 +1,3 @@
+run_id=full-20260729T045124.279045Z-269a8b4d
+mode=full
+affinity={'status': 'fixed', 'cpu': 0}

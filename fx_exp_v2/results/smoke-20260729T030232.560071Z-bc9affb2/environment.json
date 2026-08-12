@@ -1,0 +1,38 @@
+{
+  "available_memory_bytes": 2120617984,
+  "command_line": "/home/jinji_o/ABE-Test/Git/FABEO/fx_exp_v2/benchmarks/run_suite.py --config fx_exp_v2/configs/smoke.yaml --validate --plot --report",
+  "config_file": "/home/jinji_o/ABE-Test/Git/FABEO/fx_exp_v2/configs/smoke.yaml",
+  "cpu_affinity": {
+    "cpu": 0,
+    "status": "fixed"
+  },
+  "cpu_model": "Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz",
+  "dependency_versions": {
+    "PyYAML": "5.3.1",
+    "charm-crypto": "unknown",
+    "cryptography": "2.8",
+    "matplotlib": "3.7.5",
+    "numpy": "1.24.4",
+    "pandas": "2.0.3"
+  },
+  "git_commit": "f2b402afb8776dd9256f268ed5d44fcc5caf1cc4",
+  "git_dirty": true,
+  "git_status_porcelain": [
+    "?? Code/fxabe_rev/",
+    "?? Code/fxdacp/",
+    "?? fx_exp/",
+    "?? fx_exp_v2/",
+    "?? pytest.ini"
+  ],
+  "logical_cpu_count": 16,
+  "os": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.29",
+  "pairing_backend": "MNT224",
+  "physical_cpu_count": 8,
+  "python_version": "3.8.10 (default, Mar 18 2025, 20:04:55) \n[GCC 9.4.0]",
+  "thread_configuration": {
+    "OMP_NUM_THREADS": "unset",
+    "OPENBLAS_NUM_THREADS": "unset",
+    "requested_threads": 1
+  },
+  "timestamp": "2026-07-29T03:02:32.574353+00:00"
+}
