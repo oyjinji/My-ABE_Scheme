@@ -1,0 +1,63 @@
+run_id,experiment,scheme,curve,backend,workload,seed,replicate,ell,u,N,J,k,t_I,c_max,actual_c_star,n_users,n_revoked,phase,time_ns,G1_exp,G2_exp,GT_exp,pair_count,serialized_bytes,component,success,notes
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,540,FX_slot_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,264,FX_metadata_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,480,PStore_ciphertext_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,240,PStore_nonce_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,320,PStore_tag_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,160,posting_payload_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,1524,FX_PStore_serialized_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,882,CT_core_G1_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,944,CT_core_G2_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,42,CT_revocation_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,928,header_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,48,DEM_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,4368,total_CT_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,540,FX_slot_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,264,FX_metadata_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,480,PStore_ciphertext_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,240,PStore_nonce_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,320,PStore_tag_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,160,posting_payload_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,1524,FX_PStore_serialized_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,882,CT_core_G1_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,2360,CT_core_G2_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,42,CT_revocation_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,930,header_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,48,DEM_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,,,,,8,1,,,Storage,,,,,,5786,total_CT_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,20,,,,,,,,,,Storage,,,,,,840,CT_core_G1_bytes,True,group.serialize + canonical metadata
+smoke_05_3_final2_20260818,EXP-02,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,20,,,,,,,,,,Storage,,,,,,236,CT_core_G2_bytes,True,group.serialize + canonical metadata
+smoke_05_3_final2_20260818,EXP-02,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,20,,,,,,,,,,Storage,,,,,,226,CT_core_GT_bytes,True,group.serialize + canonical metadata
+smoke_05_3_final2_20260818,EXP-02,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,20,,,,,,,,,,Storage,,,,,,183,header_bytes,True,group.serialize + canonical metadata
+smoke_05_3_final2_20260818,EXP-02,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,20,,,,,,,,,,Storage,,,,,,1485,total_CT_bytes,True,group.serialize + canonical metadata
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,1080,FX_slot_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,264,FX_metadata_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,960,PStore_ciphertext_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,480,PStore_nonce_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,640,PStore_tag_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,320,posting_payload_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,2784,FX_PStore_serialized_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,1722,CT_core_G1_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,944,CT_core_G2_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,42,CT_revocation_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,1168,header_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,48,DEM_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,6708,total_CT_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,1080,FX_slot_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,264,FX_metadata_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,960,PStore_ciphertext_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,480,PStore_nonce_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,640,PStore_tag_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,320,posting_payload_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,2784,FX_PStore_serialized_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,1722,CT_core_G1_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,4720,CT_core_G2_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,42,CT_revocation_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,1170,header_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,48,DEM_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FXABE-NoOccurrence,MNT224,Charm-Crypto/PBC,OR,53001,0,40,40,,,,,8,1,,,Storage,,,,,,10486,total_CT_bytes,True,canonical serialization
+smoke_05_3_final2_20260818,EXP-02,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,40,,,,,,,,,,Storage,,,,,,1680,CT_core_G1_bytes,True,group.serialize + canonical metadata
+smoke_05_3_final2_20260818,EXP-02,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,40,,,,,,,,,,Storage,,,,,,236,CT_core_G2_bytes,True,group.serialize + canonical metadata
+smoke_05_3_final2_20260818,EXP-02,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,40,,,,,,,,,,Storage,,,,,,226,CT_core_GT_bytes,True,group.serialize + canonical metadata
+smoke_05_3_final2_20260818,EXP-02,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,40,,,,,,,,,,Storage,,,,,,363,header_bytes,True,group.serialize + canonical metadata
+smoke_05_3_final2_20260818,EXP-02,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,40,,,,,,,,,,Storage,,,,,,2505,total_CT_bytes,True,group.serialize + canonical metadata

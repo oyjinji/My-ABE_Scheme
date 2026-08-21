@@ -1,0 +1,14 @@
+{
+  "D_count_invariant": true,
+  "FULL_VALIDATION": "PASS",
+  "canonical_storage": true,
+  "correctness": true,
+  "errors": [],
+  "failed_rows": 0,
+  "no_exact_locator": true,
+  "pair_count_invariant": true,
+  "raw_rows": 17717,
+  "same_backend": true,
+  "same_curve": true,
+  "valid": true
+}

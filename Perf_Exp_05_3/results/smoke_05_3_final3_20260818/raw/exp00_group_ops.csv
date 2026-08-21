@@ -1,0 +1,28 @@
+run_id,experiment,scheme,curve,backend,workload,seed,replicate,ell,u,N,J,k,t_I,c_max,actual_c_star,n_users,n_revoked,phase,time_ns,G1_exp,G2_exp,GT_exp,pair_count,serialized_bytes,component,success,notes
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,0,,,,,,,,,,,G1 exponentiation,571335,1,0,0,0,,G1 exponentiation,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,1,,,,,,,,,,,G1 exponentiation,592813,1,0,0,0,,G1 exponentiation,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,2,,,,,,,,,,,G1 exponentiation,639429,1,0,0,0,,G1 exponentiation,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,0,,,,,,,,,,,G2 exponentiation,4308224,0,1,0,0,,G2 exponentiation,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,1,,,,,,,,,,,G2 exponentiation,4678647,0,1,0,0,,G2 exponentiation,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,2,,,,,,,,,,,G2 exponentiation,5143748,0,1,0,0,,G2 exponentiation,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,0,,,,,,,,,,,GT exponentiation,984522,0,0,1,0,,GT exponentiation,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,1,,,,,,,,,,,GT exponentiation,1005518,0,0,1,0,,GT exponentiation,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,2,,,,,,,,,,,GT exponentiation,985389,0,0,1,0,,GT exponentiation,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,0,,,,,,,,,,,pairing,5160218,0,0,0,1,,pairing,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,1,,,,,,,,,,,pairing,5018059,0,0,0,1,,pairing,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,2,,,,,,,,,,,pairing,3596463,0,0,0,1,,pairing,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,0,,,,,,,,,,,G1 multiplication,2312,0,0,0,0,,G1 multiplication,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,1,,,,,,,,,,,G1 multiplication,2407,0,0,0,0,,G1 multiplication,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,2,,,,,,,,,,,G1 multiplication,2311,0,0,0,0,,G1 multiplication,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,0,,,,,,,,,,,G2 multiplication,16180,0,0,0,0,,G2 multiplication,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,1,,,,,,,,,,,G2 multiplication,18396,0,0,0,0,,G2 multiplication,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,2,,,,,,,,,,,G2 multiplication,17722,0,0,0,0,,G2 multiplication,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,0,,,,,,,,,,,G1 serialization,1060,0,0,0,0,42,G1 serialization,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,1,,,,,,,,,,,G1 serialization,1348,0,0,0,0,42,G1 serialization,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,2,,,,,,,,,,,G1 serialization,1156,0,0,0,0,42,G1 serialization,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,0,,,,,,,,,,,G2 serialization,1252,0,0,0,0,118,G2 serialization,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,1,,,,,,,,,,,G2 serialization,1541,0,0,0,0,118,G2 serialization,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,2,,,,,,,,,,,G2 serialization,1637,0,0,0,0,118,G2 serialization,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,0,,,,,,,,,,,hash-to-G1,40355,0,0,0,0,,hash-to-G1,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,1,,,,,,,,,,,hash-to-G1,41126,0,0,0,0,,hash-to-G1,True,single real operation
+smoke_05_3_final3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53001,2,,,,,,,,,,,hash-to-G1,40356,0,0,0,0,,hash-to-G1,True,single real operation

@@ -1,0 +1,181 @@
+run_id,experiment,scheme,curve,backend,workload,seed,replicate,ell,u,N,J,k,t_I,c_max,actual_c_star,n_users,n_revoked,phase,time_ns,G1_exp,G2_exp,GT_exp,pair_count,serialized_bytes,component,success,notes
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,0,,,,,,,,,,,G1 exponentiation,508500,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,1,,,,,,,,,,,G1 exponentiation,512300,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,2,,,,,,,,,,,G1 exponentiation,505599,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,3,,,,,,,,,,,G1 exponentiation,505700,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,4,,,,,,,,,,,G1 exponentiation,521400,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,5,,,,,,,,,,,G1 exponentiation,505000,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,6,,,,,,,,,,,G1 exponentiation,504700,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,7,,,,,,,,,,,G1 exponentiation,774200,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,8,,,,,,,,,,,G1 exponentiation,499000,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,9,,,,,,,,,,,G1 exponentiation,496300,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,10,,,,,,,,,,,G1 exponentiation,495300,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,11,,,,,,,,,,,G1 exponentiation,511999,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,12,,,,,,,,,,,G1 exponentiation,496200,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,13,,,,,,,,,,,G1 exponentiation,843100,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,14,,,,,,,,,,,G1 exponentiation,601300,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,15,,,,,,,,,,,G1 exponentiation,518100,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,16,,,,,,,,,,,G1 exponentiation,528500,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,17,,,,,,,,,,,G1 exponentiation,502200,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,18,,,,,,,,,,,G1 exponentiation,573600,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,19,,,,,,,,,,,G1 exponentiation,511399,1,0,0,0,,G1 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,0,,,,,,,,,,,G2 exponentiation,4712299,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,1,,,,,,,,,,,G2 exponentiation,3718399,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,2,,,,,,,,,,,G2 exponentiation,3715799,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,3,,,,,,,,,,,G2 exponentiation,4595699,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,4,,,,,,,,,,,G2 exponentiation,4628899,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,5,,,,,,,,,,,G2 exponentiation,4122600,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,6,,,,,,,,,,,G2 exponentiation,3836799,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,7,,,,,,,,,,,G2 exponentiation,5044199,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,8,,,,,,,,,,,G2 exponentiation,4862099,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,9,,,,,,,,,,,G2 exponentiation,4816999,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,10,,,,,,,,,,,G2 exponentiation,4641699,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,11,,,,,,,,,,,G2 exponentiation,3884399,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,12,,,,,,,,,,,G2 exponentiation,3708099,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,13,,,,,,,,,,,G2 exponentiation,3725299,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,14,,,,,,,,,,,G2 exponentiation,4194600,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,15,,,,,,,,,,,G2 exponentiation,4730099,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,16,,,,,,,,,,,G2 exponentiation,3825199,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,17,,,,,,,,,,,G2 exponentiation,3921099,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,18,,,,,,,,,,,G2 exponentiation,3725299,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,19,,,,,,,,,,,G2 exponentiation,4098299,0,1,0,0,,G2 exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,0,,,,,,,,,,,GT exponentiation,849300,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,1,,,,,,,,,,,GT exponentiation,838499,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,2,,,,,,,,,,,GT exponentiation,835700,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,3,,,,,,,,,,,GT exponentiation,873200,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,4,,,,,,,,,,,GT exponentiation,1081400,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,5,,,,,,,,,,,GT exponentiation,1359400,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,6,,,,,,,,,,,GT exponentiation,851399,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,7,,,,,,,,,,,GT exponentiation,837400,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,8,,,,,,,,,,,GT exponentiation,855900,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,9,,,,,,,,,,,GT exponentiation,996400,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,10,,,,,,,,,,,GT exponentiation,839400,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,11,,,,,,,,,,,GT exponentiation,854499,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,12,,,,,,,,,,,GT exponentiation,856000,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,13,,,,,,,,,,,GT exponentiation,885500,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,14,,,,,,,,,,,GT exponentiation,1141200,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,15,,,,,,,,,,,GT exponentiation,1015500,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,16,,,,,,,,,,,GT exponentiation,1031999,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,17,,,,,,,,,,,GT exponentiation,860300,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,18,,,,,,,,,,,GT exponentiation,847200,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,19,,,,,,,,,,,GT exponentiation,896700,0,0,1,0,,GT exponentiation,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,0,,,,,,,,,,,pairing,3188299,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,1,,,,,,,,,,,pairing,3959099,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,2,,,,,,,,,,,pairing,3036300,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,3,,,,,,,,,,,pairing,3125499,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,4,,,,,,,,,,,pairing,3057099,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,5,,,,,,,,,,,pairing,3017200,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,6,,,,,,,,,,,pairing,3383599,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,7,,,,,,,,,,,pairing,3637499,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,8,,,,,,,,,,,pairing,3163200,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,9,,,,,,,,,,,pairing,3020499,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,10,,,,,,,,,,,pairing,2996799,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,11,,,,,,,,,,,pairing,3329200,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,12,,,,,,,,,,,pairing,3278799,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,13,,,,,,,,,,,pairing,3007599,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,14,,,,,,,,,,,pairing,3028300,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,15,,,,,,,,,,,pairing,3040899,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,16,,,,,,,,,,,pairing,3110200,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,17,,,,,,,,,,,pairing,3070699,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,18,,,,,,,,,,,pairing,3236399,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,19,,,,,,,,,,,pairing,3016100,0,0,0,1,,pairing,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,0,,,,,,,,,,,G1 multiplication,1800,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,1,,,,,,,,,,,G1 multiplication,2400,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,2,,,,,,,,,,,G1 multiplication,2000,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,3,,,,,,,,,,,G1 multiplication,2000,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,4,,,,,,,,,,,G1 multiplication,2100,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,5,,,,,,,,,,,G1 multiplication,1900,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,6,,,,,,,,,,,G1 multiplication,1900,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,7,,,,,,,,,,,G1 multiplication,1900,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,8,,,,,,,,,,,G1 multiplication,2200,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,9,,,,,,,,,,,G1 multiplication,2100,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,10,,,,,,,,,,,G1 multiplication,2000,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,11,,,,,,,,,,,G1 multiplication,1900,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,12,,,,,,,,,,,G1 multiplication,2200,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,13,,,,,,,,,,,G1 multiplication,1900,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,14,,,,,,,,,,,G1 multiplication,1900,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,15,,,,,,,,,,,G1 multiplication,1900,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,16,,,,,,,,,,,G1 multiplication,1900,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,17,,,,,,,,,,,G1 multiplication,1900,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,18,,,,,,,,,,,G1 multiplication,1900,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,19,,,,,,,,,,,G1 multiplication,2000,0,0,0,0,,G1 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,0,,,,,,,,,,,G2 multiplication,12900,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,1,,,,,,,,,,,G2 multiplication,16000,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,2,,,,,,,,,,,G2 multiplication,15500,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,3,,,,,,,,,,,G2 multiplication,15800,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,4,,,,,,,,,,,G2 multiplication,15000,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,5,,,,,,,,,,,G2 multiplication,14800,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,6,,,,,,,,,,,G2 multiplication,15300,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,7,,,,,,,,,,,G2 multiplication,26600,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,8,,,,,,,,,,,G2 multiplication,15800,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,9,,,,,,,,,,,G2 multiplication,14900,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,10,,,,,,,,,,,G2 multiplication,15100,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,11,,,,,,,,,,,G2 multiplication,14900,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,12,,,,,,,,,,,G2 multiplication,15000,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,13,,,,,,,,,,,G2 multiplication,14800,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,14,,,,,,,,,,,G2 multiplication,15000,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,15,,,,,,,,,,,G2 multiplication,14900,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,16,,,,,,,,,,,G2 multiplication,14700,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,17,,,,,,,,,,,G2 multiplication,14700,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,18,,,,,,,,,,,G2 multiplication,14500,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,19,,,,,,,,,,,G2 multiplication,14500,0,0,0,0,,G2 multiplication,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,0,,,,,,,,,,,G1 serialization,700,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,1,,,,,,,,,,,G1 serialization,1000,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,2,,,,,,,,,,,G1 serialization,900,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,3,,,,,,,,,,,G1 serialization,900,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,4,,,,,,,,,,,G1 serialization,800,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,5,,,,,,,,,,,G1 serialization,900,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,6,,,,,,,,,,,G1 serialization,900,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,7,,,,,,,,,,,G1 serialization,900,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,8,,,,,,,,,,,G1 serialization,800,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,9,,,,,,,,,,,G1 serialization,800,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,10,,,,,,,,,,,G1 serialization,900,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,11,,,,,,,,,,,G1 serialization,900,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,12,,,,,,,,,,,G1 serialization,800,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,13,,,,,,,,,,,G1 serialization,900,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,14,,,,,,,,,,,G1 serialization,900,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,15,,,,,,,,,,,G1 serialization,800,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,16,,,,,,,,,,,G1 serialization,800,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,17,,,,,,,,,,,G1 serialization,800,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,18,,,,,,,,,,,G1 serialization,900,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,19,,,,,,,,,,,G1 serialization,2000,0,0,0,0,42,G1 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,0,,,,,,,,,,,G2 serialization,1100,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,1,,,,,,,,,,,G2 serialization,1400,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,2,,,,,,,,,,,G2 serialization,1400,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,3,,,,,,,,,,,G2 serialization,1400,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,4,,,,,,,,,,,G2 serialization,1200,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,5,,,,,,,,,,,G2 serialization,1200,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,6,,,,,,,,,,,G2 serialization,1200,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,7,,,,,,,,,,,G2 serialization,1300,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,8,,,,,,,,,,,G2 serialization,1200,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,9,,,,,,,,,,,G2 serialization,1300,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,10,,,,,,,,,,,G2 serialization,1200,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,11,,,,,,,,,,,G2 serialization,1200,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,12,,,,,,,,,,,G2 serialization,1200,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,13,,,,,,,,,,,G2 serialization,3300,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,14,,,,,,,,,,,G2 serialization,1600,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,15,,,,,,,,,,,G2 serialization,1200,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,16,,,,,,,,,,,G2 serialization,1300,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,17,,,,,,,,,,,G2 serialization,1300,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,18,,,,,,,,,,,G2 serialization,1200,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,19,,,,,,,,,,,G2 serialization,1200,0,0,0,0,118,G2 serialization,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,0,,,,,,,,,,,hash-to-G1,34700,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,1,,,,,,,,,,,hash-to-G1,36300,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,2,,,,,,,,,,,hash-to-G1,35700,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,3,,,,,,,,,,,hash-to-G1,36400,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,4,,,,,,,,,,,hash-to-G1,35300,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,5,,,,,,,,,,,hash-to-G1,35800,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,6,,,,,,,,,,,hash-to-G1,35400,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,7,,,,,,,,,,,hash-to-G1,36000,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,8,,,,,,,,,,,hash-to-G1,35300,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,9,,,,,,,,,,,hash-to-G1,35300,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,10,,,,,,,,,,,hash-to-G1,49900,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,11,,,,,,,,,,,hash-to-G1,38500,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,12,,,,,,,,,,,hash-to-G1,36300,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,13,,,,,,,,,,,hash-to-G1,35600,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,14,,,,,,,,,,,hash-to-G1,36100,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,15,,,,,,,,,,,hash-to-G1,35400,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,16,,,,,,,,,,,hash-to-G1,35600,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,17,,,,,,,,,,,hash-to-G1,35600,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,18,,,,,,,,,,,hash-to-G1,36100,0,0,0,0,,hash-to-G1,True,single real operation
+standard_05_3_20260818,EXP-00,COMMON-PRIMITIVE,MNT224,Charm-Crypto/PBC,N/A,53002,19,,,,,,,,,,,hash-to-G1,35400,0,0,0,0,,hash-to-G1,True,single real operation

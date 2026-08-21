@@ -1,0 +1,47 @@
+{
+  "config_path": "Global_Exp/configs/standard.yaml",
+  "experiments": [
+    "exp01",
+    "exp02",
+    "exp03",
+    "exp04",
+    "exp05",
+    "exp06",
+    "exp07",
+    "exp08"
+  ],
+  "master_seed": 20260812,
+  "mode": "standard",
+  "policy_rows": [
+    10,
+    20,
+    40,
+    80,
+    160
+  ],
+  "repetitions": 20,
+  "run_name": "global_standard_20260812_v1",
+  "schemes": [
+    "FABEO22",
+    "FXABE-Base",
+    "FXABE-Full"
+  ],
+  "timing_seconds": {
+    "exp01": 0.9050994550052565,
+    "exp02": 23.249385367991636,
+    "exp03": 118.47685867000837,
+    "exp04": 154.15410779000376,
+    "exp05": 169.19926842700806,
+    "exp06": 172.246697931987,
+    "exp07": 104.3252619279956,
+    "exp08": 38.6317137000151
+  },
+  "user_attrs": [
+    5,
+    10,
+    20,
+    40,
+    80
+  ],
+  "warmups": 3
+}

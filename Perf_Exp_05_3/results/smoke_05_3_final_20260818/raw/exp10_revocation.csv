@@ -1,0 +1,55 @@
+run_id,experiment,scheme,curve,backend,workload,seed,replicate,ell,u,N,J,k,t_I,c_max,actual_c_star,n_users,n_revoked,phase,time_ns,G1_exp,G2_exp,GT_exp,pair_count,serialized_bytes,component,success,notes
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,0,,,,,,,,,16,1,RevKeyUpt vs n,33558157,1,8,0,0,,RevKeyUpt vs n,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,0,,,,,,,,,16,1,Cover size,0,,,,,4,Cover size,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,0,,,,,,,,,16,1,KU serialized bytes,0,,,,,1002,KU serialized bytes,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,1,,,,,,,,,16,1,RevKeyUpt vs n,32472256,1,8,0,0,,RevKeyUpt vs n,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,1,,,,,,,,,16,1,Cover size,0,,,,,4,Cover size,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,1,,,,,,,,,16,1,KU serialized bytes,0,,,,,1002,KU serialized bytes,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,2,,,,,,,,,16,1,RevKeyUpt vs n,35450165,1,8,0,0,,RevKeyUpt vs n,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,2,,,,,,,,,16,1,Cover size,0,,,,,4,Cover size,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,2,,,,,,,,,16,1,KU serialized bytes,0,,,,,1002,KU serialized bytes,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,0,,,,,,,,,32,2,RevKeyUpt vs n,34603913,1,8,0,0,,RevKeyUpt vs n,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,0,,,,,,,,,32,2,Cover size,0,,,,,4,Cover size,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,0,,,,,,,,,32,2,KU serialized bytes,0,,,,,1002,KU serialized bytes,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,1,,,,,,,,,32,2,RevKeyUpt vs n,39229633,1,8,0,0,,RevKeyUpt vs n,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,1,,,,,,,,,32,2,Cover size,0,,,,,4,Cover size,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,1,,,,,,,,,32,2,KU serialized bytes,0,,,,,1002,KU serialized bytes,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,2,,,,,,,,,32,2,RevKeyUpt vs n,34204297,1,8,0,0,,RevKeyUpt vs n,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,2,,,,,,,,,32,2,Cover size,0,,,,,4,Cover size,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,2,,,,,,,,,32,2,KU serialized bytes,0,,,,,1002,KU serialized bytes,True,cover_size=4
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,0,,,,,,,,,32,1,RevKeyUpt vs revoked,41109911,1,10,0,0,,RevKeyUpt vs revoked,True,cover_size=5
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,0,,,,,,,,,32,1,Cover size vs revoked,0,,,,,5,Cover size vs revoked,True,cover_size=5
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,0,,,,,,,,,32,1,KU bytes vs revoked,0,,,,,1238,KU bytes vs revoked,True,cover_size=5
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,1,,,,,,,,,32,1,RevKeyUpt vs revoked,41588400,1,10,0,0,,RevKeyUpt vs revoked,True,cover_size=5
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,1,,,,,,,,,32,1,Cover size vs revoked,0,,,,,5,Cover size vs revoked,True,cover_size=5
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,1,,,,,,,,,32,1,KU bytes vs revoked,0,,,,,1238,KU bytes vs revoked,True,cover_size=5
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,2,,,,,,,,,32,1,RevKeyUpt vs revoked,40968044,1,10,0,0,,RevKeyUpt vs revoked,True,cover_size=5
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,2,,,,,,,,,32,1,Cover size vs revoked,0,,,,,5,Cover size vs revoked,True,cover_size=5
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,2,,,,,,,,,32,1,KU bytes vs revoked,0,,,,,1238,KU bytes vs revoked,True,cover_size=5
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,0,,,,,,,,,32,4,RevKeyUpt vs revoked,28009538,1,6,0,0,,RevKeyUpt vs revoked,True,cover_size=3
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,0,,,,,,,,,32,4,Cover size vs revoked,0,,,,,3,Cover size vs revoked,True,cover_size=3
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,0,,,,,,,,,32,4,KU bytes vs revoked,0,,,,,766,KU bytes vs revoked,True,cover_size=3
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,1,,,,,,,,,32,4,RevKeyUpt vs revoked,25730046,1,6,0,0,,RevKeyUpt vs revoked,True,cover_size=3
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,1,,,,,,,,,32,4,Cover size vs revoked,0,,,,,3,Cover size vs revoked,True,cover_size=3
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,1,,,,,,,,,32,4,KU bytes vs revoked,0,,,,,766,KU bytes vs revoked,True,cover_size=3
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,2,,,,,,,,,32,4,RevKeyUpt vs revoked,25342565,1,6,0,0,,RevKeyUpt vs revoked,True,cover_size=3
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,2,,,,,,,,,32,4,Cover size vs revoked,0,,,,,3,Cover size vs revoked,True,cover_size=3
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Revocation,53001,2,,,,,,,,,32,4,KU bytes vs revoked,0,,,,,766,KU bytes vs revoked,True,cover_size=3
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,11796452418953539728,0,20,20,1,1,1,1,1,1,32,1,Transform vs revoked,13099666,2,0,0,4,,Transform,True,active user excluded
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,11796452418953539728,1,20,20,1,1,1,1,1,1,32,1,Transform vs revoked,13494834,2,0,0,4,,Transform,True,active user excluded
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,11796452418953539728,2,20,20,1,1,1,1,1,1,32,1,Transform vs revoked,13702832,2,0,0,4,,Transform,True,active user excluded
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,6831066903315824388,0,20,20,1,1,1,1,1,1,32,4,Transform vs revoked,12925542,2,0,0,4,,Transform,True,active user excluded
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,6831066903315824388,1,20,20,1,1,1,1,1,1,32,4,Transform vs revoked,12996123,2,0,0,4,,Transform,True,active user excluded
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,6831066903315824388,2,20,20,1,1,1,1,1,1,32,4,Transform vs revoked,13010077,2,0,0,4,,Transform,True,active user excluded
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Privacy update,53001,0,,,4,,,,,,,,PrivacyKeyUpt vs |S|,8891158,16,0,0,0,,PrivacyKeyUpt,True,offline epoch-bound
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Privacy update,53001,1,,,4,,,,,,,,PrivacyKeyUpt vs |S|,9437697,16,0,0,0,,PrivacyKeyUpt,True,offline epoch-bound
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Privacy update,53001,2,,,4,,,,,,,,PrivacyKeyUpt vs |S|,9254674,16,0,0,0,,PrivacyKeyUpt,True,offline epoch-bound
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Privacy update,53001,0,,,16,,,,,,,,PrivacyKeyUpt vs |S|,36688753,64,0,0,0,,PrivacyKeyUpt,True,offline epoch-bound
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Privacy update,53001,1,,,16,,,,,,,,PrivacyKeyUpt vs |S|,36440308,64,0,0,0,,PrivacyKeyUpt,True,offline epoch-bound
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Privacy update,53001,2,,,16,,,,,,,,PrivacyKeyUpt vs |S|,38254052,64,0,0,0,,PrivacyKeyUpt,True,offline epoch-bound
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Epoch model,2314450145612224231,0,,,,,,,,,32,4,Dual-Epoch,28172953,,,,,,Dual vs Coupled,True,real active-user refresh
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Epoch model,9939567904605674438,0,,,,,,,,,32,4,Coupled-Epoch,308833550,,,,,,Dual vs Coupled,True,real active-user refresh
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Epoch model,6615756631402970964,1,,,,,,,,,32,4,Dual-Epoch,26821927,,,,,,Dual vs Coupled,True,real active-user refresh
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Epoch model,130784111372739610,1,,,,,,,,,32,4,Coupled-Epoch,302931225,,,,,,Dual vs Coupled,True,real active-user refresh
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Epoch model,4455624386466293677,2,,,,,,,,,32,4,Dual-Epoch,25957626,,,,,,Dual vs Coupled,True,real active-user refresh
+smoke_05_3_final_20260818,EXP-10,FXABE-05.3,MNT224,Charm-Crypto/PBC,Epoch model,3289298575617159524,2,,,,,,,,,32,4,Coupled-Epoch,296204738,,,,,,Dual vs Coupled,True,real active-user refresh

@@ -1,0 +1,7 @@
+scheme,policy_rows,matched_rows,actual_pair_count,transform_ms,status
+FXABE-Base,32,1,4,13.037,ok
+FXABE-Base,32,8,18,57.913,ok
+FXABE-Base,32,16,34,108.654,ok
+FXABE-Full,32,1,4,14.7,ok
+FXABE-Full,32,8,18,59.656,ok
+FXABE-Full,32,16,34,111.77,ok

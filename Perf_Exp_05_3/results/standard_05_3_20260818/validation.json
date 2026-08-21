@@ -1,0 +1,12 @@
+{
+  "anomalies": [],
+  "comparison_valid": true,
+  "errors": [],
+  "failed_rows": 0,
+  "mode": "standard",
+  "raw_rows": 6966,
+  "same_backend": true,
+  "same_curve": true,
+  "valid": true,
+  "warnings": []
+}

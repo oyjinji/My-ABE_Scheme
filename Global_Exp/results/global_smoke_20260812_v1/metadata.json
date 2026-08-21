@@ -1,0 +1,41 @@
+{
+  "config_path": "Global_Exp/configs/smoke.yaml",
+  "experiments": [
+    "exp01",
+    "exp02",
+    "exp03",
+    "exp04",
+    "exp05",
+    "exp06",
+    "exp07",
+    "exp08"
+  ],
+  "master_seed": 20260812,
+  "mode": "smoke",
+  "policy_rows": [
+    8,
+    16
+  ],
+  "repetitions": 3,
+  "run_name": "global_smoke_20260812_v1",
+  "schemes": [
+    "FABEO22",
+    "FXABE-Base",
+    "FXABE-Full"
+  ],
+  "timing_seconds": {
+    "exp01": 0.17171460200916044,
+    "exp02": 0.9550655140192248,
+    "exp03": 2.647615138994297,
+    "exp04": 2.9925291440158617,
+    "exp05": 3.484542945981957,
+    "exp06": 3.469773942983011,
+    "exp07": 1.8922010230016895,
+    "exp08": 1.0491692689829506
+  },
+  "user_attrs": [
+    8,
+    16
+  ],
+  "warmups": 1
+}

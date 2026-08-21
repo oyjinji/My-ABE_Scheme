@@ -1,0 +1,55 @@
+run_id,experiment,scheme,curve,backend,workload,seed,replicate,ell,u,N,J,k,t_I,c_max,actual_c_star,n_users,n_revoked,phase,time_ns,G1_exp,G2_exp,GT_exp,pair_count,serialized_bytes,component,success,notes
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,0,20,20,,,,,8,1,,,Encrypt Core,56872675,41,8,1,0,,ABE Core,True,D_count=8
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,0,20,20,,,,,8,1,,,Policy OPRF,12581294,,,,,,Policy OPRF,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,0,20,20,,,,,8,1,,,FX Build,1396599,,,,,,FX Build,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,0,20,20,,,,,8,1,,,PStore Build,952500,,,,,,PStore Build,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,0,20,20,,,,,8,1,,,ABE Encrypt Core,56872675,,,,,,ABE Encrypt Core,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,0,20,20,,,,,8,1,,,Revocation Encrypt,515000,,,,,,Revocation Encrypt,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,0,20,20,,,,,8,1,,,Full Encrypt,72532968,,,,,,Full Encrypt,True,total
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,1,20,20,,,,,8,1,,,Encrypt Core,56310775,41,8,1,0,,ABE Core,True,D_count=8
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,1,20,20,,,,,8,1,,,Policy OPRF,11814395,,,,,,Policy OPRF,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,1,20,20,,,,,8,1,,,FX Build,646199,,,,,,FX Build,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,1,20,20,,,,,8,1,,,PStore Build,874200,,,,,,PStore Build,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,1,20,20,,,,,8,1,,,ABE Encrypt Core,56310775,,,,,,ABE Encrypt Core,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,1,20,20,,,,,8,1,,,Revocation Encrypt,692200,,,,,,Revocation Encrypt,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,1,20,20,,,,,8,1,,,Full Encrypt,70655569,,,,,,Full Encrypt,True,total
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,2,20,20,,,,,8,1,,,Encrypt Core,59960874,41,8,1,0,,ABE Core,True,D_count=8
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,2,20,20,,,,,8,1,,,Policy OPRF,12108095,,,,,,Policy OPRF,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,2,20,20,,,,,8,1,,,FX Build,1269300,,,,,,FX Build,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,2,20,20,,,,,8,1,,,PStore Build,941599,,,,,,PStore Build,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,2,20,20,,,,,8,1,,,ABE Encrypt Core,59960874,,,,,,ABE Encrypt Core,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,2,20,20,,,,,8,1,,,Revocation Encrypt,524800,,,,,,Revocation Encrypt,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,3809195252530281118,2,20,20,,,,,8,1,,,Full Encrypt,75025868,,,,,,Full Encrypt,True,total
+smoke_05_3_20260818,EXP-01,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,13409461052216434927,0,20,20,,,,,8,1,,,Encrypt Core,106801854,41,20,1,0,,ABE Core,True,D_count=20
+smoke_05_3_20260818,EXP-01,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,13409461052216434927,1,20,20,,,,,8,1,,,Encrypt Core,104141255,41,20,1,0,,ABE Core,True,D_count=20
+smoke_05_3_20260818,EXP-01,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,13409461052216434927,2,20,20,,,,,8,1,,,Encrypt Core,106607353,41,20,1,0,,ABE Core,True,D_count=20
+smoke_05_3_20260818,EXP-01,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,20,,,,,,,,,,Encrypt Core,33997885,40,2,1,0,,ABE Core,True,official encrypt
+smoke_05_3_20260818,EXP-01,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,1,20,,,,,,,,,,Encrypt Core,34010585,40,2,1,0,,ABE Core,True,official encrypt
+smoke_05_3_20260818,EXP-01,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,2,20,,,,,,,,,,Encrypt Core,33219786,40,2,1,0,,ABE Core,True,official encrypt
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,0,40,40,,,,,8,1,,,Encrypt Core,78296266,81,8,1,0,,ABE Core,True,D_count=8
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,0,40,40,,,,,8,1,,,Policy OPRF,24524389,,,,,,Policy OPRF,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,0,40,40,,,,,8,1,,,FX Build,1162100,,,,,,FX Build,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,0,40,40,,,,,8,1,,,PStore Build,2250599,,,,,,PStore Build,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,0,40,40,,,,,8,1,,,ABE Encrypt Core,78296266,,,,,,ABE Encrypt Core,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,0,40,40,,,,,8,1,,,Revocation Encrypt,522099,,,,,,Revocation Encrypt,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,0,40,40,,,,,8,1,,,Full Encrypt,107033953,,,,,,Full Encrypt,True,total
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,1,40,40,,,,,8,1,,,Encrypt Core,87809062,81,8,1,0,,ABE Core,True,D_count=8
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,1,40,40,,,,,8,1,,,Policy OPRF,24402590,,,,,,Policy OPRF,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,1,40,40,,,,,8,1,,,FX Build,1274999,,,,,,FX Build,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,1,40,40,,,,,8,1,,,PStore Build,1633899,,,,,,PStore Build,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,1,40,40,,,,,8,1,,,ABE Encrypt Core,87809062,,,,,,ABE Encrypt Core,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,1,40,40,,,,,8,1,,,Revocation Encrypt,516300,,,,,,Revocation Encrypt,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,1,40,40,,,,,8,1,,,Full Encrypt,115953350,,,,,,Full Encrypt,True,total
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,2,40,40,,,,,8,1,,,Encrypt Core,79487565,81,8,1,0,,ABE Core,True,D_count=8
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,2,40,40,,,,,8,1,,,Policy OPRF,24671489,,,,,,Policy OPRF,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,2,40,40,,,,,8,1,,,FX Build,6683397,,,,,,FX Build,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,2,40,40,,,,,8,1,,,PStore Build,2354199,,,,,,PStore Build,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,2,40,40,,,,,8,1,,,ABE Encrypt Core,79487565,,,,,,ABE Encrypt Core,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,2,40,40,,,,,8,1,,,Revocation Encrypt,505600,,,,,,Revocation Encrypt,True,offline/index-build
+smoke_05_3_20260818,EXP-01,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,16244094580089031888,2,40,40,,,,,8,1,,,Full Encrypt,114004350,,,,,,Full Encrypt,True,total
+smoke_05_3_20260818,EXP-01,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,10295364710673706302,0,40,40,,,,,8,1,,,Encrypt Core,208752808,81,40,1,0,,ABE Core,True,D_count=40
+smoke_05_3_20260818,EXP-01,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,10295364710673706302,1,40,40,,,,,8,1,,,Encrypt Core,209854809,81,40,1,0,,ABE Core,True,D_count=40
+smoke_05_3_20260818,EXP-01,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,10295364710673706302,2,40,40,,,,,8,1,,,Encrypt Core,207021409,81,40,1,0,,ABE Core,True,D_count=40
+smoke_05_3_20260818,EXP-01,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,40,,,,,,,,,,Encrypt Core,57582775,80,2,1,0,,ABE Core,True,official encrypt
+smoke_05_3_20260818,EXP-01,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,1,40,,,,,,,,,,Encrypt Core,59376275,80,2,1,0,,ABE Core,True,official encrypt
+smoke_05_3_20260818,EXP-01,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,2,40,,,,,,,,,,Encrypt Core,58487774,80,2,1,0,,ABE Core,True,official encrypt

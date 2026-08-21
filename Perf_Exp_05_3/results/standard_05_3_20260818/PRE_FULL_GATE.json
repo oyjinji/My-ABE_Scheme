@@ -1,0 +1,15 @@
+{
+  "EXP01_EXP09_accounting_consistent": true,
+  "FABEO_vs_FXABE_interpretation": "COMPARABLE",
+  "FULL_READY": true,
+  "G2_count_is_c_max": true,
+  "occurrence_reuse": true,
+  "policy_oprf_u_sensitivity": "EXPECTED",
+  "real_FX": true,
+  "revocation_lifecycle": true,
+  "standard_correctness": true,
+  "standard_validation": true,
+  "storage_accounting": true,
+  "transform_pair_invariant": true,
+  "unresolved_anomaly": false
+}

@@ -1,0 +1,35 @@
+============================================================
+=== FX-ABE 05.3 STANDARD FINAL AUDIT + FULL ===
+============================================================
+Common curve/backend: MNT224 / Charm-Crypto/PBC
+EXP01/EXP09 accounting: PASS
+EXP09 denominator: its own paired EXP-09 FXABE Core median
+FABEO vs FXABE Core: COMPARABLE (scale-dependent crossover)
+ell=640 ratio: 0.9638
+95% CI overlap points: [160, 320]
+Occurrence reuse: PASS
+NoOccurrence / FXABE speedup: 4.437x at ell=1280
+Operation-count theory: PASS
+Core storage split: PASS
+Full storage breakdown: PASS
+Transform pair invariant: PASS
+Transform J bottleneck: anonymous query + reconstruction processing
+Policy OPRF u-sensitivity: EXPECTED
+Policy OPRF main driver: u
+FX/PStore: build 88.637 ms at u=1280; query 4.652 ms at N=64
+Dual vs Coupled: 11.372x Coupled/Dual
+PRE_FULL_AUDIT: PASS
+FULL_READY: YES
+Full run: RUN
+Full raw rows: 17717
+Full failed rows: 0
+FULL_VALIDATION: PASS
+ell=1280 FXABE Core: 1532.667 ms
+ell=1280 NoOccurrence: 6800.159 ms
+ell=1280 FABEO: 1619.126 ms
+Occurrence speedup at ell=1280: 4.437x
+FXABE/FABEO ratio: 0.9466
+Recommended paper wording: FXABE-05.3 achieves encryption-core performance comparable to FABEO under the same MNT224/Charm backend.
+Recommended main figures: 01, 02, 03a, 03b, 05, 06, 07, 08, 09, 10
+Formal scheme status: CANDIDATE — FORMAL PROOF OPEN
+============================================================

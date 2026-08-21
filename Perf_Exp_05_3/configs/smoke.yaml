@@ -1,0 +1,18 @@
+mode: smoke
+master_seed: 53001
+curve: MNT224
+backend: Charm-Crypto/PBC
+warmup: 1
+repeats: 3
+exp00_repeats: 3
+ell: [20, 40]
+transform_J: [5, 10, 20]
+t_I: [1, 2, 4]
+c_max: [1, 2, 4]
+fx_u: [20, 40]
+query_N: [1, 2, 4]
+e2e_ell: [40]
+core_ell: [20, 40]
+rev_n: [16, 32]
+revoked: [1, 4]
+privacy_S: [4, 16]

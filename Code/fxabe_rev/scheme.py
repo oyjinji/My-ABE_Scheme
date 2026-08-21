@@ -41,7 +41,10 @@ class FXABERev(ABEnc):
         self._pair_counter = 0
         self.fx_build_count = 0
 
-    def setup(self):
+    def setup(self, metrics=None):
+        # ``metrics`` is optional, non-invasive benchmark instrumentation
+        # (Global_Exp): when None, behaviour is identical to the base scheme.
+        _total_started = perf_counter_ns()
         if self.scalar_source.seed is None:
             g1, g2 = self.group.random(G1), self.group.random(G2)
         else:
@@ -58,14 +61,21 @@ class FXABERev(ABEnc):
             "pairing_backend": self.group.groupType(),
         }
         msk = {"alpha": alpha, "a": a, "kappa": kappa}
+        _tree_started = perf_counter_ns()
         self.state = {
             "tree": BinaryRevocationTree(self.user_capacity),
             "node_secret": {}, "user_state": {}, "ku": {},
             "latest_revocation_epoch": None,
         }
+        if metrics is not None:
+            metrics["total_ns"] = perf_counter_ns() - _total_started
+            metrics["auxiliary_tree_ns"] = perf_counter_ns() - _tree_started
         return pp, msk
 
-    def keygen(self, pp, msk, identity, attributes, privacy_epoch, version="1"):
+    def keygen(self, pp, msk, identity, attributes, privacy_epoch, version="1",
+               metrics=None):
+        # ``metrics`` is optional, non-invasive benchmark instrumentation.
+        _total_started = perf_counter_ns()
         self._require_state()
         identity = str(identity)
         unique = list(dict.fromkeys(map(str, attributes)))
@@ -85,14 +95,19 @@ class FXABERev(ABEnc):
             "identity_binding": identity, "path_components": components,
             "K1": pp["g2"] ** (z * eta), "version": str(version),
         }
+        _priv_started = perf_counter_ns()
         tk_priv = self._privacy_components(
             pp, msk, unique, privacy_epoch, eta, z, version
         )
+        _priv_ns = perf_counter_ns() - _priv_started
         rk = {"z_inv": 1 / z, "version": str(version), "identity_binding": identity}
         self.state["user_state"][identity] = {
             "attributes": unique, "eta": eta, "z": z, "version": str(version),
             "tk_static": tk_static, "rk": rk,
         }
+        if metrics is not None:
+            metrics["total_ns"] = perf_counter_ns() - _total_started
+            metrics["privacy_components_ns"] = _priv_ns
         return tk_static, tk_priv, rk
 
     def privacy_key_upt(self, pp, msk, identity, new_privacy_epoch):
@@ -133,12 +148,16 @@ class FXABERev(ABEnc):
 
     def encrypt(self, pp, msk, message, policy, privacy_epoch,
                 revocation_epoch, version="1", index_name="FX-ABF",
-                filter_seed=None):
+                filter_seed=None, metrics=None):
+        # ``metrics`` is optional, non-invasive benchmark instrumentation
+        # (Global_Exp): when None, behaviour is identical to the base scheme.
+        _total_started = perf_counter_ns()
         if not isinstance(message, bytes):
             raise TypeError("KEM-DEM plaintext must be bytes")
         epoch_r = int(revocation_epoch)
         if epoch_r != self.state["latest_revocation_epoch"]:
             raise ValueError("new ciphertext must use latest published revocation epoch")
+        _lsss_started = perf_counter_ns()
         matrix, rho = policy_rows(self.group, policy)
         matrix = pad_matrix(matrix)
         ell = len(matrix)
@@ -149,18 +168,23 @@ class FXABERev(ABEnc):
                  for j, coefficient in enumerate(row)), self.group.init(ZR, 0))
             for row in matrix
         ]
+        _lsss_ns = perf_counter_ns() - _lsss_started
         token_cache = {}
         q_cache = {}
         row_tokens = []
         rows = []
+        tokenize_ns = 0
+        _rows_started = perf_counter_ns()
         for attribute, lambda_i in zip(rho, lambdas):
             key = str(attribute)
             if key not in token_cache:
+                _tok_started = perf_counter_ns()
                 token = self.oprf.direct_token(
                     attribute, privacy_epoch, version, msk["kappa"]
                 )
                 token_cache[key] = token
                 q_cache[key] = self.oprf.H0(token)
+                tokenize_ns += perf_counter_ns() - _tok_started
             token = token_cache[key]
             r_i = self.scalar_source.scalar()
             rows.append({
@@ -169,9 +193,12 @@ class FXABERev(ABEnc):
                 "C2": pp["g2"] ** r_i,
             })
             row_tokens.append(self.oprf.token_bytes(token))
+        _rows_ns = perf_counter_ns() - _rows_started
+        _group_started = perf_counter_ns()
         C = pp["g1"] ** s
         h_r = self._epoch_scalar(epoch_r)
         C_rev = C ** h_r
+        _group_ns = perf_counter_ns() - _group_started
         postings = {}
         for row_id, token_bytes in enumerate(row_tokens, 1):
             postings.setdefault(token_bytes, []).append(row_id)
@@ -179,8 +206,10 @@ class FXABERev(ABEnc):
             pp, version, privacy_epoch, len(postings), ell, C, matrix
         )
         index_rng = random.Random(filter_seed) if filter_seed is not None else self.byte_rng
+        _index_started = perf_counter_ns()
         index = create_index(index_name, **self.filter_options)
         index.build(postings, ctx_fx, index_rng)
+        _index_ns = perf_counter_ns() - _index_started
         if index_name == "FX-ABF":
             self.fx_build_count += 1
         index_meta = index._metadata()
@@ -190,10 +219,23 @@ class FXABERev(ABEnc):
             "profile": PROFILE, "index_name": index_name,
             "index_metadata": index_meta,
         }
+        _kem_started = perf_counter_ns()
         ctx_ct = self.ct_context(pp, meta, C, C_rev, matrix)
         E = pp["egg_alpha"] ** s
         key = kdf("ABE-KEM-DEM-Key", ctx_ct, encode_group(self.group, E))
         sealed = aead_encrypt(key, message, ctx_ct, random_bytes(self.byte_rng, 12))
+        _kem_ns = perf_counter_ns() - _kem_started
+        if metrics is not None:
+            metrics.update({
+                "lsss_ns": _lsss_ns,
+                "tokenize_ns": tokenize_ns,
+                "row_crypto_ns": _rows_ns - tokenize_ns,
+                "group_crypto_ns": _group_ns,
+                "index_build_ns": _index_ns,
+                "kem_dem_ns": _kem_ns,
+                "total_ns": perf_counter_ns() - _total_started,
+                "pstore_build_ns": int(index.stats().get("pstore_build_ns", 0)),
+            })
         return {
             "C_sym": sealed["ciphertext"], "nonce": sealed["nonce"],
             "C": C, "C_rev": C_rev, "rows": rows, "A_star": matrix,

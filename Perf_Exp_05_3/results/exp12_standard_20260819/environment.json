@@ -1,0 +1,34 @@
+{
+  "backend": "Charm-Crypto/PBC",
+  "config": "/home/jinji_o/ABE-Test/Git/FABEO/Perf_Exp_05_3/configs/exp12_standard.yaml",
+  "config_sha256": "372a86fedc9eeb15aaab924dd011923e17d58afde9e183a5c26b1cc9914ddd6a",
+  "cpu": "x86_64",
+  "curve": "MNT224",
+  "dependencies": {
+    "PyYAML": "5.3.1",
+    "charm-crypto": "unknown",
+    "cryptography": "2.8",
+    "matplotlib": "3.7.5",
+    "numpy": "1.24.4",
+    "pytest": "8.3.5"
+  },
+  "git_commit": "09e176a7b5553f850c30d9ba9fdcada4a970b4e0",
+  "git_dirty": true,
+  "git_status": [
+    "M Code/fxabe_rev/scheme.py",
+    "?? Code/fxabe_05_3_exp/",
+    "?? Global_Exp/",
+    "?? Perf_Exp_05_3/"
+  ],
+  "group_bytes": {
+    "G1": 42,
+    "G2": 118,
+    "GT": 226,
+    "ZR": 42
+  },
+  "logical_cpus": 16,
+  "os": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.29",
+  "python": "3.8.10 (default, Mar 18 2025, 20:04:55) \n[GCC 9.4.0]",
+  "ram_bytes": 4103757824,
+  "timer": "time.perf_counter_ns"
+}

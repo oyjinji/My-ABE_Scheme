@@ -1,0 +1,66 @@
+{
+  "candidate_config": "Global_Exp/configs/full.yaml",
+  "candidate_run_name": "global_full_20260812_v1",
+  "full_command": "python3 Global_Exp/scripts/run_all.py --config Global_Exp/configs/full.yaml --run-name global_full_20260812_v1",
+  "linearity_warnings": [],
+  "per_experiment": {
+    "exp01": {
+      "candidate_points": 150,
+      "candidate_seconds": 2.1643682619690914,
+      "reference_points": 60,
+      "reference_seconds": 0.9050994550052565,
+      "scale": 2.391304347826087
+    },
+    "exp02": {
+      "candidate_points": 900,
+      "candidate_seconds": 112.98614347838853,
+      "reference_points": 300,
+      "reference_seconds": 23.249385367991636,
+      "scale": 4.859747545582048
+    },
+    "exp03": {
+      "candidate_points": 900,
+      "candidate_seconds": 575.7676231298443,
+      "reference_points": 300,
+      "reference_seconds": 118.47685867000837,
+      "scale": 4.859747545582048
+    },
+    "exp04": {
+      "candidate_points": 900,
+      "candidate_seconds": 749.1500469738612,
+      "reference_points": 300,
+      "reference_seconds": 154.15410779000376,
+      "scale": 4.859747545582048
+    },
+    "exp05": {
+      "candidate_points": 900,
+      "candidate_seconds": 822.2657294524305,
+      "reference_points": 300,
+      "reference_seconds": 169.19926842700806,
+      "scale": 4.859747545582048
+    },
+    "exp06": {
+      "candidate_points": 900,
+      "candidate_seconds": 837.0754675095861,
+      "reference_points": 300,
+      "reference_seconds": 172.246697931987,
+      "scale": 4.859747545582048
+    },
+    "exp07": {
+      "candidate_points": 900,
+      "candidate_seconds": 506.9944355967808,
+      "reference_points": 300,
+      "reference_seconds": 104.3252619279956,
+      "scale": 4.859747545582048
+    },
+    "exp08": {
+      "candidate_points": 150,
+      "candidate_seconds": 184.76036986963743,
+      "reference_points": 60,
+      "reference_seconds": 38.6317137000151,
+      "scale": 4.782608695652174
+    }
+  },
+  "projected_total_minutes": 63.18606973787497,
+  "projected_total_seconds": 3791.1641842724985
+}

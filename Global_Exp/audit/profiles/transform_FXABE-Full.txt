@@ -1,0 +1,38 @@
+         78624 function calls (73460 primitive calls) in 0.561 seconds
+
+   Ordered by: cumulative time
+   List reduced from 95 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.561    0.561 Global_Exp/audit/audit_profile.py:69(<lambda>)
+        1    0.000    0.000    0.561    0.561 /home/jinji_o/ABE-Test/Git/FABEO/Global_Exp/src/adapters.py:227(transform)
+        1    0.002    0.002    0.561    0.561 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/scheme.py:246(transform)
+      162    0.000    0.000    0.534    0.003 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/scheme.py:408(_pair)
+      162    0.534    0.003    0.534    0.003 {built-in method charm.core.math.pairing.pair}
+      160    0.001    0.000    0.025    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/filters/fxabf.py:271(query)
+ 5965/930    0.005    0.000    0.013    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/encoding.py:10(encode)
+      160    0.001    0.000    0.011    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/filters/fxabf.py:60(fuse_positions)
+ 1059/930    0.001    0.000    0.011    0.000 {method 'join' of 'bytes' objects}
+     5449    0.001    0.000    0.010    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/encoding.py:27(<genexpr>)
+      640    0.001    0.000    0.009    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/filters/fxabf.py:46(_range_hash)
+       80    0.000    0.000    0.008    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/filters/base.py:129(open_pstore_profiled)
+      129    0.000    0.000    0.004    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/filters/fxabf.py:141(_check_int)
+     5965    0.002    0.000    0.003    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/encoding.py:6(_frame)
+       80    0.000    0.000    0.003    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/crypto_utils.py:38(aead_decrypt)
+       80    0.000    0.000    0.003    0.000 /usr/lib/python3/dist-packages/cryptography/hazmat/primitives/ciphers/aead.py:174(decrypt)
+       80    0.000    0.000    0.003    0.000 /usr/lib/python3/dist-packages/cryptography/hazmat/backends/openssl/aead.py:127(_decrypt)
+     1090    0.002    0.000    0.002    0.000 {built-in method _hashlib.openssl_sha256}
+       80    0.000    0.000    0.002    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/filters/base.py:110(posting_key)
+       80    0.000    0.000    0.002    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/crypto_utils.py:22(kdf)
+    25607    0.002    0.000    0.002    0.000 {built-in method builtins.isinstance}
+       80    0.000    0.000    0.001    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/filters/base.py:114(posting_ad)
+      210    0.000    0.000    0.001    0.000 {built-in method builtins.sorted}
+       80    0.000    0.000    0.001    0.000 /usr/lib/python3/dist-packages/cryptography/hazmat/backends/openssl/aead.py:27(_aead_setup)
+      387    0.000    0.000    0.001    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/encoding.py:29(<genexpr>)
+      160    0.000    0.000    0.001    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/filters/fxabf.py:27(plan_segments)
+     5965    0.001    0.000    0.001    0.000 {built-in method _struct.pack}
+       80    0.000    0.000    0.001    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/crypto_utils.py:13(sha256)
+       80    0.000    0.000    0.001    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/encoding.py:47(decode_posting_list)
+     7488    0.001    0.000    0.001    0.000 {built-in method builtins.len}
+
+

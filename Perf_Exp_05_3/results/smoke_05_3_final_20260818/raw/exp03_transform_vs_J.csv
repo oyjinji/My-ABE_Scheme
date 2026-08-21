@@ -1,0 +1,46 @@
+run_id,experiment,scheme,curve,backend,workload,seed,replicate,ell,u,N,J,k,t_I,c_max,actual_c_star,n_users,n_revoked,phase,time_ns,G1_exp,G2_exp,GT_exp,pair_count,serialized_bytes,component,success,notes
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,5,5,1,1,1,1,,,FX Query,511249,,,,,,FX Query,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,5,5,1,1,1,1,,,AuthorizedSubset,41458,,,,,,AuthorizedSubset,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,5,5,1,1,1,1,,,Transform Attribute,6350075,,,,,,Transform Attribute,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,5,5,1,1,1,1,,,Transform Revocation,6508223,,,,,,Transform Revocation,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,5,5,1,1,1,1,,,Transform Total,13550651,2,0,0,4,,Transform Total,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,1,20,20,5,5,1,1,1,1,,,FX Query,399717,,,,,,FX Query,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,1,20,20,5,5,1,1,1,1,,,AuthorizedSubset,40649,,,,,,AuthorizedSubset,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,1,20,20,5,5,1,1,1,1,,,Transform Attribute,6232476,,,,,,Transform Attribute,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,1,20,20,5,5,1,1,1,1,,,Transform Revocation,6600544,,,,,,Transform Revocation,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,1,20,20,5,5,1,1,1,1,,,Transform Total,13352055,2,0,0,4,,Transform Total,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,2,20,20,5,5,1,1,1,1,,,FX Query,414381,,,,,,FX Query,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,2,20,20,5,5,1,1,1,1,,,AuthorizedSubset,41559,,,,,,AuthorizedSubset,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,2,20,20,5,5,1,1,1,1,,,Transform Attribute,6182524,,,,,,Transform Attribute,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,2,20,20,5,5,1,1,1,1,,,Transform Revocation,6587094,,,,,,Transform Revocation,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,2,20,20,5,5,1,1,1,1,,,Transform Total,13322732,2,0,0,4,,Transform Total,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,10,10,1,1,1,1,,,FX Query,941002,,,,,,FX Query,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,10,10,1,1,1,1,,,AuthorizedSubset,59963,,,,,,AuthorizedSubset,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,10,10,1,1,1,1,,,Transform Attribute,7374497,,,,,,Transform Attribute,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,10,10,1,1,1,1,,,Transform Revocation,7181262,,,,,,Transform Revocation,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,10,10,1,1,1,1,,,Transform Total,15731046,2,0,0,4,,Transform Total,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,1,20,20,10,10,1,1,1,1,,,FX Query,994387,,,,,,FX Query,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,1,20,20,10,10,1,1,1,1,,,AuthorizedSubset,53289,,,,,,AuthorizedSubset,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,1,20,20,10,10,1,1,1,1,,,Transform Attribute,7822650,,,,,,Transform Attribute,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,1,20,20,10,10,1,1,1,1,,,Transform Revocation,7006126,,,,,,Transform Revocation,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,1,20,20,10,10,1,1,1,1,,,Transform Total,16048859,2,0,0,4,,Transform Total,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,2,20,20,10,10,1,1,1,1,,,FX Query,942617,,,,,,FX Query,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,2,20,20,10,10,1,1,1,1,,,AuthorizedSubset,56322,,,,,,AuthorizedSubset,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,2,20,20,10,10,1,1,1,1,,,Transform Attribute,7786854,,,,,,Transform Attribute,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,2,20,20,10,10,1,1,1,1,,,Transform Revocation,7323837,,,,,,Transform Revocation,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,2,20,20,10,10,1,1,1,1,,,Transform Total,16226826,2,0,0,4,,Transform Total,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,20,20,1,1,1,1,,,FX Query,1576827,,,,,,FX Query,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,20,20,1,1,1,1,,,AuthorizedSubset,60569,,,,,,AuthorizedSubset,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,20,20,1,1,1,1,,,Transform Attribute,6406095,,,,,,Transform Attribute,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,20,20,1,1,1,1,,,Transform Revocation,6533300,,,,,,Transform Revocation,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,0,20,20,20,20,1,1,1,1,,,Transform Total,14787621,2,0,0,4,,Transform Total,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,1,20,20,20,20,1,1,1,1,,,FX Query,1641642,,,,,,FX Query,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,1,20,20,20,20,1,1,1,1,,,AuthorizedSubset,63198,,,,,,AuthorizedSubset,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,1,20,20,20,20,1,1,1,1,,,Transform Attribute,6895504,,,,,,Transform Attribute,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,1,20,20,20,20,1,1,1,1,,,Transform Revocation,6624508,,,,,,Transform Revocation,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,1,20,20,20,20,1,1,1,1,,,Transform Total,15463793,2,0,0,4,,Transform Total,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,2,20,20,20,20,1,1,1,1,,,FX Query,1467014,,,,,,FX Query,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,2,20,20,20,20,1,1,1,1,,,AuthorizedSubset,60266,,,,,,AuthorizedSubset,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,2,20,20,20,20,1,1,1,1,,,Transform Attribute,6508223,,,,,,Transform Attribute,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,2,20,20,20,20,1,1,1,1,,,Transform Revocation,6150571,,,,,,Transform Revocation,True,pair_count invariant
+smoke_05_3_final_20260818,EXP-03,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,53001,2,20,20,20,20,1,1,1,1,,,Transform Total,14360601,2,0,0,4,,Transform Total,True,pair_count invariant

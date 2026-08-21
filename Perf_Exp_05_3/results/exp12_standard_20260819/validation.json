@@ -1,0 +1,65 @@
+{
+  "backend": "Charm-Crypto/PBC",
+  "c_max": 8,
+  "curve": "MNT224",
+  "ell": 640,
+  "excluded_illegal_u": [
+    40
+  ],
+  "failed_rows": 0,
+  "gates": [
+    {
+      "D_count": 8,
+      "actual_c_star": 8,
+      "decrypt": true,
+      "no_exact_locator": true,
+      "pair_count": 4,
+      "t_I": 1,
+      "u": 80
+    },
+    {
+      "D_count": 8,
+      "actual_c_star": 4,
+      "decrypt": true,
+      "no_exact_locator": true,
+      "pair_count": 4,
+      "t_I": 1,
+      "u": 160
+    },
+    {
+      "D_count": 8,
+      "actual_c_star": 2,
+      "decrypt": true,
+      "no_exact_locator": true,
+      "pair_count": 4,
+      "t_I": 1,
+      "u": 320
+    },
+    {
+      "D_count": 8,
+      "actual_c_star": 1,
+      "decrypt": true,
+      "no_exact_locator": true,
+      "pair_count": 4,
+      "t_I": 1,
+      "u": 640
+    }
+  ],
+  "legal_u": [
+    80,
+    160,
+    320,
+    640
+  ],
+  "raw_rows": 640,
+  "repeats": 20,
+  "requested_u": [
+    40,
+    80,
+    160,
+    320,
+    640
+  ],
+  "status": "PASS",
+  "warmup": 3
+}

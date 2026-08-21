@@ -1,0 +1,34 @@
+{
+  "canonical_g1_bytes": 42,
+  "canonical_g2_bytes": 118,
+  "canonical_gt_bytes": 226,
+  "config_path": "/home/jinji_o/ABE-Test/Git/FABEO/Global_Exp/configs/full.yaml",
+  "cpu_affinity": {
+    "cpu": 0,
+    "status": "fixed"
+  },
+  "cpu_model": "Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz",
+  "dependency_versions": {
+    "PyYAML": "5.3.1",
+    "charm-crypto": "unknown",
+    "cryptography": "2.8",
+    "matplotlib": "3.7.5",
+    "numpy": "1.24.4",
+    "pandas": "2.0.3",
+    "pytest": "8.3.5"
+  },
+  "git_commit": "09e176a7b5553f850c30d9ba9fdcada4a970b4e0",
+  "git_dirty": true,
+  "git_status_porcelain": [
+    "M Code/fxabe_rev/scheme.py",
+    "?? Global_Exp/"
+  ],
+  "group_secparam": 512,
+  "logical_cpu_count": 16,
+  "os": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.29",
+  "pairing_group": "MNT224",
+  "python_version": "3.8.10 (default, Mar 18 2025, 20:04:55) \n[GCC 9.4.0]",
+  "run_name": "global_full_20260812_v1",
+  "timer": "time.perf_counter_ns",
+  "timestamp_utc": "2026-08-12T12:50:37.458183+00:00"
+}

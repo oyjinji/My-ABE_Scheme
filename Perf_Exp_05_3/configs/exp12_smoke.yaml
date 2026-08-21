@@ -1,0 +1,10 @@
+mode: exp12-smoke
+master_seed: 53120
+curve: MNT224
+backend: Charm-Crypto/PBC
+ell: 640
+c_max: 8
+requested_u: [40, 80, 160, 320, 640]
+warmup: 1
+repeats: 3
+message_bytes: 32

@@ -1,0 +1,38 @@
+         573781 function calls (528438 primitive calls) in 1.130 seconds
+
+   Ordered by: cumulative time
+   List reduced from 268 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    1.130    1.130 Global_Exp/audit/audit_profile.py:60(<lambda>)
+        1    0.000    0.000    1.130    1.130 /home/jinji_o/ABE-Test/Git/FABEO/Global_Exp/src/adapters.py:184(encrypt)
+        1    0.850    0.850    1.130    1.130 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/scheme.py:149(encrypt)
+        1    0.000    0.000    0.135    0.135 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/filters/fxabf.py:147(build)
+        9    0.004    0.000    0.111    0.012 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/filters/fxabf.py:83(_build_attempt)
+     1440    0.008    0.000    0.106    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/filters/fxabf.py:60(fuse_positions)
+      160    0.087    0.001    0.104    0.001 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/oprf.py:25(direct_token)
+41985/6886    0.039    0.000    0.097    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/encoding.py:10(encode)
+     5760    0.008    0.000    0.088    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/filters/fxabf.py:46(_range_hash)
+7689/7046    0.007    0.000    0.080    0.000 {method 'join' of 'bytes' objects}
+40674/39712    0.008    0.000    0.073    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/encoding.py:27(<genexpr>)
+    42149    0.017    0.000    0.025    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/encoding.py:6(_frame)
+        1    0.000    0.000    0.024    0.024 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/lsss.py:8(policy_rows)
+        1    0.000    0.000    0.023    0.023 /home/jinji_o/ABE-Test/Git/FABEO/Code/msp/__init__.py:23(createPolicy)
+        1    0.000    0.000    0.021    0.021 /usr/local/lib/python3.8/dist-packages/charm_crypto_framework-0.63-py3.8-linux-x86_64.egg/charm/toolbox/policytree.py:99(parse)
+        1    0.000    0.000    0.020    0.020 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:1780(parseString)
+   4824/1    0.007    0.000    0.020    0.020 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:1530(_parseNoCache)
+    323/1    0.000    0.000    0.020    0.020 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:4096(parseImpl)
+    805/1    0.002    0.000    0.020    0.020 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:3732(parseImpl)
+    803/3    0.002    0.000    0.020    0.007 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:3897(parseImpl)
+    163/4    0.000    0.000    0.020    0.005 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:4390(parseImpl)
+    163/4    0.000    0.000    0.020    0.005 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:4311(parseImpl)
+      482    0.000    0.000    0.016    0.000 /usr/local/lib/python3.8/dist-packages/charm_crypto_framework-0.63-py3.8-linux-x86_64.egg/charm/toolbox/pairinggroup.py:115(hash)
+      482    0.016    0.000    0.016    0.000 {built-in method charm.core.math.pairing.H}
+        1    0.000    0.000    0.015    0.015 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/filters/base.py:85(build_pstore)
+   186047    0.013    0.000    0.013    0.000 {built-in method builtins.isinstance}
+      160    0.000    0.000    0.010    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/oprf.py:13(H1)
+      160    0.000    0.000    0.010    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/oprf.py:19(H0)
+        1    0.000    0.000    0.008    0.008 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/filters/fxabf.py:160(<dictcomp>)
+      160    0.001    0.000    0.008    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/filters/fxabf.py:141(_check_int)
+
+

@@ -1,0 +1,10 @@
+run_id,experiment,scheme,curve,backend,workload,seed,replicate,ell,u,N,J,k,t_I,c_max,actual_c_star,n_users,n_revoked,phase,time_ns,G1_exp,G2_exp,GT_exp,pair_count,serialized_bytes,component,success,notes
+smoke_05_3_final_20260818,EXP-04,FXABE-05.3,MNT224,Charm-Crypto/PBC,Duplicate-AND,53001,0,8,8,8,8,8,1,8,1,,,Transform Total,15331127,16,0,0,4,,Transform,True,fixed ell=J=k=c_max=8
+smoke_05_3_final_20260818,EXP-04,FXABE-05.3,MNT224,Charm-Crypto/PBC,Duplicate-AND,53001,1,8,8,8,8,8,1,8,1,,,Transform Total,15283501,16,0,0,4,,Transform,True,fixed ell=J=k=c_max=8
+smoke_05_3_final_20260818,EXP-04,FXABE-05.3,MNT224,Charm-Crypto/PBC,Duplicate-AND,53001,2,8,8,8,8,8,1,8,1,,,Transform Total,13916291,16,0,0,4,,Transform,True,fixed ell=J=k=c_max=8
+smoke_05_3_final_20260818,EXP-04,FXABE-05.3,MNT224,Charm-Crypto/PBC,Duplicate-AND,53001,0,8,4,4,8,8,2,8,2,,,Transform Total,16398219,16,0,0,5,,Transform,True,fixed ell=J=k=c_max=8
+smoke_05_3_final_20260818,EXP-04,FXABE-05.3,MNT224,Charm-Crypto/PBC,Duplicate-AND,53001,1,8,4,4,8,8,2,8,2,,,Transform Total,16965387,16,0,0,5,,Transform,True,fixed ell=J=k=c_max=8
+smoke_05_3_final_20260818,EXP-04,FXABE-05.3,MNT224,Charm-Crypto/PBC,Duplicate-AND,53001,2,8,4,4,8,8,2,8,2,,,Transform Total,16396500,16,0,0,5,,Transform,True,fixed ell=J=k=c_max=8
+smoke_05_3_final_20260818,EXP-04,FXABE-05.3,MNT224,Charm-Crypto/PBC,Duplicate-AND,53001,0,8,2,2,8,8,4,8,4,,,Transform Total,22691973,16,0,0,7,,Transform,True,fixed ell=J=k=c_max=8
+smoke_05_3_final_20260818,EXP-04,FXABE-05.3,MNT224,Charm-Crypto/PBC,Duplicate-AND,53001,1,8,2,2,8,8,4,8,4,,,Transform Total,23884451,16,0,0,7,,Transform,True,fixed ell=J=k=c_max=8
+smoke_05_3_final_20260818,EXP-04,FXABE-05.3,MNT224,Charm-Crypto/PBC,Duplicate-AND,53001,2,8,2,2,8,8,4,8,4,,,Transform Total,22277290,16,0,0,7,,Transform,True,fixed ell=J=k=c_max=8

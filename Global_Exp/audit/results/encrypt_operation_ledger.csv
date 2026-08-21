@@ -1,0 +1,17 @@
+operation,fabeo_count,fabeo_est,base_count,base_est,full_count,full_est,scope
+ZR random (fixed),2,0,1 (vector),0,1 (vector),0,ciphertext
+"ZR random (per row, r_i)",0,0,l,l*0,l,l*0,row
+G1 exp (fixed),0,0,"2 (C, C_rev)",2*g1e,"2 (C, C_rev)",2*g1e,ciphertext
+G1 exp (per row),"2 (bHash^Mivtop, attrHash^sprime)",2*l*g1e,"2 (g1^(a*lambda), q^-r)",2*l*g1e,"3 (g1^(a*lambda), q^-r, H1^kappa)",3*l*g1e,row
+G2 exp (fixed),"2 (g2_s1, g2_sprime)",2*g2e,0,0,0,0,ciphertext
+G2 exp (per row),0,0,1 (C2=g2^r),l*g2e,1 (C2=g2^r),l*g2e,row
+GT exp (fixed),1 (Cp),1*gte,1 (E=egg^s),1*gte,1 (E=egg^s),1*gte,ciphertext
+hash->G1 (fixed),1 (bHash),1*h1,0,0,0,0,ciphertext
+hash->G1 (per row),1 (attrHash),l*h1,1 (q=_direct_q),l*h1,"2 (H1 chi, H0 token)",2*l*h1,row
+hash->ZR (fixed),0,0,1 (epoch scalar),1*hz,1 (epoch scalar),1*hz,ciphertext
+G1 serialize (per row),0,0,0,0,1 (token_bytes),l*SER,row
+policy parse -> MSP (fixed),1,PP,1,PP,1,PP,ciphertext
+lambda dot product (per row),1 (len-1),l*ZD,1,l*ZD,1,l*ZD,row
+FX-ABF build (fixed + per posting),0,0,0,0,1 (u=l postings),IDX,filter
+PStore build (fixed + per posting),0,0,0,0,1,PST,pstore
+kdf + AEAD (fixed),0,0,1,KEM,1,KEM,ciphertext

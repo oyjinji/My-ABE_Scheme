@@ -1,0 +1,3 @@
+scheme,policy-label semantic hiding,user-attribute semantic hiding,FX anonymous lookup,outsourced decryption,DU lightweight finalization,user revocation,dual epoch,ciphertext G1 elements,ciphertext G2 elements,pairings,token lifecycle
+FABEO,No,No,No,No,No,No,No,ell,2,3 (official decrypt),N/A
+FXABE-05.3,Yes (stated boundary),Yes (stated boundary),Yes,Yes,Yes,Yes,Yes,ell+2,c_max,3+t_I,user offline epoch-bound; policy at Encrypt

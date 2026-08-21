@@ -1,0 +1,31 @@
+mode: full
+master_seed: 20260812
+pairing_group: MNT224
+secparam: 512
+satisfaction_ratio: 0.5
+satisfaction_tolerance: 0.1
+schemes:
+- FABEO22
+- FXABE-Base
+- FXABE-Full
+user_capacity: 64
+repetitions: 50
+warmups: 5
+policy_rows:
+- 10
+- 20
+- 40
+- 80
+- 160
+- 320
+user_attrs:
+- 5
+- 10
+- 20
+- 40
+- 80
+- 160
+exp02_policy_rows: 4
+exp08:
+  policy_rows: 160
+  repetitions: 50

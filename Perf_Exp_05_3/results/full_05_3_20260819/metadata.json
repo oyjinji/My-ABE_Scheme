@@ -1,0 +1,13 @@
+{
+  "experiments": "EXP-01,02,03,04,06,07,08,09,10,11",
+  "full_run": true,
+  "mode": "full",
+  "pre_full_gate": "/home/jinji_o/ABE-Test/Git/FABEO/Perf_Exp_05_3/results/standard_05_3_20260818/PRE_FULL_GATE.json",
+  "reused_verified_standard": [
+    "EXP-00",
+    "EXP-05"
+  ],
+  "run_id": "full_05_3_20260819",
+  "skip_supplemental_full": true,
+  "supplemental_standard": "EXP-12"
+}

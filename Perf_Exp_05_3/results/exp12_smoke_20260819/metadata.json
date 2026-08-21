@@ -1,0 +1,6 @@
+{
+  "experiment": "EXP-12",
+  "legality_rule": "ceil(ell/u) <= c_max",
+  "standard_raw_modified": false,
+  "supplemental": true
+}

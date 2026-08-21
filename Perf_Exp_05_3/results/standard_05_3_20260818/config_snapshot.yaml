@@ -1,0 +1,18 @@
+mode: standard
+master_seed: 53002
+curve: MNT224
+backend: Charm-Crypto/PBC
+warmup: 3
+repeats: 20
+exp00_repeats: 20
+ell: [20, 40, 80, 160, 320, 640]
+transform_J: [5, 10, 20, 40, 80, 160, 320]
+t_I: [1, 2, 4, 8]
+c_max: [1, 2, 4, 8, 16]
+fx_u: [20, 40, 80, 160, 320, 640, 1280]
+query_N: [1, 2, 4, 8, 16, 32, 64]
+e2e_ell: [40, 160, 640]
+core_ell: [40, 160, 640]
+rev_n: [32, 64, 128, 256, 512, 1024]
+revoked: [1, 2, 4, 8, 16, 32]
+privacy_S: [8, 16, 32, 64, 128]

@@ -1,0 +1,26 @@
+============================================================
+=== FX-ABE 05.3 + FABEO COMMON-BACKEND EXPERIMENT ===
+============================================================
+Reference documents: ABE-Scheme-05.3.md; ABE-Scheme-05.3-Revision.md; ABE-Scheme-05.3-Implementation-Profile.md; IMPLEMENTATION_VALIDATION_05_3.md
+FABEO source: Code/fabeo22cp/__init__.py
+FABEO source provenance: git f2b402a; SHA256 6f72fbe7...
+FABEO curve/backend: MNT224 / Charm-Crypto/PBC
+FXABE benchmark curve/backend: MNT224 / Charm-Crypto/PBC
+SAME CURVE: PASS
+SAME BACKEND: PASS
+05.3 algebra changed: NO
+FABEO algebra changed: NO
+FXABE correctness: PASS
+FABEO correctness: PASS
+Real FX: PASS
+No exact locator: PASS
+Standard: PASS
+EXP-00..11: PASS
+Operation-count audit: PASS
+Storage audit: PASS
+Benchmark anomalies: NONE
+Cross-scheme runtime comparison: VALID
+Recommended paper plots: 01,03,04,05,07,08,10,11
+FULL_READY: YES
+Recommended next step: peer-review Standard results; run Full only by explicit decision.
+============================================================

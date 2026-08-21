@@ -1,0 +1,137 @@
+{
+  "checks": [
+    {
+      "detail": "",
+      "name": "structure.metadata.json",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "structure.config_snapshot.yaml",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "structure.environment.json",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "structure.correctness.json",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "structure.raw_dir",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "structure.summary_dir",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "structure.plots_dir",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "structure.logs_dir",
+      "status": "ok"
+    },
+    {
+      "detail": "{\"FABEO22\": {\"decrypt_ok\": true, \"status\": \"ok\"}, \"FXABE-Base\": {\"decrypt_ok\": true, \"status\": \"ok\"}, \"FXABE-Full\": {\"decrypt_ok\": true, \"status\": \"ok\"}, \"all_ok\": true}",
+      "name": "correctness.all_ok",
+      "status": "ok"
+    },
+    {
+      "detail": "150 rows",
+      "name": "raw.exp01.rows",
+      "status": "ok"
+    },
+    {
+      "detail": "900 rows",
+      "name": "raw.exp02.rows",
+      "status": "ok"
+    },
+    {
+      "detail": "900 rows",
+      "name": "raw.exp03.rows",
+      "status": "ok"
+    },
+    {
+      "detail": "900 rows",
+      "name": "raw.exp04.rows",
+      "status": "ok"
+    },
+    {
+      "detail": "900 rows",
+      "name": "raw.exp05.rows",
+      "status": "ok"
+    },
+    {
+      "detail": "900 rows",
+      "name": "raw.exp06.rows",
+      "status": "ok"
+    },
+    {
+      "detail": "900 rows",
+      "name": "raw.exp07.rows",
+      "status": "ok"
+    },
+    {
+      "detail": "150 rows",
+      "name": "raw.exp08.rows",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "plots.exp01_setup.png",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "plots.exp02_user_provisioning.png",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "plots.exp03_encrypt.png",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "plots.exp04_transform.png",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "plots.exp05_client_decrypt.png",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "plots.exp06_e2e_decrypt.png",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "plots.exp07_storage.png",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "plots.exp08_encrypt_breakdown.png",
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "name": "plots.exp08_decrypt_breakdown.png",
+      "status": "ok"
+    }
+  ],
+  "failed_checks": [],
+  "passed": true,
+  "run_dir": "Global_Exp/results/global_full_20260812_v1"
+}

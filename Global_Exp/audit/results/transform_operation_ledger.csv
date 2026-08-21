@@ -1,0 +1,11 @@
+operation,fixed_count,fixed_est,per_row_count,per_row_est,base_est_formula,full_est_formula,scope
+pairing (revocation t0),2,2*pair,0,0,2*pair,2*pair,fixed
+"pairing (per matched row: pair(C1,K1)*pair(Kx,C2))",0,0,2 per matched row,2*pair,2*m*pair,2*m*pair,per matched row
+hash->ZR (epoch scalar),1,1*hz,0,0,1*hz,1*hz,fixed
+path/cover set intersection,1,0,0,0,~0,~0,fixed
+C_rev integrity check (C**h_r),0,0,0,0,1 g1exp,1*g1e,fixed
+index query (per user token),0,0,0,0,m,m*QRY,m*QRY,per user token
+direct row lookup (Base),0,0,1 (map attr->rows),~0,0,0,fixed
+reconstruction solve (final_dec),0,0,1,GAUSS,1,GAUSS,fixed
+"GT exp (final_dec, per nonzero coeff)",0,0,1 for OR (else k),1*gte,1*gte,1*gte,per nonzero coeff
+kdf + AEAD decrypt (final_dec),0,0,1,KEM,1,KEM,fixed

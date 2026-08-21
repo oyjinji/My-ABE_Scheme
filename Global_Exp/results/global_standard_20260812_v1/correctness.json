@@ -1,0 +1,22 @@
+{
+  "FABEO22": {
+    "decrypt_ok": true,
+    "status": "ok"
+  },
+  "FXABE-Base": {
+    "decrypt_ok": true,
+    "status": "ok"
+  },
+  "FXABE-Full": {
+    "decrypt_ok": true,
+    "status": "ok"
+  },
+  "all_ok": true,
+  "workload": {
+    "matrix_hash": "c7b2a0ab288c9ae699f0abc131410b8642674209a4b97eccab26b69c7df3ded0",
+    "message_hash": "714b3ed469b8dac0d09ac23a276493dbb4392ba2101e3c9acdcd8eadebc8408b",
+    "policy_hash": "f9796839e4551bb37a79a20befebb3df00e86b8b20537260751b3c8b85970362",
+    "rho_hash": "3f01703224507755e126bc15f232ebde6dfe6cae4ba00b843555518cf4943e6d",
+    "user_set_hash": "4c817fb08c640e64663e5a1747dae58162c81360070d0df3b0a2cbbe5624b5a3"
+  }
+}

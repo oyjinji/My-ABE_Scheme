@@ -1,0 +1,721 @@
+run_id,experiment,scheme,curve,backend,workload,seed,replicate,ell,u,N,J,k,t_I,c_max,actual_c_star,n_users,n_revoked,phase,time_ns,G1_exp,G2_exp,GT_exp,pair_count,serialized_bytes,component,success,notes
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,0,40,40,16,16,1,1,8,1,,,Setup,9067899,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,0,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40326695,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,0,40,40,16,16,1,1,8,1,,,RevKeyUpt,8352399,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,0,40,40,16,16,1,1,8,1,,,Policy OPRF,26018397,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,0,40,40,16,16,1,1,8,1,,,FX Build,1716999,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,0,40,40,16,16,1,1,8,1,,,PStore Build,1600300,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,0,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,79376891,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,0,40,40,16,16,1,1,8,1,,,FX Query,1427300,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,0,40,40,16,16,1,1,8,1,,,AuthorizedSubset,61200,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,0,40,40,16,16,1,1,8,1,,,Transform Attribute,6215499,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,0,40,40,16,16,1,1,8,1,,,Transform Revocation,6243399,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,0,40,40,16,16,1,1,8,1,,,FinalDec,1030200,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,1,40,40,16,16,1,1,8,1,,,Setup,10029599,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,1,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,38989195,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,1,40,40,16,16,1,1,8,1,,,RevKeyUpt,8648999,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,1,40,40,16,16,1,1,8,1,,,Policy OPRF,24853197,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,1,40,40,16,16,1,1,8,1,,,FX Build,10280099,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,1,40,40,16,16,1,1,8,1,,,PStore Build,1614200,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,1,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,77631491,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,1,40,40,16,16,1,1,8,1,,,FX Query,1238300,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,1,40,40,16,16,1,1,8,1,,,AuthorizedSubset,59100,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,1,40,40,16,16,1,1,8,1,,,Transform Attribute,6441399,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,1,40,40,16,16,1,1,8,1,,,Transform Revocation,6084399,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,1,40,40,16,16,1,1,8,1,,,FinalDec,1001200,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,2,40,40,16,16,1,1,8,1,,,Setup,10480478,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,2,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,39915599,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,2,40,40,16,16,1,1,8,1,,,RevKeyUpt,9490462,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,2,40,40,16,16,1,1,8,1,,,Policy OPRF,24764771,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,2,40,40,16,16,1,1,8,1,,,FX Build,3522526,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,2,40,40,16,16,1,1,8,1,,,PStore Build,1675454,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,2,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,80102588,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,2,40,40,16,16,1,1,8,1,,,FX Query,1167510,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,2,40,40,16,16,1,1,8,1,,,AuthorizedSubset,59680,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,2,40,40,16,16,1,1,8,1,,,Transform Attribute,6260252,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,2,40,40,16,16,1,1,8,1,,,Transform Revocation,7208318,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,2,40,40,16,16,1,1,8,1,,,FinalDec,1019497,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,3,40,40,16,16,1,1,8,1,,,Setup,9867400,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,3,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40155244,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,3,40,40,16,16,1,1,8,1,,,RevKeyUpt,9434493,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,3,40,40,16,16,1,1,8,1,,,Policy OPRF,24316196,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,3,40,40,16,16,1,1,8,1,,,FX Build,1726579,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,3,40,40,16,16,1,1,8,1,,,PStore Build,1672568,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,3,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,82627778,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,3,40,40,16,16,1,1,8,1,,,FX Query,1160705,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,3,40,40,16,16,1,1,8,1,,,AuthorizedSubset,62463,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,3,40,40,16,16,1,1,8,1,,,Transform Attribute,6274167,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,3,40,40,16,16,1,1,8,1,,,Transform Revocation,6390227,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,3,40,40,16,16,1,1,8,1,,,FinalDec,1466525,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,4,40,40,16,16,1,1,8,1,,,Setup,9097856,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,4,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,43554391,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,4,40,40,16,16,1,1,8,1,,,RevKeyUpt,8610114,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,4,40,40,16,16,1,1,8,1,,,Policy OPRF,24138395,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,4,40,40,16,16,1,1,8,1,,,FX Build,1149368,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,4,40,40,16,16,1,1,8,1,,,PStore Build,1639276,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,4,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,82932153,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,4,40,40,16,16,1,1,8,1,,,FX Query,1186474,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,4,40,40,16,16,1,1,8,1,,,AuthorizedSubset,55144,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,4,40,40,16,16,1,1,8,1,,,Transform Attribute,7647307,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,4,40,40,16,16,1,1,8,1,,,Transform Revocation,6331990,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,4,40,40,16,16,1,1,8,1,,,FinalDec,1041142,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,5,40,40,16,16,1,1,8,1,,,Setup,9904403,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,5,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,42494592,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,5,40,40,16,16,1,1,8,1,,,RevKeyUpt,8524460,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,5,40,40,16,16,1,1,8,1,,,Policy OPRF,24861042,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,5,40,40,16,16,1,1,8,1,,,FX Build,1788217,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,5,40,40,16,16,1,1,8,1,,,PStore Build,1798833,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,5,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,82367724,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,5,40,40,16,16,1,1,8,1,,,FX Query,1170187,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,5,40,40,16,16,1,1,8,1,,,AuthorizedSubset,56484,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,5,40,40,16,16,1,1,8,1,,,Transform Attribute,6307047,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,5,40,40,16,16,1,1,8,1,,,Transform Revocation,8061559,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,5,40,40,16,16,1,1,8,1,,,FinalDec,1223582,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,6,40,40,16,16,1,1,8,1,,,Setup,10256914,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,6,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40984983,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,6,40,40,16,16,1,1,8,1,,,RevKeyUpt,11016975,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,6,40,40,16,16,1,1,8,1,,,Policy OPRF,25750048,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,6,40,40,16,16,1,1,8,1,,,FX Build,1200184,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,6,40,40,16,16,1,1,8,1,,,PStore Build,1670713,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,6,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,82748063,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,6,40,40,16,16,1,1,8,1,,,FX Query,1182561,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,6,40,40,16,16,1,1,8,1,,,AuthorizedSubset,52361,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,6,40,40,16,16,1,1,8,1,,,Transform Attribute,6369612,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,6,40,40,16,16,1,1,8,1,,,Transform Revocation,6814064,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,6,40,40,16,16,1,1,8,1,,,FinalDec,1093607,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,7,40,40,16,16,1,1,8,1,,,Setup,9402437,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,7,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41812557,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,7,40,40,16,16,1,1,8,1,,,RevKeyUpt,9331008,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,7,40,40,16,16,1,1,8,1,,,Policy OPRF,24976278,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,7,40,40,16,16,1,1,8,1,,,FX Build,1137000,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,7,40,40,16,16,1,1,8,1,,,PStore Build,1639173,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,7,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,89448336,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,7,40,40,16,16,1,1,8,1,,,FX Query,1185958,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,7,40,40,16,16,1,1,8,1,,,AuthorizedSubset,55041,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,7,40,40,16,16,1,1,8,1,,,Transform Attribute,7004337,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,7,40,40,16,16,1,1,8,1,,,Transform Revocation,6471243,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,7,40,40,16,16,1,1,8,1,,,FinalDec,1159470,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,8,40,40,16,16,1,1,8,1,,,Setup,10166003,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,8,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41474271,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,8,40,40,16,16,1,1,8,1,,,RevKeyUpt,8939124,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,8,40,40,16,16,1,1,8,1,,,Policy OPRF,24832284,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,8,40,40,16,16,1,1,8,1,,,FX Build,1194000,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,8,40,40,16,16,1,1,8,1,,,PStore Build,1811305,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,8,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,83789413,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,8,40,40,16,16,1,1,8,1,,,FX Query,2213598,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,8,40,40,16,16,1,1,8,1,,,AuthorizedSubset,106268,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,8,40,40,16,16,1,1,8,1,,,Transform Attribute,6528449,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,8,40,40,16,16,1,1,8,1,,,Transform Revocation,9823079,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,8,40,40,16,16,1,1,8,1,,,FinalDec,1514351,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,9,40,40,16,16,1,1,8,1,,,Setup,12876003,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,9,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,50539246,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,9,40,40,16,16,1,1,8,1,,,RevKeyUpt,10635398,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,9,40,40,16,16,1,1,8,1,,,Policy OPRF,29253608,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,9,40,40,16,16,1,1,8,1,,,FX Build,3656727,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,9,40,40,16,16,1,1,8,1,,,PStore Build,1836454,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,9,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,98190176,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,9,40,40,16,16,1,1,8,1,,,FX Query,1215748,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,9,40,40,16,16,1,1,8,1,,,AuthorizedSubset,66173,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,9,40,40,16,16,1,1,8,1,,,Transform Attribute,7012377,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,9,40,40,16,16,1,1,8,1,,,Transform Revocation,6707074,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,9,40,40,16,16,1,1,8,1,,,FinalDec,1094431,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,10,40,40,16,16,1,1,8,1,,,Setup,10207954,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,10,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,43156013,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,10,40,40,16,16,1,1,8,1,,,RevKeyUpt,8979116,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,10,40,40,16,16,1,1,8,1,,,Policy OPRF,26038034,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,10,40,40,16,16,1,1,8,1,,,FX Build,1139062,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,10,40,40,16,16,1,1,8,1,,,PStore Build,1744616,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,10,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,82549752,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,10,40,40,16,16,1,1,8,1,,,FX Query,1160605,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,10,40,40,16,16,1,1,8,1,,,AuthorizedSubset,97610,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,10,40,40,16,16,1,1,8,1,,,Transform Attribute,6316221,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,10,40,40,16,16,1,1,8,1,,,Transform Revocation,7744609,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,10,40,40,16,16,1,1,8,1,,,FinalDec,1079589,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,11,40,40,16,16,1,1,8,1,,,Setup,10476563,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,11,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,42262677,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,11,40,40,16,16,1,1,8,1,,,RevKeyUpt,9383781,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,11,40,40,16,16,1,1,8,1,,,Policy OPRF,24395975,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,11,40,40,16,16,1,1,8,1,,,FX Build,1178848,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,11,40,40,16,16,1,1,8,1,,,PStore Build,1740287,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,11,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,83838991,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,11,40,40,16,16,1,1,8,1,,,FX Query,1163591,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,11,40,40,16,16,1,1,8,1,,,AuthorizedSubset,56382,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,11,40,40,16,16,1,1,8,1,,,Transform Attribute,6276331,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,11,40,40,16,16,1,1,8,1,,,Transform Revocation,6978672,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,11,40,40,16,16,1,1,8,1,,,FinalDec,1070518,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,12,40,40,16,16,1,1,8,1,,,Setup,9427484,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,12,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40672156,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,12,40,40,16,16,1,1,8,1,,,RevKeyUpt,9030446,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,12,40,40,16,16,1,1,8,1,,,Policy OPRF,25329406,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,12,40,40,16,16,1,1,8,1,,,FX Build,1685556,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,12,40,40,16,16,1,1,8,1,,,PStore Build,1706479,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,12,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,80340997,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,12,40,40,16,16,1,1,8,1,,,FX Query,1151021,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,12,40,40,16,16,1,1,8,1,,,AuthorizedSubset,54422,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,12,40,40,16,16,1,1,8,1,,,Transform Attribute,6549269,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,12,40,40,16,16,1,1,8,1,,,Transform Revocation,6636778,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,12,40,40,16,16,1,1,8,1,,,FinalDec,1044853,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,13,40,40,16,16,1,1,8,1,,,Setup,10094471,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,13,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,42562724,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,13,40,40,16,16,1,1,8,1,,,RevKeyUpt,8758024,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,13,40,40,16,16,1,1,8,1,,,Policy OPRF,25911357,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,13,40,40,16,16,1,1,8,1,,,FX Build,1831301,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,13,40,40,16,16,1,1,8,1,,,PStore Build,1678547,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,13,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,81013138,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,13,40,40,16,16,1,1,8,1,,,FX Query,1181218,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,13,40,40,16,16,1,1,8,1,,,AuthorizedSubset,57514,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,13,40,40,16,16,1,1,8,1,,,Transform Attribute,6508452,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,13,40,40,16,16,1,1,8,1,,,Transform Revocation,6405585,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,13,40,40,16,16,1,1,8,1,,,FinalDec,1092988,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,14,40,40,16,16,1,1,8,1,,,Setup,9776902,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,14,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41084963,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,14,40,40,16,16,1,1,8,1,,,RevKeyUpt,9423155,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,14,40,40,16,16,1,1,8,1,,,Policy OPRF,25245814,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,14,40,40,16,16,1,1,8,1,,,FX Build,1685865,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,14,40,40,16,16,1,1,8,1,,,PStore Build,2489114,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,14,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,81118272,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,14,40,40,16,16,1,1,8,1,,,FX Query,1180807,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,14,40,40,16,16,1,1,8,1,,,AuthorizedSubset,122245,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,14,40,40,16,16,1,1,8,1,,,Transform Attribute,6448463,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,14,40,40,16,16,1,1,8,1,,,Transform Revocation,8867385,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,14,40,40,16,16,1,1,8,1,,,FinalDec,1188228,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,15,40,40,16,16,1,1,8,1,,,Setup,9633630,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,15,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,43005629,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,15,40,40,16,16,1,1,8,1,,,RevKeyUpt,10126836,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,15,40,40,16,16,1,1,8,1,,,Policy OPRF,24303622,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,15,40,40,16,16,1,1,8,1,,,FX Build,1138340,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,15,40,40,16,16,1,1,8,1,,,PStore Build,1718333,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,15,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,92681433,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,15,40,40,16,16,1,1,8,1,,,FX Query,1443537,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,15,40,40,16,16,1,1,8,1,,,AuthorizedSubset,64215,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,15,40,40,16,16,1,1,8,1,,,Transform Attribute,6276228,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,15,40,40,16,16,1,1,8,1,,,Transform Revocation,6215312,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,15,40,40,16,16,1,1,8,1,,,FinalDec,1041966,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,16,40,40,16,16,1,1,8,1,,,Setup,9819265,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,16,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41180513,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,16,40,40,16,16,1,1,8,1,,,RevKeyUpt,8935000,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,16,40,40,16,16,1,1,8,1,,,Policy OPRF,25501125,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,16,40,40,16,16,1,1,8,1,,,FX Build,1140402,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,16,40,40,16,16,1,1,8,1,,,PStore Build,1780485,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,16,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,83661912,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,16,40,40,16,16,1,1,8,1,,,FX Query,1158231,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,16,40,40,16,16,1,1,8,1,,,AuthorizedSubset,55350,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,16,40,40,16,16,1,1,8,1,,,Transform Attribute,7730796,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,16,40,40,16,16,1,1,8,1,,,Transform Revocation,6307047,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,16,40,40,16,16,1,1,8,1,,,FinalDec,1046708,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,17,40,40,16,16,1,1,8,1,,,Setup,10321232,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,17,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40335621,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,17,40,40,16,16,1,1,8,1,,,RevKeyUpt,8922529,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,17,40,40,16,16,1,1,8,1,,,Policy OPRF,24915979,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,17,40,40,16,16,1,1,8,1,,,FX Build,1717611,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,17,40,40,16,16,1,1,8,1,,,PStore Build,1727300,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,17,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,83379697,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,17,40,40,16,16,1,1,8,1,,,FX Query,1505901,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,17,40,40,16,16,1,1,8,1,,,AuthorizedSubset,72872,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,17,40,40,16,16,1,1,8,1,,,Transform Attribute,6526902,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,17,40,40,16,16,1,1,8,1,,,Transform Revocation,6803653,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,17,40,40,16,16,1,1,8,1,,,FinalDec,1015477,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,18,40,40,16,16,1,1,8,1,,,Setup,9581578,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,18,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,42882972,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,18,40,40,16,16,1,1,8,1,,,RevKeyUpt,10212489,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,18,40,40,16,16,1,1,8,1,,,Policy OPRF,27497034,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,18,40,40,16,16,1,1,8,1,,,FX Build,1151019,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,18,40,40,16,16,1,1,8,1,,,PStore Build,1668754,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,18,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,83864245,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,18,40,40,16,16,1,1,8,1,,,FX Query,1187097,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,18,40,40,16,16,1,1,8,1,,,AuthorizedSubset,54114,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,18,40,40,16,16,1,1,8,1,,,Transform Attribute,6350338,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,18,40,40,16,16,1,1,8,1,,,Transform Revocation,6505876,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,18,40,40,16,16,1,1,8,1,,,FinalDec,1195545,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,19,40,40,16,16,1,1,8,1,,,Setup,9376360,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,19,40,40,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40378294,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,19,40,40,16,16,1,1,8,1,,,RevKeyUpt,9008698,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,19,40,40,16,16,1,1,8,1,,,Policy OPRF,24936388,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,19,40,40,16,16,1,1,8,1,,,FX Build,1775950,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,19,40,40,16,16,1,1,8,1,,,PStore Build,1640204,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,19,40,40,16,16,1,1,8,1,,,ABE Encrypt Core,83564302,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,19,40,40,16,16,1,1,8,1,,,FX Query,1873254,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,19,40,40,16,16,1,1,8,1,,,AuthorizedSubset,72151,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,19,40,40,16,16,1,1,8,1,,,Transform Attribute,6381362,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,19,40,40,16,16,1,1,8,1,,,Transform Revocation,6290968,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,11051542550905816367,19,40,40,16,16,1,1,8,1,,,FinalDec,1024547,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,0,160,160,16,16,1,1,8,1,,,Setup,9509840,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,0,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40279344,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,0,160,160,16,16,1,1,8,1,,,RevKeyUpt,8706281,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,0,160,160,16,16,1,1,8,1,,,Policy OPRF,102999159,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,0,160,160,16,16,1,1,8,1,,,FX Build,4868351,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,0,160,160,16,16,1,1,8,1,,,PStore Build,6628636,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,0,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,222850986,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,0,160,160,16,16,1,1,8,1,,,FX Query,1175138,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,0,160,160,16,16,1,1,8,1,,,AuthorizedSubset,125853,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,0,160,160,16,16,1,1,8,1,,,Transform Attribute,6489177,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,0,160,160,16,16,1,1,8,1,,,Transform Revocation,7077416,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,0,160,160,16,16,1,1,8,1,,,FinalDec,1121436,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,1,160,160,16,16,1,1,8,1,,,Setup,9327297,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,1,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41628675,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,1,160,160,16,16,1,1,8,1,,,RevKeyUpt,10573555,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,1,160,160,16,16,1,1,8,1,,,Policy OPRF,108002639,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,1,160,160,16,16,1,1,8,1,,,FX Build,4904427,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,1,160,160,16,16,1,1,8,1,,,PStore Build,6521646,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,1,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,221541855,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,1,160,160,16,16,1,1,8,1,,,FX Query,1272643,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,1,160,160,16,16,1,1,8,1,,,AuthorizedSubset,152858,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,1,160,160,16,16,1,1,8,1,,,Transform Attribute,7223882,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,1,160,160,16,16,1,1,8,1,,,Transform Revocation,6298285,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,1,160,160,16,16,1,1,8,1,,,FinalDec,1063200,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,2,160,160,16,16,1,1,8,1,,,Setup,9784324,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,2,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41507564,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,2,160,160,16,16,1,1,8,1,,,RevKeyUpt,9009934,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,2,160,160,16,16,1,1,8,1,,,Policy OPRF,103578842,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,2,160,160,16,16,1,1,8,1,,,FX Build,4346596,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,2,160,160,16,16,1,1,8,1,,,PStore Build,6829834,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,2,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,223704019,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,2,160,160,16,16,1,1,8,1,,,FX Query,1602788,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,2,160,160,16,16,1,1,8,1,,,AuthorizedSubset,178111,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,2,160,160,16,16,1,1,8,1,,,Transform Attribute,6299729,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,2,160,160,16,16,1,1,8,1,,,Transform Revocation,6561741,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,2,160,160,16,16,1,1,8,1,,,FinalDec,1060314,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,3,160,160,16,16,1,1,8,1,,,Setup,9510973,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,3,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40135041,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,3,160,160,16,16,1,1,8,1,,,RevKeyUpt,9271019,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,3,160,160,16,16,1,1,8,1,,,Policy OPRF,100669809,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,3,160,160,16,16,1,1,8,1,,,FX Build,4834337,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,3,160,160,16,16,1,1,8,1,,,PStore Build,6499897,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,3,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,220731389,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,3,160,160,16,16,1,1,8,1,,,FX Query,1212551,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,3,160,160,16,16,1,1,8,1,,,AuthorizedSubset,160072,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,3,160,160,16,16,1,1,8,1,,,Transform Attribute,7002997,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,3,160,160,16,16,1,1,8,1,,,Transform Revocation,6347657,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,3,160,160,16,16,1,1,8,1,,,FinalDec,1034442,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,4,160,160,16,16,1,1,8,1,,,Setup,9897395,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,4,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41049198,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,4,160,160,16,16,1,1,8,1,,,RevKeyUpt,8603723,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,4,160,160,16,16,1,1,8,1,,,Policy OPRF,103874147,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,4,160,160,16,16,1,1,8,1,,,FX Build,4501102,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,4,160,160,16,16,1,1,8,1,,,PStore Build,6539271,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,4,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,227070390,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,4,160,160,16,16,1,1,8,1,,,FX Query,1150707,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,4,160,160,16,16,1,1,8,1,,,AuthorizedSubset,140282,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,4,160,160,16,16,1,1,8,1,,,Transform Attribute,6891060,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,4,160,160,16,16,1,1,8,1,,,Transform Revocation,6429291,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,4,160,160,16,16,1,1,8,1,,,FinalDec,1077218,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,5,160,160,16,16,1,1,8,1,,,Setup,10841854,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,5,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41071461,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,5,160,160,16,16,1,1,8,1,,,RevKeyUpt,8587541,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,5,160,160,16,16,1,1,8,1,,,Policy OPRF,101328240,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,5,160,160,16,16,1,1,8,1,,,FX Build,4388958,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,5,160,160,16,16,1,1,8,1,,,PStore Build,7092980,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,5,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,220312089,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,5,160,160,16,16,1,1,8,1,,,FX Query,1172972,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,5,160,160,16,16,1,1,8,1,,,AuthorizedSubset,128327,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,5,160,160,16,16,1,1,8,1,,,Transform Attribute,6345597,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,5,160,160,16,16,1,1,8,1,,,Transform Revocation,6366314,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,5,160,160,16,16,1,1,8,1,,,FinalDec,1214511,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,6,160,160,16,16,1,1,8,1,,,Setup,9270194,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,6,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,45416716,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,6,160,160,16,16,1,1,8,1,,,RevKeyUpt,10923282,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,6,160,160,16,16,1,1,8,1,,,Policy OPRF,106788437,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,6,160,160,16,16,1,1,8,1,,,FX Build,4706320,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,6,160,160,16,16,1,1,8,1,,,PStore Build,6484436,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,6,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,224583852,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,6,160,160,16,16,1,1,8,1,,,FX Query,1185857,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,6,160,160,16,16,1,1,8,1,,,AuthorizedSubset,128635,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,6,160,160,16,16,1,1,8,1,,,Transform Attribute,7489915,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,6,160,160,16,16,1,1,8,1,,,Transform Revocation,6377240,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,6,160,160,16,16,1,1,8,1,,,FinalDec,1072786,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,7,160,160,16,16,1,1,8,1,,,Setup,9527774,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,7,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40391900,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,7,160,160,16,16,1,1,8,1,,,RevKeyUpt,9341108,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,7,160,160,16,16,1,1,8,1,,,Policy OPRF,103342908,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,7,160,160,16,16,1,1,8,1,,,FX Build,4747034,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,7,160,160,16,16,1,1,8,1,,,PStore Build,6760982,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,7,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,221184705,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,7,160,160,16,16,1,1,8,1,,,FX Query,1156893,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,7,160,160,16,16,1,1,8,1,,,AuthorizedSubset,132243,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,7,160,160,16,16,1,1,8,1,,,Transform Attribute,6516698,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,7,160,160,16,16,1,1,8,1,,,Transform Revocation,6500103,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,7,160,160,16,16,1,1,8,1,,,FinalDec,1038462,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,8,160,160,16,16,1,1,8,1,,,Setup,10225682,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,8,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41437886,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,8,160,160,16,16,1,1,8,1,,,RevKeyUpt,9915329,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,8,160,160,16,16,1,1,8,1,,,Policy OPRF,100705667,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,8,160,160,16,16,1,1,8,1,,,FX Build,6807161,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,8,160,160,16,16,1,1,8,1,,,PStore Build,7580990,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,8,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,225978117,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,8,160,160,16,16,1,1,8,1,,,FX Query,1170638,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,8,160,160,16,16,1,1,8,1,,,AuthorizedSubset,131538,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,8,160,160,16,16,1,1,8,1,,,Transform Attribute,6366888,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,8,160,160,16,16,1,1,8,1,,,Transform Revocation,8045873,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,8,160,160,16,16,1,1,8,1,,,FinalDec,1397689,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,9,160,160,16,16,1,1,8,1,,,Setup,11175017,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,9,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,42808591,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,9,160,160,16,16,1,1,8,1,,,RevKeyUpt,9623379,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,9,160,160,16,16,1,1,8,1,,,Policy OPRF,113045854,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,9,160,160,16,16,1,1,8,1,,,FX Build,4506829,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,9,160,160,16,16,1,1,8,1,,,PStore Build,7130768,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,9,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,233206767,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,9,160,160,16,16,1,1,8,1,,,FX Query,1216722,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,9,160,160,16,16,1,1,8,1,,,AuthorizedSubset,155206,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,9,160,160,16,16,1,1,8,1,,,Transform Attribute,6423022,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,9,160,160,16,16,1,1,8,1,,,Transform Revocation,7849510,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,9,160,160,16,16,1,1,8,1,,,FinalDec,1101521,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,10,160,160,16,16,1,1,8,1,,,Setup,11116474,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,10,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41142695,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,10,160,160,16,16,1,1,8,1,,,RevKeyUpt,10420039,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,10,160,160,16,16,1,1,8,1,,,Policy OPRF,100558186,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,10,160,160,16,16,1,1,8,1,,,FX Build,4536048,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,10,160,160,16,16,1,1,8,1,,,PStore Build,6499682,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,10,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,225229384,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,10,160,160,16,16,1,1,8,1,,,FX Query,1498227,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,10,160,160,16,16,1,1,8,1,,,AuthorizedSubset,183272,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,10,160,160,16,16,1,1,8,1,,,Transform Attribute,7669589,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,10,160,160,16,16,1,1,8,1,,,Transform Revocation,7426727,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,10,160,160,16,16,1,1,8,1,,,FinalDec,1330559,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,11,160,160,16,16,1,1,8,1,,,Setup,11360803,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,11,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,47067634,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,11,160,160,16,16,1,1,8,1,,,RevKeyUpt,10182518,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,11,160,160,16,16,1,1,8,1,,,Policy OPRF,106230315,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,11,160,160,16,16,1,1,8,1,,,FX Build,4689893,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,11,160,160,16,16,1,1,8,1,,,PStore Build,6710602,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,11,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,229116963,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,11,160,160,16,16,1,1,8,1,,,FX Query,1223215,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,11,160,160,16,16,1,1,8,1,,,AuthorizedSubset,140335,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,11,160,160,16,16,1,1,8,1,,,Transform Attribute,6762966,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,11,160,160,16,16,1,1,8,1,,,Transform Revocation,6714897,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,11,160,160,16,16,1,1,8,1,,,FinalDec,1210646,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,12,160,160,16,16,1,1,8,1,,,Setup,10491149,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,12,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40617384,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,12,160,160,16,16,1,1,8,1,,,RevKeyUpt,9331400,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,12,160,160,16,16,1,1,8,1,,,Policy OPRF,105203360,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,12,160,160,16,16,1,1,8,1,,,FX Build,5108381,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,12,160,160,16,16,1,1,8,1,,,PStore Build,6697931,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,12,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,233190952,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,12,160,160,16,16,1,1,8,1,,,FX Query,1192840,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,12,160,160,16,16,1,1,8,1,,,AuthorizedSubset,165888,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,12,160,160,16,16,1,1,8,1,,,Transform Attribute,8030898,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,12,160,160,16,16,1,1,8,1,,,Transform Revocation,6444177,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,12,160,160,16,16,1,1,8,1,,,FinalDec,1155664,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,13,160,160,16,16,1,1,8,1,,,Setup,10212155,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,13,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,42373344,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,13,160,160,16,16,1,1,8,1,,,RevKeyUpt,8800957,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,13,160,160,16,16,1,1,8,1,,,Policy OPRF,106405209,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,13,160,160,16,16,1,1,8,1,,,FX Build,9965733,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,13,160,160,16,16,1,1,8,1,,,PStore Build,7424108,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,13,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,224629297,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,13,160,160,16,16,1,1,8,1,,,FX Query,1457068,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,13,160,160,16,16,1,1,8,1,,,AuthorizedSubset,185262,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,13,160,160,16,16,1,1,8,1,,,Transform Attribute,7504853,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,13,160,160,16,16,1,1,8,1,,,Transform Revocation,6386787,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,13,160,160,16,16,1,1,8,1,,,FinalDec,1111470,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,14,160,160,16,16,1,1,8,1,,,Setup,10222209,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,14,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,43830518,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,14,160,160,16,16,1,1,8,1,,,RevKeyUpt,9485035,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,14,160,160,16,16,1,1,8,1,,,Policy OPRF,104906458,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,14,160,160,16,16,1,1,8,1,,,FX Build,9305219,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,14,160,160,16,16,1,1,8,1,,,PStore Build,7509252,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,14,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,226440449,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,14,160,160,16,16,1,1,8,1,,,FX Query,1257039,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,14,160,160,16,16,1,1,8,1,,,AuthorizedSubset,140754,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,14,160,160,16,16,1,1,8,1,,,Transform Attribute,6410559,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,14,160,160,16,16,1,1,8,1,,,Transform Revocation,6799830,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,14,160,160,16,16,1,1,8,1,,,FinalDec,1243006,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,15,160,160,16,16,1,1,8,1,,,Setup,9531010,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,15,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41503271,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,15,160,160,16,16,1,1,8,1,,,RevKeyUpt,8950926,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,15,160,160,16,16,1,1,8,1,,,Policy OPRF,102259898,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,15,160,160,16,16,1,1,8,1,,,FX Build,5041357,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,15,160,160,16,16,1,1,8,1,,,PStore Build,6907803,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,15,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,230986864,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,15,160,160,16,16,1,1,8,1,,,FX Query,1291388,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,15,160,160,16,16,1,1,8,1,,,AuthorizedSubset,189766,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,15,160,160,16,16,1,1,8,1,,,Transform Attribute,6470149,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,15,160,160,16,16,1,1,8,1,,,Transform Revocation,7021118,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,15,160,160,16,16,1,1,8,1,,,FinalDec,1974316,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,16,160,160,16,16,1,1,8,1,,,Setup,9527135,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,16,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41390794,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,16,160,160,16,16,1,1,8,1,,,RevKeyUpt,8932809,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,16,160,160,16,16,1,1,8,1,,,Policy OPRF,100883260,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,16,160,160,16,16,1,1,8,1,,,FX Build,9791885,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,16,160,160,16,16,1,1,8,1,,,PStore Build,6761500,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,16,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,254230535,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,16,160,160,16,16,1,1,8,1,,,FX Query,1173361,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,16,160,160,16,16,1,1,8,1,,,AuthorizedSubset,169030,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,16,160,160,16,16,1,1,8,1,,,Transform Attribute,7184808,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,16,160,160,16,16,1,1,8,1,,,Transform Revocation,7956751,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,16,160,160,16,16,1,1,8,1,,,FinalDec,2035058,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,17,160,160,16,16,1,1,8,1,,,Setup,14059517,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,17,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,48041493,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,17,160,160,16,16,1,1,8,1,,,RevKeyUpt,11278696,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,17,160,160,16,16,1,1,8,1,,,Policy OPRF,120254748,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,17,160,160,16,16,1,1,8,1,,,FX Build,5442671,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,17,160,160,16,16,1,1,8,1,,,PStore Build,8131436,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,17,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,251339752,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,17,160,160,16,16,1,1,8,1,,,FX Query,1180696,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,17,160,160,16,16,1,1,8,1,,,AuthorizedSubset,176256,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,17,160,160,16,16,1,1,8,1,,,Transform Attribute,6959329,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,17,160,160,16,16,1,1,8,1,,,Transform Revocation,6779408,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,17,160,160,16,16,1,1,8,1,,,FinalDec,1175667,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,18,160,160,16,16,1,1,8,1,,,Setup,10404644,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,18,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,42685536,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,18,160,160,16,16,1,1,8,1,,,RevKeyUpt,8814257,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,18,160,160,16,16,1,1,8,1,,,Policy OPRF,117475289,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,18,160,160,16,16,1,1,8,1,,,FX Build,7980629,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,18,160,160,16,16,1,1,8,1,,,PStore Build,6691437,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,18,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,227373254,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,18,160,160,16,16,1,1,8,1,,,FX Query,1443561,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,18,160,160,16,16,1,1,8,1,,,AuthorizedSubset,153844,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,18,160,160,16,16,1,1,8,1,,,Transform Attribute,6452240,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,18,160,160,16,16,1,1,8,1,,,Transform Revocation,6406684,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,18,160,160,16,16,1,1,8,1,,,FinalDec,1087068,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,19,160,160,16,16,1,1,8,1,,,Setup,9665898,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,19,160,160,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40271051,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,19,160,160,16,16,1,1,8,1,,,RevKeyUpt,9681294,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,19,160,160,16,16,1,1,8,1,,,Policy OPRF,113323800,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,19,160,160,16,16,1,1,8,1,,,FX Build,4638576,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,19,160,160,16,16,1,1,8,1,,,PStore Build,6537488,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,19,160,160,16,16,1,1,8,1,,,ABE Encrypt Core,224842731,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,19,160,160,16,16,1,1,8,1,,,FX Query,1825605,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,19,160,160,16,16,1,1,8,1,,,AuthorizedSubset,201599,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,19,160,160,16,16,1,1,8,1,,,Transform Attribute,6447633,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,19,160,160,16,16,1,1,8,1,,,Transform Revocation,6998183,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,1958463794650274158,19,160,160,16,16,1,1,8,1,,,FinalDec,1323961,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,0,640,640,16,16,1,1,8,1,,,Setup,10997617,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,0,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41466613,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,0,640,640,16,16,1,1,8,1,,,RevKeyUpt,8664164,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,0,640,640,16,16,1,1,8,1,,,Policy OPRF,415725013,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,0,640,640,16,16,1,1,8,1,,,FX Build,17608540,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,0,640,640,16,16,1,1,8,1,,,PStore Build,28411848,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,0,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,789262694,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,0,640,640,16,16,1,1,8,1,,,FX Query,1141810,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,0,640,640,16,16,1,1,8,1,,,AuthorizedSubset,295008,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,0,640,640,16,16,1,1,8,1,,,Transform Attribute,7348186,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,0,640,640,16,16,1,1,8,1,,,Transform Revocation,6499433,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,0,640,640,16,16,1,1,8,1,,,FinalDec,1117353,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,1,640,640,16,16,1,1,8,1,,,Setup,9821077,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,1,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40392211,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,1,640,640,16,16,1,1,8,1,,,RevKeyUpt,8852102,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,1,640,640,16,16,1,1,8,1,,,Policy OPRF,410226513,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,1,640,640,16,16,1,1,8,1,,,FX Build,18015551,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,1,640,640,16,16,1,1,8,1,,,PStore Build,27244864,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,1,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,807441829,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,1,640,640,16,16,1,1,8,1,,,FX Query,1328205,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,1,640,640,16,16,1,1,8,1,,,AuthorizedSubset,320183,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,1,640,640,16,16,1,1,8,1,,,Transform Attribute,6321359,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,1,640,640,16,16,1,1,8,1,,,Transform Revocation,6955355,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,1,640,640,16,16,1,1,8,1,,,FinalDec,1069881,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,2,640,640,16,16,1,1,8,1,,,Setup,9229109,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,2,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41704284,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,2,640,640,16,16,1,1,8,1,,,RevKeyUpt,8840901,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,2,640,640,16,16,1,1,8,1,,,Policy OPRF,406047484,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,2,640,640,16,16,1,1,8,1,,,FX Build,17589427,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,2,640,640,16,16,1,1,8,1,,,PStore Build,26270956,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,2,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,786035172,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,2,640,640,16,16,1,1,8,1,,,FX Query,1566288,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,2,640,640,16,16,1,1,8,1,,,AuthorizedSubset,191020,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,2,640,640,16,16,1,1,8,1,,,Transform Attribute,6785501,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,2,640,640,16,16,1,1,8,1,,,Transform Revocation,6283751,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,2,640,640,16,16,1,1,8,1,,,FinalDec,1077587,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,3,640,640,16,16,1,1,8,1,,,Setup,9746683,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,3,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40493424,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,3,640,640,16,16,1,1,8,1,,,RevKeyUpt,9685441,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,3,640,640,16,16,1,1,8,1,,,Policy OPRF,411225698,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,3,640,640,16,16,1,1,8,1,,,FX Build,20214498,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,3,640,640,16,16,1,1,8,1,,,PStore Build,26540687,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,3,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,829996564,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,3,640,640,16,16,1,1,8,1,,,FX Query,1157223,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,3,640,640,16,16,1,1,8,1,,,AuthorizedSubset,347619,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,3,640,640,16,16,1,1,8,1,,,Transform Attribute,7372230,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,3,640,640,16,16,1,1,8,1,,,Transform Revocation,6444665,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,3,640,640,16,16,1,1,8,1,,,FinalDec,1108722,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,4,640,640,16,16,1,1,8,1,,,Setup,9977368,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,4,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40518599,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,4,640,640,16,16,1,1,8,1,,,RevKeyUpt,9828476,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,4,640,640,16,16,1,1,8,1,,,Policy OPRF,419138213,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,4,640,640,16,16,1,1,8,1,,,FX Build,18098370,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,4,640,640,16,16,1,1,8,1,,,PStore Build,27350394,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,4,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,803832060,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,4,640,640,16,16,1,1,8,1,,,FX Query,1201819,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,4,640,640,16,16,1,1,8,1,,,AuthorizedSubset,300968,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,4,640,640,16,16,1,1,8,1,,,Transform Attribute,6291150,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,4,640,640,16,16,1,1,8,1,,,Transform Revocation,7392576,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,4,640,640,16,16,1,1,8,1,,,FinalDec,1111393,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,5,640,640,16,16,1,1,8,1,,,Setup,9215648,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,5,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,56048105,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,5,640,640,16,16,1,1,8,1,,,RevKeyUpt,9747608,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,5,640,640,16,16,1,1,8,1,,,Policy OPRF,436481985,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,5,640,640,16,16,1,1,8,1,,,FX Build,19975546,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,5,640,640,16,16,1,1,8,1,,,PStore Build,30746590,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,5,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,801498739,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,5,640,640,16,16,1,1,8,1,,,FX Query,1435698,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,5,640,640,16,16,1,1,8,1,,,AuthorizedSubset,207188,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,5,640,640,16,16,1,1,8,1,,,Transform Attribute,6560873,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,5,640,640,16,16,1,1,8,1,,,Transform Revocation,6470960,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,5,640,640,16,16,1,1,8,1,,,FinalDec,1106010,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,6,640,640,16,16,1,1,8,1,,,Setup,9984066,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,6,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40978780,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,6,640,640,16,16,1,1,8,1,,,RevKeyUpt,9450432,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,6,640,640,16,16,1,1,8,1,,,Policy OPRF,440685296,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,6,640,640,16,16,1,1,8,1,,,FX Build,18749232,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,6,640,640,16,16,1,1,8,1,,,PStore Build,27207170,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,6,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,803917482,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,6,640,640,16,16,1,1,8,1,,,FX Query,1190598,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,6,640,640,16,16,1,1,8,1,,,AuthorizedSubset,181498,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,6,640,640,16,16,1,1,8,1,,,Transform Attribute,6529858,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,6,640,640,16,16,1,1,8,1,,,Transform Revocation,6506884,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,6,640,640,16,16,1,1,8,1,,,FinalDec,1059017,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,7,640,640,16,16,1,1,8,1,,,Setup,11909115,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,7,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,43062666,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,7,640,640,16,16,1,1,8,1,,,RevKeyUpt,8651235,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,7,640,640,16,16,1,1,8,1,,,Policy OPRF,416076431,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,7,640,640,16,16,1,1,8,1,,,FX Build,18318879,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,7,640,640,16,16,1,1,8,1,,,PStore Build,27395978,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,7,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,807372316,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,7,640,640,16,16,1,1,8,1,,,FX Query,1300250,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,7,640,640,16,16,1,1,8,1,,,AuthorizedSubset,329161,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,7,640,640,16,16,1,1,8,1,,,Transform Attribute,7298145,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,7,640,640,16,16,1,1,8,1,,,Transform Revocation,6575181,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,7,640,640,16,16,1,1,8,1,,,FinalDec,1081365,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,8,640,640,16,16,1,1,8,1,,,Setup,9888095,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,8,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40723764,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,8,640,640,16,16,1,1,8,1,,,RevKeyUpt,9167429,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,8,640,640,16,16,1,1,8,1,,,Policy OPRF,410470876,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,8,640,640,16,16,1,1,8,1,,,FX Build,18238574,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,8,640,640,16,16,1,1,8,1,,,PStore Build,26984422,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,8,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,809331097,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,8,640,640,16,16,1,1,8,1,,,FX Query,1207515,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,8,640,640,16,16,1,1,8,1,,,AuthorizedSubset,237681,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,8,640,640,16,16,1,1,8,1,,,Transform Attribute,6381047,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,8,640,640,16,16,1,1,8,1,,,Transform Revocation,7334068,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,8,640,640,16,16,1,1,8,1,,,FinalDec,1150602,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,9,640,640,16,16,1,1,8,1,,,Setup,9452312,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,9,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40997891,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,9,640,640,16,16,1,1,8,1,,,RevKeyUpt,8782503,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,9,640,640,16,16,1,1,8,1,,,Policy OPRF,421878522,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,9,640,640,16,16,1,1,8,1,,,FX Build,19294666,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,9,640,640,16,16,1,1,8,1,,,PStore Build,28088448,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,9,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,815796625,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,9,640,640,16,16,1,1,8,1,,,FX Query,1315285,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,9,640,640,16,16,1,1,8,1,,,AuthorizedSubset,310990,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,9,640,640,16,16,1,1,8,1,,,Transform Attribute,6908937,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,9,640,640,16,16,1,1,8,1,,,Transform Revocation,6631677,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,9,640,640,16,16,1,1,8,1,,,FinalDec,1100580,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,10,640,640,16,16,1,1,8,1,,,Setup,9930702,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,10,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40514279,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,10,640,640,16,16,1,1,8,1,,,RevKeyUpt,9002849,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,10,640,640,16,16,1,1,8,1,,,Policy OPRF,412117100,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,10,640,640,16,16,1,1,8,1,,,FX Build,18874862,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,10,640,640,16,16,1,1,8,1,,,PStore Build,29099741,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,10,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,835212118,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,10,640,640,16,16,1,1,8,1,,,FX Query,1273095,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,10,640,640,16,16,1,1,8,1,,,AuthorizedSubset,365815,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,10,640,640,16,16,1,1,8,1,,,Transform Attribute,7196222,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,10,640,640,16,16,1,1,8,1,,,Transform Revocation,6674284,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,10,640,640,16,16,1,1,8,1,,,FinalDec,1155197,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,11,640,640,16,16,1,1,8,1,,,Setup,9551415,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,11,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40191592,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,11,640,640,16,16,1,1,8,1,,,RevKeyUpt,9302769,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,11,640,640,16,16,1,1,8,1,,,Policy OPRF,422164554,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,11,640,640,16,16,1,1,8,1,,,FX Build,17845098,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,11,640,640,16,16,1,1,8,1,,,PStore Build,25479196,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,11,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,796144156,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,11,640,640,16,16,1,1,8,1,,,FX Query,1175900,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,11,640,640,16,16,1,1,8,1,,,AuthorizedSubset,343700,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,11,640,640,16,16,1,1,8,1,,,Transform Attribute,7161399,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,11,640,640,16,16,1,1,8,1,,,Transform Revocation,6125499,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,11,640,640,16,16,1,1,8,1,,,FinalDec,1069000,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,12,640,640,16,16,1,1,8,1,,,Setup,9312298,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,12,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,39012495,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,12,640,640,16,16,1,1,8,1,,,RevKeyUpt,9559698,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,12,640,640,16,16,1,1,8,1,,,Policy OPRF,419436844,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,12,640,640,16,16,1,1,8,1,,,FX Build,17709510,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,12,640,640,16,16,1,1,8,1,,,PStore Build,27264393,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,12,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,792191362,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,12,640,640,16,16,1,1,8,1,,,FX Query,1160225,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,12,640,640,16,16,1,1,8,1,,,AuthorizedSubset,388486,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,12,640,640,16,16,1,1,8,1,,,Transform Attribute,6281595,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,12,640,640,16,16,1,1,8,1,,,Transform Revocation,6901798,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,12,640,640,16,16,1,1,8,1,,,FinalDec,1080863,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,13,640,640,16,16,1,1,8,1,,,Setup,9389078,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,13,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40885451,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,13,640,640,16,16,1,1,8,1,,,RevKeyUpt,8963016,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,13,640,640,16,16,1,1,8,1,,,Policy OPRF,402756890,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,13,640,640,16,16,1,1,8,1,,,FX Build,21042241,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,13,640,640,16,16,1,1,8,1,,,PStore Build,31342477,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,13,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,800960455,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,13,640,640,16,16,1,1,8,1,,,FX Query,1195848,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,13,640,640,16,16,1,1,8,1,,,AuthorizedSubset,455836,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,13,640,640,16,16,1,1,8,1,,,Transform Attribute,8355338,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,13,640,640,16,16,1,1,8,1,,,Transform Revocation,6711354,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,13,640,640,16,16,1,1,8,1,,,FinalDec,1385370,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,14,640,640,16,16,1,1,8,1,,,Setup,10475794,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,14,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41209463,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,14,640,640,16,16,1,1,8,1,,,RevKeyUpt,10778760,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,14,640,640,16,16,1,1,8,1,,,Policy OPRF,408252682,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,14,640,640,16,16,1,1,8,1,,,FX Build,18025618,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,14,640,640,16,16,1,1,8,1,,,PStore Build,28696886,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,14,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,778277207,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,14,640,640,16,16,1,1,8,1,,,FX Query,1201085,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,14,640,640,16,16,1,1,8,1,,,AuthorizedSubset,312001,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,14,640,640,16,16,1,1,8,1,,,Transform Attribute,7521283,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,14,640,640,16,16,1,1,8,1,,,Transform Revocation,7027050,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,14,640,640,16,16,1,1,8,1,,,FinalDec,1109405,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,15,640,640,16,16,1,1,8,1,,,Setup,9600056,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,15,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,41316031,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,15,640,640,16,16,1,1,8,1,,,RevKeyUpt,9074511,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,15,640,640,16,16,1,1,8,1,,,Policy OPRF,417956841,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,15,640,640,16,16,1,1,8,1,,,FX Build,17872235,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,15,640,640,16,16,1,1,8,1,,,PStore Build,26706406,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,15,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,804481989,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,15,640,640,16,16,1,1,8,1,,,FX Query,1271101,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,15,640,640,16,16,1,1,8,1,,,AuthorizedSubset,379760,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,15,640,640,16,16,1,1,8,1,,,Transform Attribute,6292375,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,15,640,640,16,16,1,1,8,1,,,Transform Revocation,6523886,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,15,640,640,16,16,1,1,8,1,,,FinalDec,1427154,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,16,640,640,16,16,1,1,8,1,,,Setup,9277891,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,16,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40300257,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,16,640,640,16,16,1,1,8,1,,,RevKeyUpt,8840536,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,16,640,640,16,16,1,1,8,1,,,Policy OPRF,414203899,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,16,640,640,16,16,1,1,8,1,,,FX Build,17399871,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,16,640,640,16,16,1,1,8,1,,,PStore Build,25889906,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,16,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,828737870,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,16,640,640,16,16,1,1,8,1,,,FX Query,1189177,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,16,640,640,16,16,1,1,8,1,,,AuthorizedSubset,573593,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,16,640,640,16,16,1,1,8,1,,,Transform Attribute,6388265,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,16,640,640,16,16,1,1,8,1,,,Transform Revocation,6314346,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,16,640,640,16,16,1,1,8,1,,,FinalDec,1051501,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,17,640,640,16,16,1,1,8,1,,,Setup,10263994,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,17,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40836992,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,17,640,640,16,16,1,1,8,1,,,RevKeyUpt,9384047,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,17,640,640,16,16,1,1,8,1,,,Policy OPRF,410377142,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,17,640,640,16,16,1,1,8,1,,,FX Build,19485214,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,17,640,640,16,16,1,1,8,1,,,PStore Build,27948557,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,17,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,776943581,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,17,640,640,16,16,1,1,8,1,,,FX Query,1319973,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,17,640,640,16,16,1,1,8,1,,,AuthorizedSubset,334793,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,17,640,640,16,16,1,1,8,1,,,Transform Attribute,6374610,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,17,640,640,16,16,1,1,8,1,,,Transform Revocation,6468550,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,17,640,640,16,16,1,1,8,1,,,FinalDec,1035280,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,18,640,640,16,16,1,1,8,1,,,Setup,9917395,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,18,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40229007,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,18,640,640,16,16,1,1,8,1,,,RevKeyUpt,9024923,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,18,640,640,16,16,1,1,8,1,,,Policy OPRF,417116255,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,18,640,640,16,16,1,1,8,1,,,FX Build,18844692,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,18,640,640,16,16,1,1,8,1,,,PStore Build,26774934,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,18,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,816027398,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,18,640,640,16,16,1,1,8,1,,,FX Query,1210442,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,18,640,640,16,16,1,1,8,1,,,AuthorizedSubset,308175,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,18,640,640,16,16,1,1,8,1,,,Transform Attribute,6504340,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,18,640,640,16,16,1,1,8,1,,,Transform Revocation,6540459,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,18,640,640,16,16,1,1,8,1,,,FinalDec,2010543,,,,,,FinalDec,True,online/client
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,19,640,640,16,16,1,1,8,1,,,Setup,9447599,,,,,,Setup,True,offline
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,19,640,640,16,16,1,1,8,1,,,KeyGen Crypto + User OPRF,40770928,,,,,,KeyGen Crypto + User OPRF,True,offline/epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,19,640,640,16,16,1,1,8,1,,,RevKeyUpt,9070648,,,,,,RevKeyUpt,True,epoch-bound
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,19,640,640,16,16,1,1,8,1,,,Policy OPRF,411062046,,,,,,Policy OPRF,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,19,640,640,16,16,1,1,8,1,,,FX Build,18669656,,,,,,FX Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,19,640,640,16,16,1,1,8,1,,,PStore Build,27391705,,,,,,PStore Build,True,encrypt/index-build
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,19,640,640,16,16,1,1,8,1,,,ABE Encrypt Core,817568135,,,,,,ABE Encrypt Core,True,encrypt
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,19,640,640,16,16,1,1,8,1,,,FX Query,1208761,,,,,,FX Query,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,19,640,640,16,16,1,1,8,1,,,AuthorizedSubset,330961,,,,,,AuthorizedSubset,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,19,640,640,16,16,1,1,8,1,,,Transform Attribute,6936310,,,,,,Transform Attribute,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,19,640,640,16,16,1,1,8,1,,,Transform Revocation,6797815,,,,,,Transform Revocation,True,online
+standard_05_3_20260818,EXP-08,FXABE-05.3 Full,MNT224,Charm-Crypto/PBC,OR,7780644276086726217,19,640,640,16,16,1,1,8,1,,,FinalDec,1125076,,,,,,FinalDec,True,online/client

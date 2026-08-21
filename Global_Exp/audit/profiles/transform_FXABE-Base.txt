@@ -1,0 +1,38 @@
+         974 function calls (971 primitive calls) in 0.534 seconds
+
+   Ordered by: cumulative time
+   List reduced from 38 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.534    0.534 Global_Exp/audit/audit_profile.py:69(<lambda>)
+        1    0.002    0.002    0.534    0.534 /home/jinji_o/ABE-Test/Git/FABEO/Global_Exp/src/adapters.py:426(transform)
+      162    0.000    0.000    0.532    0.003 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/scheme.py:408(_pair)
+      162    0.532    0.003    0.532    0.003 {built-in method charm.core.math.pairing.pair}
+        1    0.000    0.000    0.000    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/scheme.py:396(_epoch_scalar)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.8/contextlib.py:117(__exit__)
+        5    0.000    0.000    0.000    0.000 {built-in method builtins.next}
+      4/1    0.000    0.000    0.000    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/encoding.py:10(encode)
+        4    0.000    0.000    0.000    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Global_Exp/src/timing.py:25(section)
+        1    0.000    0.000    0.000    0.000 {method 'join' of 'bytes' objects}
+      162    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+      245    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        4    0.000    0.000    0.000    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/encoding.py:27(<genexpr>)
+      160    0.000    0.000    0.000    0.000 {method 'setdefault' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.8/contextlib.py:238(helper)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.8/contextlib.py:82(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+        4    0.000    0.000    0.000    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Code/fxabe_rev/encoding.py:6(_frame)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.8/contextlib.py:108(__enter__)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.8/dist-packages/charm_crypto_framework-0.63-py3.8-linux-x86_64.egg/charm/toolbox/pairinggroup.py:115(hash)
+        1    0.000    0.000    0.000    0.000 {built-in method charm.core.math.pairing.H}
+        2    0.000    0.000    0.000    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Global_Exp/src/adapters.py:40(_ms)
+        4    0.000    0.000    0.000    0.000 {built-in method time.perf_counter_ns}
+        2    0.000    0.000    0.000    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Global_Exp/src/timing.py:36(get)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+       17    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        1    0.000    0.000    0.000    0.000 {method 'hexdigest' of '_hashlib.HASH' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method _hashlib.openssl_sha256}
+        4    0.000    0.000    0.000    0.000 {built-in method _struct.pack}
+        1    0.000    0.000    0.000    0.000 /home/jinji_o/ABE-Test/Git/FABEO/Global_Exp/src/timing.py:21(__init__)
+
+

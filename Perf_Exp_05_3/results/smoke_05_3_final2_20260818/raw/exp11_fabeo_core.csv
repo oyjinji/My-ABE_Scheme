@@ -1,0 +1,109 @@
+run_id,experiment,scheme,curve,backend,workload,seed,replicate,ell,u,N,J,k,t_I,c_max,actual_c_star,n_users,n_revoked,phase,time_ns,G1_exp,G2_exp,GT_exp,pair_count,serialized_bytes,component,success,notes
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,0,20,20,1,1,1,1,8,1,,,Setup,9900481,1,0,1,1,,Setup,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,0,20,20,1,1,1,1,8,1,,,KeyGen,22921255,4,5,0,0,762,KeyGen,True,key_bytes
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,0,20,20,1,1,1,1,8,1,,,Encrypt,56228070,41,8,1,0,4352,Encrypt,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,0,20,20,1,1,1,1,8,1,,,Transform Crypto,12635260,2,0,0,4,,Transform Crypto,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,0,20,20,1,1,1,1,8,1,,,Transform,12828986,2,0,0,4,,Transform,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,0,20,20,1,1,1,1,8,1,,,FinalDec,1268336,0,0,1,0,,FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,0,20,20,1,1,1,1,8,1,,,Transform+FinalDec,14097322,2,0,1,4,,Transform+FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,1,20,20,1,1,1,1,8,1,,,Setup,9197628,1,0,1,1,,Setup,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,1,20,20,1,1,1,1,8,1,,,KeyGen,23584060,4,5,0,0,762,KeyGen,True,key_bytes
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,1,20,20,1,1,1,1,8,1,,,Encrypt,58338974,41,8,1,0,4352,Encrypt,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,1,20,20,1,1,1,1,8,1,,,Transform Crypto,13274727,2,0,0,4,,Transform Crypto,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,1,20,20,1,1,1,1,8,1,,,Transform,13447766,2,0,0,4,,Transform,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,1,20,20,1,1,1,1,8,1,,,FinalDec,1047401,0,0,1,0,,FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,1,20,20,1,1,1,1,8,1,,,Transform+FinalDec,14495167,2,0,1,4,,Transform+FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,2,20,20,1,1,1,1,8,1,,,Setup,9143515,1,0,1,1,,Setup,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,2,20,20,1,1,1,1,8,1,,,KeyGen,23637357,4,5,0,0,762,KeyGen,True,key_bytes
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,2,20,20,1,1,1,1,8,1,,,Encrypt,59347040,41,8,1,0,4352,Encrypt,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,2,20,20,1,1,1,1,8,1,,,Transform Crypto,12903481,2,0,0,4,,Transform Crypto,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,2,20,20,1,1,1,1,8,1,,,Transform,13094657,2,0,0,4,,Transform,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,2,20,20,1,1,1,1,8,1,,,FinalDec,1121488,0,0,1,0,,FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,5505215579967793286,2,20,20,1,1,1,1,8,1,,,Transform+FinalDec,14216145,2,0,1,4,,Transform+FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,0,20,20,1,1,1,1,8,1,,,Setup,9788382,1,0,1,1,,Setup,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,0,20,20,1,1,1,1,8,1,,,KeyGen,23621358,4,5,0,0,762,KeyGen,True,key_bytes
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,0,20,20,1,1,1,1,8,1,,,Encrypt,110987455,41,20,1,0,5770,Encrypt,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,0,20,20,1,1,1,1,8,1,,,Transform Crypto,12917442,2,0,0,4,,Transform Crypto,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,0,20,20,1,1,1,1,8,1,,,Transform,13102912,2,0,0,4,,Transform,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,0,20,20,1,1,1,1,8,1,,,FinalDec,1012957,0,0,1,0,,FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,0,20,20,1,1,1,1,8,1,,,Transform+FinalDec,14115869,2,0,1,4,,Transform+FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,1,20,20,1,1,1,1,8,1,,,Setup,10610671,1,0,1,1,,Setup,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,1,20,20,1,1,1,1,8,1,,,KeyGen,23853298,4,5,0,0,762,KeyGen,True,key_bytes
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,1,20,20,1,1,1,1,8,1,,,Encrypt,136485228,41,20,1,0,5770,Encrypt,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,1,20,20,1,1,1,1,8,1,,,Transform Crypto,13001923,2,0,0,4,,Transform Crypto,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,1,20,20,1,1,1,1,8,1,,,Transform,13177508,2,0,0,4,,Transform,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,1,20,20,1,1,1,1,8,1,,,FinalDec,1083884,0,0,1,0,,FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,1,20,20,1,1,1,1,8,1,,,Transform+FinalDec,14261392,2,0,1,4,,Transform+FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,2,20,20,1,1,1,1,8,1,,,Setup,9734067,1,0,1,1,,Setup,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,2,20,20,1,1,1,1,8,1,,,KeyGen,22480813,4,5,0,0,762,KeyGen,True,key_bytes
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,2,20,20,1,1,1,1,8,1,,,Encrypt,111183116,41,20,1,0,5770,Encrypt,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,2,20,20,1,1,1,1,8,1,,,Transform Crypto,12800859,2,0,0,4,,Transform Crypto,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,2,20,20,1,1,1,1,8,1,,,Transform,12975427,2,0,0,4,,Transform,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,2,20,20,1,1,1,1,8,1,,,FinalDec,1033033,0,0,1,0,,FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,12624122314538166122,2,20,20,1,1,1,1,8,1,,,Transform+FinalDec,14008460,2,0,1,4,,Transform+FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,20,,,,,,,,,,Setup,8979241,0,0,1,1,,Setup,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,20,,,,,,,,,,KeyGen,5681118,3,1,0,0,212,KeyGen,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,20,,,,,,,,,,Encrypt,34509828,40,2,1,0,1485,Encrypt,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,20,,,,,,,,,,Decrypt,10465862,0,0,0,3,,Decrypt,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,1,20,,,,,,,,,,Setup,8638972,0,0,1,1,,Setup,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,1,20,,,,,,,,,,KeyGen,6359412,3,1,0,0,212,KeyGen,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,1,20,,,,,,,,,,Encrypt,35836251,40,2,1,0,1485,Encrypt,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,1,20,,,,,,,,,,Decrypt,11013918,0,0,0,3,,Decrypt,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,2,20,,,,,,,,,,Setup,9196914,0,0,1,1,,Setup,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,2,20,,,,,,,,,,KeyGen,7285136,3,1,0,0,212,KeyGen,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,2,20,,,,,,,,,,Encrypt,34539483,40,2,1,0,1485,Encrypt,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,2,20,,,,,,,,,,Decrypt,10430092,0,0,0,3,,Decrypt,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,0,40,40,1,1,1,1,8,1,,,Setup,9318999,1,0,1,1,,Setup,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,0,40,40,1,1,1,1,8,1,,,KeyGen,23978949,4,5,0,0,762,KeyGen,True,key_bytes
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,0,40,40,1,1,1,1,8,1,,,Encrypt,82228450,81,8,1,0,6692,Encrypt,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,0,40,40,1,1,1,1,8,1,,,Transform Crypto,13686841,2,0,0,4,,Transform Crypto,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,0,40,40,1,1,1,1,8,1,,,Transform,13866298,2,0,0,4,,Transform,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,0,40,40,1,1,1,1,8,1,,,FinalDec,1100189,0,0,1,0,,FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,0,40,40,1,1,1,1,8,1,,,Transform+FinalDec,14966487,2,0,1,4,,Transform+FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,1,40,40,1,1,1,1,8,1,,,Setup,11037764,1,0,1,1,,Setup,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,1,40,40,1,1,1,1,8,1,,,KeyGen,23245321,4,5,0,0,762,KeyGen,True,key_bytes
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,1,40,40,1,1,1,1,8,1,,,Encrypt,80777088,81,8,1,0,6692,Encrypt,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,1,40,40,1,1,1,1,8,1,,,Transform Crypto,13625594,2,0,0,4,,Transform Crypto,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,1,40,40,1,1,1,1,8,1,,,Transform,13804339,2,0,0,4,,Transform,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,1,40,40,1,1,1,1,8,1,,,FinalDec,1045159,0,0,1,0,,FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,1,40,40,1,1,1,1,8,1,,,Transform+FinalDec,14849498,2,0,1,4,,Transform+FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,2,40,40,1,1,1,1,8,1,,,Setup,10894279,1,0,1,1,,Setup,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,2,40,40,1,1,1,1,8,1,,,KeyGen,22962324,4,5,0,0,762,KeyGen,True,key_bytes
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,2,40,40,1,1,1,1,8,1,,,Encrypt,83003248,81,8,1,0,6692,Encrypt,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,2,40,40,1,1,1,1,8,1,,,Transform Crypto,14290232,2,0,0,4,,Transform Crypto,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,2,40,40,1,1,1,1,8,1,,,Transform,14469792,2,0,0,4,,Transform,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,2,40,40,1,1,1,1,8,1,,,FinalDec,1520760,0,0,1,0,,FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-05.3 Core,MNT224,Charm-Crypto/PBC,OR,11492514744005986854,2,40,40,1,1,1,1,8,1,,,Transform+FinalDec,15990552,2,0,1,4,,Transform+FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,0,40,40,1,1,1,1,8,1,,,Setup,10240646,1,0,1,1,,Setup,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,0,40,40,1,1,1,1,8,1,,,KeyGen,23695138,4,5,0,0,762,KeyGen,True,key_bytes
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,0,40,40,1,1,1,1,8,1,,,Encrypt,229135006,81,40,1,0,10470,Encrypt,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,0,40,40,1,1,1,1,8,1,,,Transform Crypto,13166706,2,0,0,4,,Transform Crypto,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,0,40,40,1,1,1,1,8,1,,,Transform,13358495,2,0,0,4,,Transform,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,0,40,40,1,1,1,1,8,1,,,FinalDec,1105183,0,0,1,0,,FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,0,40,40,1,1,1,1,8,1,,,Transform+FinalDec,14463678,2,0,1,4,,Transform+FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,1,40,40,1,1,1,1,8,1,,,Setup,9492852,1,0,1,1,,Setup,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,1,40,40,1,1,1,1,8,1,,,KeyGen,25785457,4,5,0,0,762,KeyGen,True,key_bytes
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,1,40,40,1,1,1,1,8,1,,,Encrypt,219586919,81,40,1,0,10470,Encrypt,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,1,40,40,1,1,1,1,8,1,,,Transform Crypto,13156107,2,0,0,4,,Transform Crypto,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,1,40,40,1,1,1,1,8,1,,,Transform,13350139,2,0,0,4,,Transform,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,1,40,40,1,1,1,1,8,1,,,FinalDec,1101820,0,0,1,0,,FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,1,40,40,1,1,1,1,8,1,,,Transform+FinalDec,14451959,2,0,1,4,,Transform+FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,2,40,40,1,1,1,1,8,1,,,Setup,9140763,1,0,1,1,,Setup,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,2,40,40,1,1,1,1,8,1,,,KeyGen,24890917,4,5,0,0,762,KeyGen,True,key_bytes
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,2,40,40,1,1,1,1,8,1,,,Encrypt,219745079,81,40,1,0,10470,Encrypt,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,2,40,40,1,1,1,1,8,1,,,Transform Crypto,12769981,2,0,0,4,,Transform Crypto,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,2,40,40,1,1,1,1,8,1,,,Transform,12952701,2,0,0,4,,Transform,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,2,40,40,1,1,1,1,8,1,,,FinalDec,1274858,0,0,1,0,,FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FXABE-NoOccurrence Core,MNT224,Charm-Crypto/PBC,OR,15229274978771172048,2,40,40,1,1,1,1,8,1,,,Transform+FinalDec,14227559,2,0,1,4,,Transform+FinalDec,True,
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,40,,,,,,,,,,Setup,9635523,0,0,1,1,,Setup,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,40,,,,,,,,,,KeyGen,5913059,3,1,0,0,212,KeyGen,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,40,,,,,,,,,,Encrypt,63884046,80,2,1,0,2505,Encrypt,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,0,40,,,,,,,,,,Decrypt,10794512,0,0,0,3,,Decrypt,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,1,40,,,,,,,,,,Setup,8765032,0,0,1,1,,Setup,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,1,40,,,,,,,,,,KeyGen,6057156,3,1,0,0,212,KeyGen,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,1,40,,,,,,,,,,Encrypt,63328448,80,2,1,0,2505,Encrypt,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,1,40,,,,,,,,,,Decrypt,10231068,0,0,0,3,,Decrypt,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,2,40,,,,,,,,,,Setup,10126612,0,0,1,1,,Setup,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,2,40,,,,,,,,,,KeyGen,5674392,3,1,0,0,212,KeyGen,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,2,40,,,,,,,,,,Encrypt,60587351,80,2,1,0,2505,Encrypt,True,official lifecycle
+smoke_05_3_final2_20260818,EXP-11,FABEO,MNT224,Charm-Crypto/PBC,OR,53001,2,40,,,,,,,,,,Decrypt,10642568,0,0,0,3,,Decrypt,True,official lifecycle

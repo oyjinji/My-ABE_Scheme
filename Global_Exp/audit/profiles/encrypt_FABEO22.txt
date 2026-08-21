@@ -1,0 +1,38 @@
+         55511 function calls (47024 primitive calls) in 0.226 seconds
+
+   Ordered by: cumulative time
+   List reduced from 199 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.226    0.226 Global_Exp/audit/audit_profile.py:60(<lambda>)
+        1    0.000    0.000    0.226    0.226 /home/jinji_o/ABE-Test/Git/FABEO/Global_Exp/src/adapters.py:92(encrypt)
+        1    0.193    0.193    0.226    0.226 /home/jinji_o/ABE-Test/Git/FABEO/Code/fabeo22cp/__init__.py:74(encrypt)
+        1    0.000    0.000    0.023    0.023 /home/jinji_o/ABE-Test/Git/FABEO/Code/msp/__init__.py:23(createPolicy)
+        1    0.000    0.000    0.021    0.021 /usr/local/lib/python3.8/dist-packages/charm_crypto_framework-0.63-py3.8-linux-x86_64.egg/charm/toolbox/policytree.py:99(parse)
+        1    0.000    0.000    0.020    0.020 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:1780(parseString)
+   4824/1    0.006    0.000    0.019    0.019 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:1530(_parseNoCache)
+    323/1    0.000    0.000    0.019    0.019 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:4096(parseImpl)
+    805/1    0.002    0.000    0.019    0.019 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:3732(parseImpl)
+    803/3    0.003    0.000    0.019    0.006 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:3897(parseImpl)
+    163/4    0.000    0.000    0.019    0.005 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:4390(parseImpl)
+    163/4    0.000    0.000    0.019    0.005 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:4311(parseImpl)
+      161    0.000    0.000    0.008    0.000 /usr/local/lib/python3.8/dist-packages/charm_crypto_framework-0.63-py3.8-linux-x86_64.egg/charm/toolbox/pairinggroup.py:115(hash)
+      161    0.008    0.000    0.008    0.000 {built-in method charm.core.math.pairing.H}
+     2090    0.001    0.000    0.002    0.000 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:2637(parseImpl)
+     3053    0.001    0.000    0.001    0.000 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:1511(preParse)
+      479    0.000    0.000    0.001    0.000 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:1214(wrapper)
+     2088    0.001    0.000    0.001    0.000 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:497(__init__)
+     2088    0.001    0.000    0.001    0.000 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:488(__new__)
+    319/1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.8/dist-packages/charm_crypto_framework-0.63-py3.8-linux-x86_64.egg/charm/toolbox/policytree.py:89(evalStack)
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.8/dist-packages/charm_crypto_framework-0.63-py3.8-linux-x86_64.egg/charm/toolbox/policytree.py:59(__init__)
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.8/dist-packages/charm_crypto_framework-0.63-py3.8-linux-x86_64.egg/charm/toolbox/policytree.py:63(getBNF)
+    10588    0.001    0.000    0.001    0.000 {built-in method builtins.isinstance}
+     2075    0.000    0.000    0.001    0.000 /usr/local/lib/python3.8/dist-packages/charm_crypto_framework-0.63-py3.8-linux-x86_64.egg/charm/toolbox/enum.py:38(__eq__)
+      480    0.000    0.000    0.001    0.000 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:2931(parseImpl)
+     2089    0.001    0.000    0.001    0.000 /home/jinji_o/.local/lib/python3.8/site-packages/pyparsing.py:254(__init__)
+        1    0.000    0.000    0.001    0.001 /home/jinji_o/ABE-Test/Git/FABEO/Code/msp/__init__.py:39(convert_policy_to_msp)
+    319/1    0.000    0.000    0.001    0.001 /home/jinji_o/ABE-Test/Git/FABEO/Code/msp/__init__.py:50(_convert_policy_to_msp)
+      160    0.000    0.000    0.001    0.000 /usr/local/lib/python3.8/dist-packages/charm_crypto_framework-0.63-py3.8-linux-x86_64.egg/charm/toolbox/policytree.py:25(createAttribute)
+      319    0.000    0.000    0.001    0.000 /usr/local/lib/python3.8/dist-packages/charm_crypto_framework-0.63-py3.8-linux-x86_64.egg/charm/toolbox/node.py:7(__init__)
+
+

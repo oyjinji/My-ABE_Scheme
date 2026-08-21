@@ -1,0 +1,10 @@
+run_id,experiment,scheme,curve,backend,workload,seed,replicate,ell,u,N,J,k,t_I,c_max,actual_c_star,n_users,n_revoked,phase,time_ns,G1_exp,G2_exp,GT_exp,pair_count,serialized_bytes,component,success,notes
+smoke_05_3_final_20260818,EXP-09,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,5574536366100186708,0,40,40,16,16,1,1,8,1,,,FXABE Core,96758796,,,,,,FXABE Core,True,overhead_pct=74.851263
+smoke_05_3_final_20260818,EXP-09,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,5574536366100186708,0,40,40,16,16,1,1,8,1,,,OPRF + FX/PStore,72425181,,,,,,OPRF + FX/PStore,True,overhead_pct=74.851263
+smoke_05_3_final_20260818,EXP-09,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,5574536366100186708,0,40,40,16,16,1,1,8,1,,,FXABE Full,169183977,,,,,,FXABE Full,True,overhead_pct=74.851263
+smoke_05_3_final_20260818,EXP-09,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,5574536366100186708,1,40,40,16,16,1,1,8,1,,,FXABE Core,79488641,,,,,,FXABE Core,True,overhead_pct=104.451206
+smoke_05_3_final_20260818,EXP-09,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,5574536366100186708,1,40,40,16,16,1,1,8,1,,,OPRF + FX/PStore,83026844,,,,,,OPRF + FX/PStore,True,overhead_pct=104.451206
+smoke_05_3_final_20260818,EXP-09,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,5574536366100186708,1,40,40,16,16,1,1,8,1,,,FXABE Full,162515485,,,,,,FXABE Full,True,overhead_pct=104.451206
+smoke_05_3_final_20260818,EXP-09,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,5574536366100186708,2,40,40,16,16,1,1,8,1,,,FXABE Core,79668832,,,,,,FXABE Core,True,overhead_pct=90.552545
+smoke_05_3_final_20260818,EXP-09,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,5574536366100186708,2,40,40,16,16,1,1,8,1,,,OPRF + FX/PStore,72142155,,,,,,OPRF + FX/PStore,True,overhead_pct=90.552545
+smoke_05_3_final_20260818,EXP-09,FXABE-05.3,MNT224,Charm-Crypto/PBC,OR,5574536366100186708,2,40,40,16,16,1,1,8,1,,,FXABE Full,151810987,,,,,,FXABE Full,True,overhead_pct=90.552545
