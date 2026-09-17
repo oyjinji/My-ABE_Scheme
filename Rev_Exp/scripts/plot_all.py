@@ -111,9 +111,10 @@ def plot_exp03(rows, out):
 
 
 def plot_exp04(rows, out):
-    fig, ax = plt.subplots(figsize=(5.2, 3.3))
+    fig, ax = plt.subplots(figsize=(5.2, 4.8))
     _line(ax, _metric(rows, "transform_total_ns"), "r_v", scale=1e6)
     ax.set_xscale("log", base=2)
+    ax.set_ylim(63, 85)
     ax.set_xlabel("Number of Revoked Users r_v")
     ax.set_ylabel("Transform Time (ms)")
     ax.grid(True, alpha=.22)
