@@ -2,10 +2,10 @@ import copy
 import random
 import struct
 
-from Code.fxabe_rev.crypto_utils import aead_encrypt
-from Code.fxabe_rev.filters import FILTERS, create_index
-from Code.fxabe_rev.filters.base import posting_ad, posting_key
-from Code.fxabe_rev.filters.fxabf import FXABFIndex, plan_segments
+from core.fxabe_rev.crypto_utils import aead_encrypt
+from core.fxabe_rev.filters import FILTERS, create_index
+from core.fxabe_rev.filters.base import posting_ad, posting_key
+from core.fxabe_rev.filters.fxabf import FXABFIndex, plan_segments
 
 
 def test_members_never_false_negative_and_nonmembers_never_final_accept():

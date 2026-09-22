@@ -1,6 +1,6 @@
 """Adapter for the repository's legacy greedy XOR retrieval ABF.
 
-The construction follows ``fx_exp/filters/original_abf.py``: each token hashes
+The construction follows ``src/experiments/index_v1/filters/original_abf.py``: each token hashes
 to three distinct slots, one still-free slot is reserved, and XOR assignment
 stores a value/pointer plus a short check.  The adapter replaces the legacy
 standalone PStore encoding with the same authenticated PStore used by every

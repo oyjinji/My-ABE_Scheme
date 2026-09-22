@@ -13,10 +13,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
-from Perf_Exp_05_3.scripts.common import read_csv  # noqa: E402
-from Perf_Exp_05_3.scripts.standard_final_audit import (bootstrap_median_ci, cleanup_plots,
+ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(ROOT / "src"))
+from experiments.perf_05_3.scripts.common import read_csv  # noqa: E402
+from experiments.perf_05_3.scripts.standard_final_audit import (bootstrap_median_ci, cleanup_plots,
                                                         percentile, storage_audit, write_rows)  # noqa: E402
 
 COLORS = {"FXABE-05.3 Core": "#1b9e77", "FXABE-NoOccurrence Core": "#d95f02", "FABEO": "#7570b3"}

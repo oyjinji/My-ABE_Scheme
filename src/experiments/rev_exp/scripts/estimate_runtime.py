@@ -7,12 +7,12 @@ import sys
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[4]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
-from Rev_Exp.src.common import REV_ROOT, load_config, read_csv
-from Rev_Exp.src.planning import endpoint_values, parse_sampling, sampling_for_n
+from experiments.rev_exp.src.common import REV_ROOT, load_config, read_csv
+from experiments.rev_exp.src.planning import endpoint_values, parse_sampling, sampling_for_n
 
 
 DEFAULT_SMOKE = REV_ROOT / "results_archive" / "smoke_20260811"

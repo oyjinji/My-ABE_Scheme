@@ -2,8 +2,8 @@ import copy
 import random
 import struct
 
-from Code.fxdacp.crypto_utils import aead_encrypt
-from Code.fxdacp.fxabf import FXABF, FXABFIndex
+from core.fxdacp.crypto_utils import aead_encrypt
+from core.fxdacp.fxabf import FXABF, FXABFIndex
 
 
 def _replace_plaintext(builder, index, token, ctx, plaintext):
@@ -43,7 +43,7 @@ def test_out_of_range_posting_row_is_rejected():
 
 
 def test_epoch_changes_token(group):
-    from Code.fxdacp.oprf import PairingOPRF
+    from core.fxdacp.oprf import PairingOPRF
     from charm.toolbox.pairinggroup import ZR
     oprf = PairingOPRF(group)
     kappa = group.random(ZR)

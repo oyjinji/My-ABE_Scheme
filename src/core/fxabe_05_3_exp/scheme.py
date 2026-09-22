@@ -7,7 +7,7 @@ from time import perf_counter_ns
 from charm.toolbox.ABEnc import ABEnc
 from charm.toolbox.pairinggroup import G1, G2, GT, ZR, pair
 
-from Code.fxabe_rev.revocation import BinaryRevocationTree, KUNodes
+from core.fxabe_rev.revocation import BinaryRevocationTree, KUNodes
 
 from .crypto import PairingOPRF, ScalarSource, kdf, open_seal, seal, seeded_rng
 from .encoding import encode, encode_group

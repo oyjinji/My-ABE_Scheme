@@ -1,6 +1,6 @@
 """Run all eleven FX-ABF experiments under one resumable run directory."""
 
-from fx_exp.plots.plot_all import plot_run
+from experiments.index_v1.plots.plot_all import plot_run
 from . import (
     run_filter_suite, run_fxabf_build, run_query_breakdown,
     run_sensitivity, run_storage_suite, run_transform_scaling,

@@ -8,14 +8,14 @@ import subprocess
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
 
-PRODUCTS_DIR = ROOT / 'data' / 'products' / 'credit_fraud'
-RAW_DATASET = ROOT / 'data' / 'raw' / 'creditcard.csv'
-OUTPUT_JSON = ROOT / 'results' / 'dacp_marketplace' / 'credit_fraud' / 'product_integrity_summary.json'
+PRODUCTS_DIR = ROOT / 'shared' / 'data' / 'products' / 'credit_fraud'
+RAW_DATASET = ROOT / 'shared' / 'data' / 'raw' / 'creditcard.csv'
+OUTPUT_JSON = ROOT / 'shared' / 'results' / 'dacp_marketplace' / 'credit_fraud' / 'product_integrity_summary.json'
 
 
 PRODUCT_FILES = {
@@ -40,11 +40,11 @@ def main():
             return
         subprocess.check_call([
             sys.executable,
-            str(ROOT / 'Benchmark' / 'run_dacp_marketplace_credit_fraud.py'),
+            str(ROOT / 'src' / 'benchmarks' / 'run_dacp_marketplace_credit_fraud.py'),
             '--dataset-path',
             str(RAW_DATASET),
             '--output-dir',
-            str(ROOT / 'results' / 'dacp_marketplace' / 'credit_fraud'),
+            str(ROOT / 'shared' / 'results' / 'dacp_marketplace' / 'credit_fraud'),
             '--products-dir',
             str(PRODUCTS_DIR),
             '--high-amount-threshold',

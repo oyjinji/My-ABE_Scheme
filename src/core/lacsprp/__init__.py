@@ -1,7 +1,8 @@
 '''
-LACS-PRP-style anonymous CP-ABE skeleton based on /home/jinji_o/ABE-Test/LACS-PRP.md.
+LACS-PRP-style anonymous CP-ABE skeleton, derived from the design note
+LACS-PRP.md (outside this repository).
 
-| Notes: Keeps the standard CP-ABE interface used by Benchmark/run_cp_schemes.py.
+| Notes: Keeps the standard CP-ABE interface used by src/benchmarks/run_cp_schemes.py.
 | Notes: Follows the BSW07 CP-ABE pairing flow and adds a Path Bloom Filter
 |        (PBF) policy-hiding/matching layer inspired by LACS-PRP.
 | Notes: The ROBDD builder, PBF encoding, and authentication pieces below are

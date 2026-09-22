@@ -7,22 +7,22 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
 from charm.toolbox.pairinggroup import PairingGroup, GT
 
-from Code.fabesa import FABESACPABE
-from Code.msp import MSP
+from core.fabesa import FABESACPABE
+from core.msp import MSP
 
 
 def load_newcp20_class():
     # The requested directory name "newcp2.0" is not a normal Python package
     # import path, so this sample loads it explicitly from its file location.
-    module_path = ROOT / 'Code' / 'newcp2.0' / '__init__.py'
+    module_path = ROOT / 'src' / 'core' / 'newcp2.0' / '__init__.py'
     spec = importlib.util.spec_from_file_location(
-        'Code.newcp20_dynamic',
+        'core.newcp20_dynamic',
         str(module_path),
         submodule_search_locations=[str(module_path.parent)],
     )

@@ -3,13 +3,13 @@ import sys
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[4]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
-from Rev_Exp.scripts.aggregate import aggregate_all
-from Rev_Exp.src.common import create_results_dir, load_config
-from Rev_Exp.src.experiments import run_selected
+from experiments.rev_exp.scripts.aggregate import aggregate_all
+from experiments.rev_exp.src.common import create_results_dir, load_config
+from experiments.rev_exp.src.experiments import run_selected
 
 
 def run(name):

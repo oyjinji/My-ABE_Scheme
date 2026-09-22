@@ -2,7 +2,7 @@
 
 import random
 
-from Code.fxabe_rev.filters import create_index
+from core.fxabe_rev.filters import create_index
 
 from .common import derive_seed, write_csv
 from .workload import filter_query_workload

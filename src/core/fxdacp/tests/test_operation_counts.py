@@ -1,4 +1,4 @@
-from Code.fxdacp import OperationMetrics
+from core.fxdacp import OperationMetrics
 
 
 def test_empty_and_partial_hits_keep_exact_pairing_formula(scheme):

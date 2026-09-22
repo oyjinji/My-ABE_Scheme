@@ -1,7 +1,7 @@
 # Global ABE end-to-end experiment -- full configuration.
 # Deep statistical run: 50 repetitions, 5 warm-ups, policies up to 320 rows.
 # NOTE: heavy -- only run after the standard run demonstrates feasibility
-# (see Global_Exp/results/*/logs/runtime_projection.json).  Estimated
+# (see src/experiments/global_exp/results/*/logs/runtime_projection.json).  Estimated
 # 45-90 minutes on the reference machine.
 mode: full
 master_seed: 20260812

@@ -4,10 +4,10 @@
 
 Audited implementations:
 
-- `Code/fxabe_rev/filters/base.py`
+- `src/core/fxabe_rev/filters/base.py`
 - `legacy_abf.py`, `abf.py`, `cuckoo.py`, `xor_filter.py`, `fxabf.py`
 - `pstore.py`, `scheme.py`
-- `fx_exp_v2/benchmarks/benchmark_f2_transform_scaling.py`
+- `src/experiments/index_v2/benchmarks/benchmark_f2_transform_scaling.py`
 
 The input to every `query()` is already a serialized, high-entropy OPRF
 `token_bytes` object produced in `PrivacyKeyUpt`; therefore **OPRF-token

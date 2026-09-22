@@ -6,9 +6,9 @@ cryptographic operations are real Charm MNT224 pairing-group operations
 (``setup``/``keygen``/``encrypt``/``transform``/``final_dec``); no pairing is
 mocked, no result is cached across timed repetitions.
 
-* **FABEO22**    — the repository's real FABEO22 CP-ABE (``Code/fabeo22cp``),
+* **FABEO22**    — the repository's real FABEO22 CP-ABE (``src/core/fabeo22cp``),
                    untouched.
-* **FXABE-Full** — the real ``Code/fxabe_rev.FXABERev`` end-to-end pipeline:
+* **FXABE-Full** — the real ``src/core/fxabe_rev.FXABERev`` end-to-end pipeline:
                    OPRF -> FX-ABF -> PStore -> ABE -> CSP Transform -> FinalDec.
 * **FXABE-Base** — an *internal ablation baseline*, not a published
                    construction.  It reuses the real FXABERev setup, revocation
@@ -24,12 +24,12 @@ from time import perf_counter_ns
 
 from charm.toolbox.pairinggroup import G1, G2, GT, ZR, pair
 
-from Code.fabeo22cp import FABEO22CPABE
-from Code.fxabe_rev import FXABERev, TransformMetrics
-from Code.fxabe_rev.crypto_utils import aead_encrypt, kdf, random_bytes
-from Code.fxabe_rev.encoding import encode_group
-from Code.fxabe_rev.filters.fxabf import PROFILE
-from Code.fxabe_rev.lsss import pad_matrix, policy_rows
+from core.fabeo22cp import FABEO22CPABE
+from core.fxabe_rev import FXABERev, TransformMetrics
+from core.fxabe_rev.crypto_utils import aead_encrypt, kdf, random_bytes
+from core.fxabe_rev.encoding import encode_group
+from core.fxabe_rev.filters.fxabf import PROFILE
+from core.fxabe_rev.lsss import pad_matrix, policy_rows
 
 from .storage import ciphertext_size
 from .timing import SectionTimer

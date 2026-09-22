@@ -1,4 +1,4 @@
-from Code.fxdacp import OperationMetrics
+from core.fxdacp import OperationMetrics
 
 
 def round_trip(scheme, attrs, policy, message=b"fxdacp-test", epoch="7"):

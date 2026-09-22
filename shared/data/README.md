@@ -1,11 +1,12 @@
 # DACP Data Workspace
 
-This directory is for local dataset experiments.
+This directory (`shared/data/`) is for local dataset experiments.
 
-- `data/raw/`: user-downloaded real datasets.
-- `data/work/`: synthetic files and temporary local inputs.
-- `data/encrypted/`: encrypted experiment outputs.
-- `data/recovered/`: recovered plaintext outputs for local verification.
+- `shared/data/raw/`: user-downloaded real datasets.
+- `shared/data/work/`: synthetic files and temporary local inputs.
+- `shared/data/encrypted/`: encrypted experiment outputs.
+- `shared/data/recovered/`: recovered plaintext outputs for local verification.
+- `shared/data/products/`: generated product fixtures.
 
 Do not commit real datasets, encrypted datasets, recovered datasets, or large
 experiment outputs to Git.

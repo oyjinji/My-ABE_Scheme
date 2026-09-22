@@ -8,7 +8,7 @@ ciphertext-side / delivery-side package only; secret key and public parameter
 sizes are reported as supplementary metrics.
 """
 
-from Code.fxabe_rev.encoding import encode, encode_group
+from core.fxabe_rev.encoding import encode, encode_group
 
 
 def group_bytes(group, element):

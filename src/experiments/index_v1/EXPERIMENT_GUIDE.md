@@ -1,6 +1,6 @@
 # FXDACP experiment operation guide
 
-Run every command from `/home/jinji_o/ABE-Test/Git/FABEO`.
+Run every command from `/home/jinjio_TEE_container/ABE/Git/My-ABE_Scheme`.
 
 ## 1. Environment and dependencies
 
@@ -16,13 +16,13 @@ If pytest is absent, create an isolated environment that retains the repository'
 
 ```bash
 python3 -m venv --system-site-packages .venv-fx
-.venv-fx/bin/python -m pip install -r fx_exp/requirements.txt
+.venv-fx/bin/python -m pip install -r src/experiments/index_v1/requirements.txt
 ```
 
 On Debian images without `ensurepip`, install only the missing test packages into a repository-local target:
 
 ```bash
-python3 -m pip install --target .fxdeps -r fx_exp/requirements.txt
+python3 -m pip install --target .fxdeps -r src/experiments/index_v1/requirements.txt
 ```
 
 Subsequent examples use `.venv-fx/bin/python`. If using the target fallback, replace it with `PYTHONPATH=.fxdeps python3`; if the base interpreter already has every dependency, replace it with `python3`.
@@ -32,14 +32,14 @@ Subsequent examples use `.venv-fx/bin/python`. If using the target fallback, rep
 Run FXDACP and experiment-framework tests, producing separate JUnit logs:
 
 ```bash
-.venv-fx/bin/python -m pytest -q Code/fxdacp/tests --junitxml=fx_exp/logs/tests/fxdacp.xml
-.venv-fx/bin/python -m pytest -q fx_exp/tests --junitxml=fx_exp/logs/tests/fx_exp.xml
+.venv-fx/bin/python -m pytest -q src/core/fxdacp/tests --junitxml=src/experiments/index_v1/logs/tests/fxdacp.xml
+.venv-fx/bin/python -m pytest -q src/experiments/index_v1/tests --junitxml=src/experiments/index_v1/logs/tests/fx_exp.xml
 ```
 
 Run both together:
 
 ```bash
-.venv-fx/bin/python -m pytest -q Code/fxdacp/tests fx_exp/tests
+.venv-fx/bin/python -m pytest -q src/core/fxdacp/tests src/experiments/index_v1/tests
 ```
 
 ## 3. Profiles and complete runs
@@ -47,37 +47,37 @@ Run both together:
 Smoke (small end-to-end validation):
 
 ```bash
-.venv-fx/bin/python -m fx_exp.runners.run_all --profile smoke --run-id smoke_manual
+.venv-fx/bin/python -m experiments.index_v1.runners.run_all --profile smoke --run-id smoke_manual
 ```
 
 Standard (recommended routine paper run):
 
 ```bash
-.venv-fx/bin/python -m fx_exp.runners.run_all --profile standard --run-id standard_01
+.venv-fx/bin/python -m experiments.index_v1.runners.run_all --profile standard --run-id standard_01
 ```
 
 Full (long final-data run):
 
 ```bash
-.venv-fx/bin/python -m fx_exp.runners.run_all --profile full --run-id full_01
+.venv-fx/bin/python -m experiments.index_v1.runners.run_all --profile full --run-id full_01
 ```
 
 Inspect a grid without executing it:
 
 ```bash
-.venv-fx/bin/python -m fx_exp.runners.run_all --profile full --dry-run
+.venv-fx/bin/python -m experiments.index_v1.runners.run_all --profile full --dry-run
 ```
 
 The full runner appends and fsyncs each trial immediately. On SIGINT, it finishes the current trial where possible and exits. Resume without overwriting completed combinations:
 
 ```bash
-.venv-fx/bin/python -m fx_exp.runners.run_all --profile full --run-id full_01 --resume
+.venv-fx/bin/python -m experiments.index_v1.runners.run_all --profile full --run-id full_01 --resume
 ```
 
 Override the deterministic master seed:
 
 ```bash
-.venv-fx/bin/python -m fx_exp.runners.run_all --profile smoke --seed 424242 --run-id smoke_seed_424242
+.venv-fx/bin/python -m experiments.index_v1.runners.run_all --profile smoke --seed 424242 --run-id smoke_seed_424242
 ```
 
 Run IDs must be unique unless `--resume` is supplied. Omitting `--run-id` creates `YYYYMMDD_HHMMSS_<profile>`.
@@ -87,37 +87,37 @@ Run IDs must be unique unless `--resume` is supplied. Omitting `--run-id` create
 Experiments 1-3 (first success, retries, build/expansion):
 
 ```bash
-.venv-fx/bin/python -m fx_exp.runners.run_fxabf_build --profile smoke --run-id build_smoke
+.venv-fx/bin/python -m experiments.index_v1.runners.run_fxabf_build --profile smoke --run-id build_smoke
 ```
 
 Experiments 4 and 10 (query breakdown and rejection):
 
 ```bash
-.venv-fx/bin/python -m fx_exp.runners.run_query_breakdown --profile smoke --run-id query_smoke
+.venv-fx/bin/python -m experiments.index_v1.runners.run_query_breakdown --profile smoke --run-id query_smoke
 ```
 
 Experiments 5 and 6 (FX-ABF and PStore storage):
 
 ```bash
-.venv-fx/bin/python -m fx_exp.runners.run_storage_suite --profile smoke --run-id storage_smoke
+.venv-fx/bin/python -m experiments.index_v1.runners.run_storage_suite --profile smoke --run-id storage_smoke
 ```
 
 Filter comparison only (experiment 7):
 
 ```bash
-.venv-fx/bin/python -m fx_exp.runners.run_filter_suite --profile smoke --run-id filters_smoke
+.venv-fx/bin/python -m experiments.index_v1.runners.run_filter_suite --profile smoke --run-id filters_smoke
 ```
 
 Segment and joint sensitivity (experiments 8 and 11):
 
 ```bash
-.venv-fx/bin/python -m fx_exp.runners.run_sensitivity --profile smoke --run-id sensitivity_smoke
+.venv-fx/bin/python -m experiments.index_v1.runners.run_sensitivity --profile smoke --run-id sensitivity_smoke
 ```
 
 Fixed `N=32,r=8` Transform scaling only (experiment 9):
 
 ```bash
-.venv-fx/bin/python -m fx_exp.runners.run_transform_scaling --profile smoke --run-id transform_smoke
+.venv-fx/bin/python -m experiments.index_v1.runners.run_transform_scaling --profile smoke --run-id transform_smoke
 ```
 
 Each focused runner accepts the same `--seed`, `--dry-run`, `--run-id` and `--resume` flags.
@@ -125,7 +125,7 @@ Each focused runner accepts the same `--seed`, `--dry-run`, `--run-id` and `--re
 ## 5. Redraw without rerunning
 
 ```bash
-.venv-fx/bin/python -m fx_exp.plots.plot_all --run-dir fx_exp/results/smoke_manual
+.venv-fx/bin/python -m experiments.index_v1.plots.plot_all --run-dir src/experiments/index_v1/results/smoke_manual
 ```
 
 This reads only raw JSONL and rewrites `plots/*.png`, `plots/*.pdf`, and the exact aggregated inputs in `plot_data/*.csv`.
@@ -134,19 +134,19 @@ This reads only raw JSONL and rewrites `plots/*.png`, `plots/*.pdf`, and the exa
 
 For run `<id>`:
 
-- `fx_exp/results/<id>/manifest.json`: environment, git state, full config, seed and command;
-- `fx_exp/results/<id>/raw/exp*.jsonl`: one append-only object per trial/combination, including failures and tracebacks;
-- `fx_exp/results/<id>/summary/exp*.csv`: grouped sample count, mean, median, standard deviation, min, max, P95 and (with at least 10 samples) P99;
-- `fx_exp/results/<id>/plot_data/*.csv`: exact figure inputs;
-- `fx_exp/results/<id>/plots/*.{png,pdf}`: paper-ready raster/vector figures;
-- `fx_exp/logs/<profile>/<id>.log`: progress and per-combination status.
+- `src/experiments/index_v1/results/<id>/manifest.json`: environment, git state, full config, seed and command;
+- `src/experiments/index_v1/results/<id>/raw/exp*.jsonl`: one append-only object per trial/combination, including failures and tracebacks;
+- `src/experiments/index_v1/results/<id>/summary/exp*.csv`: grouped sample count, mean, median, standard deviation, min, max, P95 and (with at least 10 samples) P99;
+- `src/experiments/index_v1/results/<id>/plot_data/*.csv`: exact figure inputs;
+- `src/experiments/index_v1/results/<id>/plots/*.{png,pdf}`: paper-ready raster/vector figures;
+- `src/experiments/index_v1/logs/<profile>/<id>.log`: progress and per-combination status.
 
 View progress and summaries:
 
 ```bash
-tail -f fx_exp/logs/smoke/smoke_manual.log
-ls fx_exp/results/smoke_manual/summary
-sed -n '1,20p' fx_exp/results/smoke_manual/summary/exp07_filter_suite.csv
+tail -f src/experiments/index_v1/logs/smoke/smoke_manual.log
+ls src/experiments/index_v1/results/smoke_manual/summary
+sed -n '1,20p' src/experiments/index_v1/results/smoke_manual/summary/exp07_filter_suite.csv
 ```
 
 ## 7. Raw and summary fields
@@ -168,7 +168,7 @@ A run is successful when every raw row has `status=ok`, summary CSVs exist for a
 
 Common problems:
 
-- `No module named pytest`: create `.venv-fx` and install `fx_exp/requirements.txt` as above.
+- `No module named pytest`: create `.venv-fx` and install `src/experiments/index_v1/requirements.txt` as above.
 - Charm import/pairing failure: use `--system-site-packages` and verify `PairingGroup('MNT224')` before running.
 - Matplotlib cache permissions: the plotter automatically uses `/tmp/fx_exp_matplotlib`.
 - Existing run directory: select a new `--run-id`, or pass `--resume` only when continuing that exact config/run.

@@ -6,12 +6,12 @@ import argparse
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
-from Code.dacp.data import run_dataset_file_experiment
-from Code.dacp.data.policies import get_policy
+from core.dacp.data import run_dataset_file_experiment
+from core.dacp.data.policies import get_policy
 
 
 def write_synthetic_file(path, template):
@@ -41,9 +41,9 @@ def main():
     args = parser.parse_args()
 
     policy = get_policy(args.policy_template)
-    dataset_path = ROOT / 'data' / 'work' / ('synthetic_{0}_like.csv'.format(args.policy_template))
+    dataset_path = ROOT / 'shared' / 'data' / 'work' / ('synthetic_{0}_like.csv'.format(args.policy_template))
     write_synthetic_file(dataset_path, args.policy_template)
-    output_dir = ROOT / 'results' / 'dacp_data' / ('synthetic_{0}'.format(args.policy_template))
+    output_dir = ROOT / 'shared' / 'results' / 'dacp_data' / ('synthetic_{0}'.format(args.policy_template))
 
     summary = run_dataset_file_experiment(
         dataset_path=dataset_path,

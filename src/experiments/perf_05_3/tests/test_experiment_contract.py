@@ -1,8 +1,8 @@
 from pathlib import Path
 
-from Code.fxabe_05_3_exp.fx import FXIndex
-from Perf_Exp_05_3.scripts.common import SCHEMA, base_row
-from Perf_Exp_05_3.workloads import (distinct_token_workload,
+from core.fxabe_05_3_exp.fx import FXIndex
+from experiments.perf_05_3.scripts.common import SCHEMA, base_row
+from experiments.perf_05_3.workloads import (distinct_token_workload,
                                     duplicate_workload, or_workload,
                                     threshold_workload)
 
@@ -48,7 +48,7 @@ def test_fx_final_state_and_accounting():
 
 
 def test_no_object_size_api():
-    roots = [Path("Code/fxabe_05_3_exp"), Path("Perf_Exp_05_3")]
+    roots = [Path("src/core/fxabe_05_3_exp"), Path("src/experiments/perf_05_3")]
     for root in roots:
         for path in root.rglob("*.py"):
             assert ("sys." + "getsizeof") not in path.read_text(), path

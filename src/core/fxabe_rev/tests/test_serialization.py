@@ -1,4 +1,4 @@
-from Code.fxabe_rev.serialization import dumps, loads, serialized_size
+from core.fxabe_rev.serialization import dumps, loads, serialized_size
 
 
 def test_group_and_byte_serialization_roundtrip(prepared):

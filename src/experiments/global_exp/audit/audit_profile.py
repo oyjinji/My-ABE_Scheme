@@ -3,7 +3,7 @@
 Profiles FABEO22 Encrypt, FXABE-Base Encrypt, FXABE-Full Encrypt, and
 FXABE-Base/FXABE-Full Transform.  Profiler numbers are for *attribution only*,
 never a replacement for the formal benchmark.  Outputs pstats files and a
-top-30 cumulative-time listing per profile in Global_Exp/audit/profiles/.
+top-30 cumulative-time listing per profile in src/experiments/global_exp/audit/profiles/.
 """
 
 import cProfile
@@ -12,13 +12,13 @@ import os
 import pstats
 import sys
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 sys.path.insert(0, ROOT)
 
 from charm.toolbox.pairinggroup import PairingGroup
 
-from Global_Exp.src.adapters import create_adapter
-from Global_Exp.src.workloads import build_workload
+from experiments.global_exp.src.adapters import create_adapter
+from experiments.global_exp.src.workloads import build_workload
 
 GROUP = PairingGroup("MNT224", secparam=512)
 PROF_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "profiles")

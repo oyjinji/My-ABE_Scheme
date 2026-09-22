@@ -35,7 +35,7 @@ dedicated audit CSV/report, not in the formal full figures or index registry.
 
 ## Legacy ABF identity
 
-`Legacy ABF` is an adapter of `fx_exp/filters/original_abf.py`, the repository's
+`Legacy ABF` is an adapter of `src/experiments/index_v1/filters/original_abf.py`, the repository's
 greedy three-position XOR retrieval construction. It directly recovers a
 pointer/value plus short check and does not add an exact locator. The v2 adapter
 uses a compact integer `j` and the common array PStore rather than the old
@@ -96,11 +96,11 @@ in the locator baseline.
 Command:
 
 ```bash
-python3 -m fx_exp_v2.diagnostics.index_query_audit \
+python3 -m experiments.index_v2.diagnostics.index_query_audit \
   --independent-workloads 30 \
   --warmup-batches 5 \
   --measured-batches 20 \
-  --output-dir fx_exp_v2/results/index-query-audit
+  --output-dir src/experiments/index_v2/results/index-query-audit
 ```
 
 Parameters are `ell=[32,128,512]`, `N=32`, `r=8`, 30 independent workloads.

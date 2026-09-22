@@ -8,9 +8,9 @@
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[4]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
 import pytest  # noqa: E402
 from charm.toolbox.pairinggroup import PairingGroup  # noqa: E402

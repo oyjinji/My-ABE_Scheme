@@ -1,15 +1,15 @@
 # FX-ABE 05.3 + FABEO Common-Backend Experiments
 
-This independent suite implements the frozen 05.3 algebra on the exact profile used by the repository's official FABEO CP-ABE benchmark: Charm/PBC `PairingGroup("MNT224")`. It does not modify historical `Global_Exp`, `Rev_Exp`, `fx_exp`, `fx_exp_v2`, `Code/fxabe_rev`, or `Code/fabeo22cp` data/source.
+This independent suite implements the frozen 05.3 algebra on the exact profile used by the repository's official FABEO CP-ABE benchmark: Charm/PBC `PairingGroup("MNT224")`. It does not modify historical `src/experiments/global_exp`, `src/experiments/rev_exp`, `src/experiments/index_v1`, `src/experiments/index_v2`, `src/core/fxabe_rev`, or `src/core/fabeo22cp` data/source.
 
 ## Reproduction
 
 ```bash
-cd /home/jinji_o/ABE-Test/Git/FABEO
-python3 Perf_Exp_05_3/scripts/run_pipeline.py \
-  --config Perf_Exp_05_3/configs/smoke.yaml --run-id smoke_05_3
-python3 Perf_Exp_05_3/scripts/run_pipeline.py \
-  --config Perf_Exp_05_3/configs/standard.yaml --run-id standard_05_3
+cd /home/jinjio_TEE_container/ABE/Git/My-ABE_Scheme
+python3 src/experiments/perf_05_3/scripts/run_pipeline.py \
+  --config src/experiments/perf_05_3/configs/smoke.yaml --run-id smoke_05_3
+python3 src/experiments/perf_05_3/scripts/run_pipeline.py \
+  --config src/experiments/perf_05_3/configs/standard.yaml --run-id standard_05_3
 ```
 
 The general runner refuses `full.yaml`. The explicit gated Full runner is used only after `PRE_FULL_AUDIT.md` reports `FULL_READY=YES`.
@@ -17,17 +17,17 @@ The general runner refuses `full.yaml`. The explicit gated Full runner is used o
 The final-audit and explicitly gated Full sequence is:
 
 ```bash
-python3 Perf_Exp_05_3/scripts/standard_final_audit.py \
-  Perf_Exp_05_3/results/standard_05_3_20260818
-python3 Perf_Exp_05_3/scripts/run_exp12.py \
-  --config Perf_Exp_05_3/configs/exp12_standard.yaml \
+python3 src/experiments/perf_05_3/scripts/standard_final_audit.py \
+  src/experiments/perf_05_3/results/standard_05_3_20260818
+python3 src/experiments/perf_05_3/scripts/run_exp12.py \
+  --config src/experiments/perf_05_3/configs/exp12_standard.yaml \
   --run-id exp12_standard_20260819
-python3 Perf_Exp_05_3/scripts/pre_full_audit.py \
-  Perf_Exp_05_3/results/standard_05_3_20260818 \
-  Perf_Exp_05_3/results/exp12_standard_20260819
-python3 Perf_Exp_05_3/scripts/run_full.py \
-  --config Perf_Exp_05_3/configs/full.yaml --run-id full_05_3_20260819 \
-  --standard-run Perf_Exp_05_3/results/standard_05_3_20260818
+python3 src/experiments/perf_05_3/scripts/pre_full_audit.py \
+  src/experiments/perf_05_3/results/standard_05_3_20260818 \
+  src/experiments/perf_05_3/results/exp12_standard_20260819
+python3 src/experiments/perf_05_3/scripts/run_full.py \
+  --config src/experiments/perf_05_3/configs/full.yaml --run-id full_05_3_20260819 \
+  --standard-run src/experiments/perf_05_3/results/standard_05_3_20260818
 ```
 
 All timers use `time.perf_counter_ns`; smoke uses warmup 1/repeats 3, standard 3/20, and the unexecuted full profile 5/50. Raw samples, failures and outliers are retained. Aggregates report median, mean, sample standard deviation, p25, p75, min and max.

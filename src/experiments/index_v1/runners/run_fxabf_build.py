@@ -2,8 +2,8 @@
 
 import random
 
-from fx_exp.filters.fxabf_fuse import FXABFFuse
-from fx_exp.generators import token_entries
+from experiments.index_v1.filters.fxabf_fuse import FXABFFuse
+from experiments.index_v1.generators import token_entries
 from .common import ExperimentRun, configure, parser
 
 

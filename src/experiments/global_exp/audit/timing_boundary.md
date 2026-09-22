@@ -6,7 +6,7 @@ In the real FX-ABE lifecycle, is the user's anonymous attribute token
 (OPRF output) recomputed **per query**, computed once **per privacy epoch**,
 or a mixture?
 
-## Code path (read from `Code/fxabe_rev/`)
+## Code path (read from `src/core/fxabe_rev/`)
 
 * **KeyGen** (`scheme.py::keygen`) calls `self._privacy_components(...)`.
   `_privacy_components` (scheme.py:383-394) loops over the user's attributes
@@ -50,7 +50,7 @@ epoch-scoped *unlinkability property* comes from the epoch being part of
 
 ## Consequence for Global_Exp Exp06
 
-`Global_Exp/src/adapters.py::user_oprf` (FXABE-Full) re-times `direct_token` +
+`src/experiments/global_exp/src/adapters.py::user_oprf` (FXABE-Full) re-times `direct_token` +
 `token_bytes` over `workload.user_set` **on every query**.  This is:
 
 * a **conservative timing boundary** (models a device that does not cache its

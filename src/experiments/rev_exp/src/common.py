@@ -16,8 +16,8 @@ from pathlib import Path
 import yaml
 
 
-ROOT = Path(__file__).resolve().parents[2]
-REV_ROOT = ROOT / "Rev_Exp"
+ROOT = Path(__file__).resolve().parents[4]
+REV_ROOT = ROOT / "src/experiments/rev_exp"
 RESULTS_ROOT = REV_ROOT / "results"
 # Legacy canonical locations remain readable for the archived 2026-08-11 smoke.
 RAW_DIR = RESULTS_ROOT / "raw"
@@ -40,7 +40,7 @@ def load_config(path):
 
 
 def create_results_dir(mode, run_name=None):
-    """Create a non-overwriting run directory under Rev_Exp/results."""
+    """Create a non-overwriting run directory under src/experiments/rev_exp/results."""
     if run_name is None:
         stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S.%fZ")
         run_name = "%s_%s" % (str(mode), stamp)

@@ -1,7 +1,7 @@
 import copy
 import random
 
-from Code.fxdacp.fxabf import FXABF, FXABFIndex, SegmentMeta, fuse_positions, plan_segments
+from core.fxdacp.fxabf import FXABF, FXABFIndex, SegmentMeta, fuse_positions, plan_segments
 
 
 def entries(count=32):

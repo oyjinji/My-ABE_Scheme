@@ -1,18 +1,18 @@
-from Rev_Exp.scripts.plot_all import FIGURE_METRICS
-from Rev_Exp.src.common import load_config, summary
-from Rev_Exp.src.experiments import derive_exp05b_rows
-from Rev_Exp.src.planning import plan_totals, workload_plan
+from experiments.rev_exp.scripts.plot_all import FIGURE_METRICS
+from experiments.rev_exp.src.common import load_config, summary
+from experiments.rev_exp.src.experiments import derive_exp05b_rows
+from experiments.rev_exp.src.planning import plan_totals, workload_plan
 
 
 def test_standard_tiered_plan_has_expected_formal_sample_count():
-    config = load_config("Rev_Exp/configs/standard.yaml")
+    config = load_config("src/experiments/rev_exp/configs/standard.yaml")
     totals = plan_totals(config)
     assert totals["formal_samples"] == 1010
     assert totals["warmup_invocations"] == 397
 
 
 def test_full_large_endpoint_and_exp05b_reuse_counts():
-    rows = workload_plan(load_config("Rev_Exp/configs/full.yaml"))
+    rows = workload_plan(load_config("src/experiments/rev_exp/configs/full.yaml"))
     exp01_endpoint = next(row for row in rows
                           if row["experiment"] == "Exp01" and
                           row["tier"] == "large_endpoint")
@@ -24,7 +24,7 @@ def test_full_large_endpoint_and_exp05b_reuse_counts():
 
 
 def test_privacy_update_is_placement_independent():
-    rows = workload_plan(load_config("Rev_Exp/configs/standard.yaml"))
+    rows = workload_plan(load_config("src/experiments/rev_exp/configs/standard.yaml"))
     exp06 = next(row for row in rows if row["experiment"] == "Exp06")
     assert exp06["placements"] == 1
     assert exp06["formal_samples"] == 70
@@ -38,7 +38,7 @@ def test_statistical_summary_includes_placement_range_fields():
 
 
 def test_exp05b_rows_are_one_to_one_exp01_five_percent_views():
-    config = load_config("Rev_Exp/configs/standard.yaml")
+    config = load_config("src/experiments/rev_exp/configs/standard.yaml")
     source = []
     for index, n in enumerate(config["exp05"]["dual_scalability"]["n"]):
         source.append({

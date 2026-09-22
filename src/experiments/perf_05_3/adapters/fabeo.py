@@ -1,13 +1,13 @@
 """Non-invasive adapter over the repository's official FABEO CP-ABE source."""
 
-from Code.fabeo22cp import FABEO22CPABE
-from Code.fxabe_05_3_exp.scheme import OperationCounts
-from Code.fxabe_05_3_exp.storage import fabeo_ciphertext_bytes, recursive_group_bytes
+from core.fabeo22cp import FABEO22CPABE
+from core.fxabe_05_3_exp.scheme import OperationCounts
+from core.fxabe_05_3_exp.storage import fabeo_ciphertext_bytes, recursive_group_bytes
 
 
 class FABEOAdapter:
     name = "FABEO"
-    source_path = "Code/fabeo22cp/__init__.py"
+    source_path = "src/core/fabeo22cp/__init__.py"
 
     def __init__(self, group):
         self.group = group

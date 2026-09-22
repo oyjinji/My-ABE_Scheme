@@ -2,7 +2,7 @@
 
 ## Primary retrieval-only experiment
 
-`fx_exp_v2/retrieval_exp` is the functionally equivalent algorithm comparison.
+`src/experiments/index_v2/retrieval_exp` is the functionally equivalent algorithm comparison.
 Legacy ABF retrieval, four-partition Bloomier retrieval, Cuckoo payload table,
 Plain XOR retrieval, and FX-ABF retrieval all map a token directly to the same
 fixed-width `j || check` value or miss. No structure uses an exact locator or
@@ -15,7 +15,7 @@ F1 measures real construction, retries, resizing, canonical serialized space,
 and AES-GCM PStore work for five indexes. F1-A has one row per token; F1-B has
 four rows per token with a reproducible mildly skewed distribution.
 
-F2 uses `Code.fxabe_rev.FXABERev`, Charm MNT224 group elements, and an explicit
+F2 uses `core.fxabe_rev.FXABERev`, Charm MNT224 group elements, and an explicit
 counter around every actual `pair()` call. F2-A fixes `N=32,r=8` while policy
 rows increase. F2-B fixes policy size and `N=64` while `r` increases. Each
 filter receives the same ciphertext row components, transform key, KU, tokens,

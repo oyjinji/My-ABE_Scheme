@@ -7,10 +7,10 @@ import statistics
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
+ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(ROOT / "src"))
 
-from Perf_Exp_05_3.scripts.common import read_csv, write_csv  # noqa: E402
+from experiments.perf_05_3.scripts.common import read_csv, write_csv  # noqa: E402
 
 
 def _number(value):

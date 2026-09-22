@@ -5,10 +5,10 @@ import random
 import statistics
 from time import perf_counter_ns
 
-from Code.fxabe_rev.retrievals import (
+from core.fxabe_rev.retrievals import (
     BuildFailure, create_retrieval, deserialize_retrieval, make_value,
 )
-from fx_exp_v2.benchmarks.common import derive_seed, write_csv
+from experiments.index_v2.benchmarks.common import derive_seed, write_csv
 
 
 RAW_FIELDS = [

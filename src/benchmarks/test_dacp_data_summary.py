@@ -9,11 +9,11 @@ import sys
 import tempfile
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
-from Code.dacp.data.summary import append_summary_csv, normalize_summary, save_summary_json
+from core.dacp.data.summary import append_summary_csv, normalize_summary, save_summary_json
 
 
 def assert_true(name, condition):
@@ -60,7 +60,7 @@ def test_batch_missing_file(tmp):
     output = subprocess.check_output(
         [
             sys.executable,
-            str(ROOT / 'Benchmark' / 'benchmark_dacp_dataset_files.py'),
+            str(ROOT / 'src' / 'benchmarks' / 'benchmark_dacp_dataset_files.py'),
             '--config',
             str(config_path),
             '--summary-csv',
@@ -81,7 +81,7 @@ def test_file_cli_summary(tmp):
     output = subprocess.check_output(
         [
             sys.executable,
-            str(ROOT / 'Benchmark' / 'run_dacp_dataset_file.py'),
+            str(ROOT / 'src' / 'benchmarks' / 'run_dacp_dataset_file.py'),
             '--dataset-path',
             str(dataset_path),
             '--dataset-name',

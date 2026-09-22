@@ -1,20 +1,21 @@
 # Revocation Experiments
 
 This is the independent experiment layer for the dual-epoch tree-revocable
-FX-ABE design in `prompt_doc/ABE-Scheme-02.md`.  The 2026-08-11 correctness and
+FX-ABE design in the external design note `ABE-Scheme-02.md` (not in this
+repository).  The 2026-08-11 correctness and
 smoke implementation is retained; the current orchestration uses tiered
 sampling so expensive MNT224 endpoints are measured rigorously without applying
 one global repeat count to every experiment.
 
 ## Cryptographic boundary
 
-The experiment imports `Code/fxabe_rev/` read-only and continues to execute its
+The experiment imports `src/core/fxabe_rev/` read-only and continues to execute its
 real Charm-Crypto `PairingGroup("MNT224")` operations, LSSS/MSP reconstruction,
 pairing OPRF, Binary-Fuse-style FX-ABF, AES-GCM PStore, Transform, and KEM-DEM
 FinalDec.  No cryptographic algebra or revocation semantics were changed by the
 tiered-sampling revision.
 
-`src/revocation.py` remains the tested experiment-local timing wrapper for the
+`src/experiments/rev_exp/src/revocation.py` remains the tested experiment-local timing wrapper for the
 same tree, node secrets, epoch hash, scalar source, and G2 operations.  Its
 KUNodes/Path/Cover rules and fixed KU wire encoding are unchanged.  KU size uses
 Charm's canonical serialization (42-byte G1 and 118-byte G2 on this installed
@@ -29,11 +30,11 @@ isolation, and forward-only revocation.  Framework tests additionally verify
 tiered sample counts, full large-endpoint sampling, placement-independent Exp06,
 and the required placement range statistics.
 
-Use a cache-isolated command so the strict `Rev_Exp/` write boundary is kept:
+Use a cache-isolated command so the strict `src/experiments/rev_exp/` write boundary is kept:
 
 ```bash
 PYTHONDONTWRITEBYTECODE=1 PYTEST_ADDOPTS='-p no:cacheprovider' \
-  python3 -m pytest Rev_Exp/tests -q
+  python3 -m pytest src/experiments/rev_exp/tests -q
 ```
 
 Current result: `17 passed` (the original 13 correctness tests plus four
@@ -134,14 +135,14 @@ flat conclusion.
 The original smoke is preserved in:
 
 ```text
-Rev_Exp/results_archive/smoke_20260811/
+src/experiments/rev_exp/results_archive/smoke_20260811/
   raw/ aggregated/ figures/ metadata/
 ```
 
 New runs are isolated as:
 
 ```text
-Rev_Exp/results/<run_name>/
+src/experiments/rev_exp/results/<run_name>/
   raw/
   aggregated/
   figures/
@@ -158,16 +159,16 @@ as the original smoke-era layout.
 Inspect standard without running crypto:
 
 ```bash
-python3 Rev_Exp/scripts/run_all.py \
-  --config Rev_Exp/configs/standard.yaml \
+python3 src/experiments/rev_exp/scripts/run_all.py \
+  --config src/experiments/rev_exp/configs/standard.yaml \
   --dry-run
 ```
 
 Estimate wall time from archived smoke calibration:
 
 ```bash
-python3 Rev_Exp/scripts/estimate_runtime.py \
-  --config Rev_Exp/configs/standard.yaml
+python3 src/experiments/rev_exp/scripts/estimate_runtime.py \
+  --config src/experiments/rev_exp/configs/standard.yaml
 ```
 
 This is a planning estimate only and is never written into benchmark raw data.
@@ -177,28 +178,28 @@ material error from setup, registration, FX retry, cache, and backend effects.
 Run standard after reviewing the plan:
 
 ```bash
-PYTHONDONTWRITEBYTECODE=1 python3 Rev_Exp/scripts/run_all.py \
-  --config Rev_Exp/configs/standard.yaml \
+PYTHONDONTWRITEBYTECODE=1 python3 src/experiments/rev_exp/scripts/run_all.py \
+  --config src/experiments/rev_exp/configs/standard.yaml \
   --run-name standard_20260811
 ```
 
 Run full:
 
 ```bash
-PYTHONDONTWRITEBYTECODE=1 python3 Rev_Exp/scripts/run_all.py \
-  --config Rev_Exp/configs/full.yaml \
+PYTHONDONTWRITEBYTECODE=1 python3 src/experiments/rev_exp/scripts/run_all.py \
+  --config src/experiments/rev_exp/configs/full.yaml \
   --run-name full_20260811
 ```
 
 Re-aggregate, validate, or plot one existing run without benchmarking:
 
 ```bash
-python3 Rev_Exp/scripts/aggregate.py \
-  --results-dir Rev_Exp/results/standard_20260811
-python3 Rev_Exp/scripts/validate_results.py \
-  --results-dir Rev_Exp/results/standard_20260811
-python3 Rev_Exp/scripts/plot_all.py \
-  --results-dir Rev_Exp/results/standard_20260811
+python3 src/experiments/rev_exp/scripts/aggregate.py \
+  --results-dir src/experiments/rev_exp/results/standard_20260811_v1
+python3 src/experiments/rev_exp/scripts/validate_results.py \
+  --results-dir src/experiments/rev_exp/results/standard_20260811_v1
+python3 src/experiments/rev_exp/scripts/plot_all.py \
+  --results-dir src/experiments/rev_exp/results/standard_20260811_v1
 ```
 
 All six main figures remain 300-dpi PNG plus vector PDF with unsmoothed values,

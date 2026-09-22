@@ -10,21 +10,21 @@ import sys
 from pathlib import Path
 from time import perf_counter_ns
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
+ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(ROOT / "src"))
 
 from charm.toolbox.pairinggroup import G1, G2, GT, ZR, PairingGroup, pair  # noqa: E402
 
-from Code.fxabe_05_3_exp import (  # noqa: E402
+from core.fxabe_05_3_exp import (  # noqa: E402
     FXABE053, NoOccurrenceFXABE, OperationCounts, TransformMetrics,
 )
-from Code.fxabe_05_3_exp.fx import FXIndex  # noqa: E402
-from Code.fxabe_05_3_exp.storage import fxabe_ciphertext_bytes, recursive_group_bytes  # noqa: E402
-from Perf_Exp_05_3.adapters import FABEOAdapter  # noqa: E402
-from Perf_Exp_05_3.scripts.common import (  # noqa: E402
+from core.fxabe_05_3_exp.fx import FXIndex  # noqa: E402
+from core.fxabe_05_3_exp.storage import fxabe_ciphertext_bytes, recursive_group_bytes  # noqa: E402
+from experiments.perf_05_3.adapters import FABEOAdapter  # noqa: E402
+from experiments.perf_05_3.scripts.common import (  # noqa: E402
     base_row, derive_seed, dump_json, environment, load_yaml, timed, write_csv,
 )
-from Perf_Exp_05_3.workloads import (  # noqa: E402
+from experiments.perf_05_3.workloads import (  # noqa: E402
     and_workload, duplicate_workload, or_workload, threshold_workload,
 )
 
@@ -577,7 +577,7 @@ def main():
     args=parser.parse_args(); config=load_yaml(args.config)
     if config["mode"]=="full":
         raise SystemExit("Full is gated and intentionally not run automatically; use the explicit full runner only after FULL_READY=YES")
-    run_root=ROOT/"Perf_Exp_05_3"/"results"/args.run_id
+    run_root=ROOT/"src/experiments/perf_05_3"/"results"/args.run_id
     if run_root.exists() and not args.resume: raise SystemExit("result directory exists: %s"%run_root)
     raw=run_root/"raw"
     for directory in (raw,run_root/"aggregated",run_root/"plots",run_root/"logs"):
@@ -588,7 +588,7 @@ def main():
     if not args.resume or not (run_root/"correctness.json").exists():
         dump_json(run_root/"environment.json",environment(group,args.config))
         shutil.copy2(args.config,run_root/"config_snapshot.yaml")
-        gate=subprocess.run([sys.executable,"-m","pytest","-q","Perf_Exp_05_3/tests/test_correctness.py"],cwd=str(ROOT),text=True,capture_output=True)
+        gate=subprocess.run([sys.executable,"-m","pytest","-q","src/experiments/perf_05_3/tests/test_correctness.py"],cwd=str(ROOT),text=True,capture_output=True)
         correctness={"success":gate.returncode==0,"stdout":gate.stdout,"stderr":gate.stderr}
         dump_json(run_root/"correctness.json",correctness)
         if gate.returncode: raise SystemExit("correctness gate failed")

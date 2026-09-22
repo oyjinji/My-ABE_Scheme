@@ -1,6 +1,6 @@
 import random
 
-from Code.fxabe_rev.filters import FILTERS
+from core.fxabe_rev.filters import FILTERS
 
 
 def test_five_indexes_return_same_postings_and_exact_query_sum():

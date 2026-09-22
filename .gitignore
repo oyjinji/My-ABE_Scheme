@@ -3,20 +3,32 @@ __pycache__/
 *.pyo
 *.Zone.Identifier
 *:Zone.Identifier
-data/raw/*
-data/work/*
-data/encrypted/*
-data/recovered/*
-results/dacp_data/*
-data/products/*
-results/dacp_marketplace/*
-!data/raw/.gitkeep
-!data/work/.gitkeep
-!data/encrypted/.gitkeep
-!data/recovered/.gitkeep
-!data/products/.gitkeep
-!results/dacp_data/.gitkeep
-!results/dacp_marketplace/.gitkeep
-!results/dacp_marketplace/credit_fraud/
-results/dacp_marketplace/credit_fraud/*
-!results/dacp_marketplace/credit_fraud/.gitkeep
+
+# 临时 / 草稿运行目录（冻结的 results 仍入库，见根 README 的 "Results and
+# provenance policy" 一节）。index_v2 一类的套件用时间戳生成 run id，其草稿
+# 目录不匹配此模式，验证完需自行删除。
+src/**/results/scratch*/
+src/**/logs/*.tmp
+
+# 根级共享工作区（DACP 数据集实验），内容不入库，仅保留目录占位
+shared/data/raw/*
+shared/data/work/*
+shared/data/encrypted/*
+shared/data/recovered/*
+shared/data/products/*
+shared/results/dacp_data/*
+shared/results/dacp_marketplace/*
+!shared/data/raw/.gitkeep
+!shared/data/work/.gitkeep
+!shared/data/encrypted/.gitkeep
+!shared/data/recovered/.gitkeep
+!shared/data/products/.gitkeep
+!shared/results/dacp_data/.gitkeep
+!shared/results/dacp_marketplace/.gitkeep
+!shared/results/dacp_marketplace/credit_fraud/
+shared/results/dacp_marketplace/credit_fraud/*
+!shared/results/dacp_marketplace/credit_fraud/.gitkeep
+
+# matplotlib 字体缓存（曾误入库）
+.mplconfig/
+src/**/.mplconfig/

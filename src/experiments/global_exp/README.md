@@ -15,7 +15,7 @@ LSSS matrix, same `rho`, same user set, same message, same seed):
 | --- | --- |
 | **FABEO22** | The repository's real FABEO22 CP-ABE, untouched. |
 | **FXABE-Base** | Internal ablation baseline (not a published construction): the real FXABE setup, revocation tree, epoch scalars, pairings, KDF/AEAD and `final_dec`, with the anonymity layer (OPRF / FX-ABF / PStore) replaced by a plaintext attribute→policy-row direct mapping. |
-| **FXABE-Full** | The complete real system (`Code/fxabe_rev.FXABERev`). |
+| **FXABE-Full** | The complete real system (`src/core/fxabe_rev.FXABERev`). |
 
 ## Guarantees
 
@@ -62,7 +62,7 @@ LSSS matrix, same `rho`, same user set, same message, same seed):
 ## Layout
 
 ```
-Global_Exp/
+src/experiments/global_exp/
   configs/         smoke.yaml · standard.yaml · full.yaml
   src/             common · workloads · timing · statistics · storage ·
                    adapters · experiments · planning
@@ -80,17 +80,17 @@ Global_Exp/
 
 ```bash
 # 1. tests
-PYTHONDONTWRITEBYTECODE=1 python3 -m pytest Global_Exp/tests -q
+PYTHONDONTWRITEBYTECODE=1 python3 -m pytest src/experiments/global_exp/tests -q
 
 # 2. smoke (end-to-end plumbing)
-python3 Global_Exp/scripts/run_all.py --config Global_Exp/configs/smoke.yaml \
+python3 src/experiments/global_exp/scripts/run_all.py --config src/experiments/global_exp/configs/smoke.yaml \
     --run-name global_smoke_20260812_v1
-python3 Global_Exp/scripts/aggregate.py  --run-dir Global_Exp/results/global_smoke_20260812_v1
-python3 Global_Exp/scripts/plot_all.py    --run-dir Global_Exp/results/global_smoke_20260812_v1
-python3 Global_Exp/scripts/validate_results.py --run-dir Global_Exp/results/global_smoke_20260812_v1
+python3 src/experiments/global_exp/scripts/aggregate.py  --run-dir src/experiments/global_exp/results/global_smoke_20260812_v1
+python3 src/experiments/global_exp/scripts/plot_all.py    --run-dir src/experiments/global_exp/results/global_smoke_20260812_v1
+python3 src/experiments/global_exp/scripts/validate_results.py --run-dir src/experiments/global_exp/results/global_smoke_20260812_v1
 
 # 3. standard (primary benchmark, ~10 min)
-python3 Global_Exp/scripts/run_all.py --config Global_Exp/configs/standard.yaml \
+python3 src/experiments/global_exp/scripts/run_all.py --config src/experiments/global_exp/configs/standard.yaml \
     --run-name global_standard_20260812_v1
 # ... aggregate / plot / validate as above ...
 
@@ -103,5 +103,5 @@ python3 Global_Exp/scripts/run_all.py --config Global_Exp/configs/standard.yaml 
 All three configs fix the same `master_seed`, pairing group (MNT224) and
 satisfaction ratio (0.5).  `repetitions`/`warmups` and the `policy_rows` /
 `user_attrs` sweeps differ by tier.  Per-unit wall-clock from a completed run
-is recorded in `logs/timing.json`; `src/planning.py` projects a candidate
+is recorded in `logs/timing.json`; `src/experiments/global_exp/src/planning.py` projects a candidate
 config's runtime from it (linear-in-`l` model, with linearity diagnostics).

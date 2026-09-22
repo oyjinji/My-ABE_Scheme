@@ -1,5 +1,5 @@
-from Code.fxabe_rev import FXABERev
-from Rev_Exp.src.revocation import measured_rev_key_upt
+from core.fxabe_rev import FXABERev
+from experiments.rev_exp.src.revocation import measured_rev_key_upt
 
 
 def _prepared(group):

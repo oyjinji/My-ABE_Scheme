@@ -9,11 +9,11 @@ from collections import defaultdict
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[4]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
-from Rev_Exp.src.common import RESULTS_ROOT, read_csv, results_paths, summary, write_csv
+from experiments.rev_exp.src.common import RESULTS_ROOT, read_csv, results_paths, summary, write_csv
 
 
 SPECS = {

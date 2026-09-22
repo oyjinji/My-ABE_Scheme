@@ -7,11 +7,11 @@ import sys
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[4]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
-from Rev_Exp.src.common import read_csv, results_paths
+from experiments.rev_exp.src.common import read_csv, results_paths
 
 
 def main(argv=None):

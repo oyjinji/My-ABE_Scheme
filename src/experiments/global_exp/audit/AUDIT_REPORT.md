@@ -1,7 +1,7 @@
 # FX-ABE Global Performance Complexity Audit Report
 
 Date: 2026-08-13 · Scope: audit-only (no scheme modification, no re-benchmark of the full run, no implementation of any optimization)
-Baseline: `Global_Exp/results/global_full_20260812_v1/` untouched. All new diagnostics under `Global_Exp/audit/results/`.
+Baseline: `src/experiments/global_exp/results/global_full_20260812_v1/` untouched. All new diagnostics under `src/experiments/global_exp/audit/results/`.
 
 ---
 
@@ -29,17 +29,17 @@ Three findings dominate:
 - AUDIT FIRST / OPTIMIZE LATER: findings below are *described, classified, and estimated* only.
 
 **Code opened and read** (real code, not stubs):
-- `Code/fabeo22cp/__init__.py` — setup / keygen / encrypt / decrypt, prune path.
-- `Code/fxabe_rev/scheme.py` — setup / keygen / encrypt / transform / final_dec / privacy_key_upt / rev / rev_key_upt.
-- `Code/fxabe_rev/lsss.py` — `policy_rows`, `pad_matrix`, `solve_reconstruction`.
-- `Code/fxabe_rev/oprf.py` — `PairingOPRF.direct_token`, `H0`, `token_bytes`.
-- `Code/fxabe_rev/revocation.py` — `BinaryRevocationTree`, `KUNodes`.
-- `Code/fxabe_rev/filters/fxabf.py`, `xor_filter.py` — index build/query.
-- `Code/msp/__init__.py` — `convert_policy_to_msp` (OR → both children carry the same vector → l unit rows).
-- `Global_Exp/src/{adapters,workloads,timing,storage,experiments}.py` — measurement harness.
+- `src/core/fabeo22cp/__init__.py` — setup / keygen / encrypt / decrypt, prune path.
+- `src/core/fxabe_rev/scheme.py` — setup / keygen / encrypt / transform / final_dec / privacy_key_upt / rev / rev_key_upt.
+- `src/core/fxabe_rev/lsss.py` — `policy_rows`, `pad_matrix`, `solve_reconstruction`.
+- `src/core/fxabe_rev/oprf.py` — `PairingOPRF.direct_token`, `H0`, `token_bytes`.
+- `src/core/fxabe_rev/revocation.py` — `BinaryRevocationTree`, `KUNodes`.
+- `src/core/fxabe_rev/filters/fxabf.py`, `xor_filter.py` — index build/query.
+- `src/core/msp/__init__.py` — `convert_policy_to_msp` (OR → both children carry the same vector → l unit rows).
+- `src/experiments/global_exp/src/{adapters,workloads,timing,storage,experiments}.py` — measurement harness.
 - Charm 0.63 `charm/toolbox/policytree.py` — `requiredAttributes` (OR branch returns only the first matched leaf).
 
-**Dynamic diagnostics executed** (all read-only; outputs under `Global_Exp/audit/results/`):
+**Dynamic diagnostics executed** (all read-only; outputs under `src/experiments/global_exp/audit/results/`):
 - `reconstruction_trace.csv` — l=8…64, brute-force min authorized subset, solve_reconstruction over matched rows, dynamic pair_count.
 - `row_selection_trace.csv` — FABEO vs FXABE row selection at identical workloads (l=8, l=32).
 - `diagnostic_m_sweep.csv` — fixed l=32, m ∈ {1, 8, 16}.
@@ -49,13 +49,13 @@ Three findings dominate:
 - `encrypt_operation_ledger.csv`, `transform_operation_ledger.csv` — static op counts from code + measured per-op costs.
 - `profiles/` — cProfile attribution (encrypt ×3 schemes, transform ×2).
 
-**Test verification:** baseline `pytest Global_Exp/tests` → **19 passed**. Audit tests `pytest Global_Exp/audit/tests` → **6 passed** (OR min subset = 1; reconstruction over matched uses 1 row; pair_count = 2 + 2·matched; FABEO prune = 1 node; Charm ZR zero-filter ineffectiveness; transformed_rows length = matched).
+**Test verification:** baseline `pytest src/experiments/global_exp/tests` → **19 passed**. Audit tests `pytest src/experiments/global_exp/audit/tests` → **6 passed** (OR min subset = 1; reconstruction over matched uses 1 row; pair_count = 2 + 2·matched; FABEO prune = 1 node; Charm ZR zero-filter ineffectiveness; transformed_rows length = matched).
 
 ---
 
 ## 3. Measured Performance Landscape (baseline recap)
 
-Full-run medians (l=320 unless noted; user-supplied, `Global_Exp/results/global_full_20260812_v1/`):
+Full-run medians (l=320 unless noted; user-supplied, `src/experiments/global_exp/results/global_full_20260812_v1/`):
 
 | Metric | FABEO22 | FXABE-Base | FXABE-Full |
 |---|---|---|---|
@@ -91,7 +91,7 @@ Note the asymmetry that will recur: **G2 exp is 7.40× G1 exp**, and hash→G2 i
 
 **Answer: NO — the minimum authorized subset is exactly 1.**
 
-For the OR-policy LSSS produced by `Code/msp/convert_policy_to_msp`, every policy row is the unit vector `e1` (both children of an OR node inherit the parent's row). The target of the scheme is `[1]` (first component = 1). Therefore **any single row alone** spans the target:
+For the OR-policy LSSS produced by `src/core/msp/convert_policy_to_msp`, every policy row is the unit vector `e1` (both children of an OR node inherit the parent's row). The target of the scheme is `[1]` (first component = 1). Therefore **any single row alone** spans the target:
 
 ```
 solve_reconstruction(group, matrix, [row_i])  →  {i: 1}
@@ -117,7 +117,7 @@ Brute-force verified at l=8: all 8 singleton subsets return a valid reconstructi
 
 **Answer: CONFIRMED Case A.**
 
-Reading `Code/fxabe_rev/scheme.py::transform`:
+Reading `src/core/fxabe_rev/scheme.py::transform`:
 1. The index query (or direct lookup in Base) returns **every** matched row.
 2. The transform loops over **all** returned rows and computes, for each, the 2-pairing row transform `t1_i = pair(C1_i, K1)`, `t2_i = pair(K2_i, C2_i)`.
 3. There is **no** pruning, no authorized-subset reduction, no reconstruction before the pairing phase.
@@ -311,7 +311,7 @@ Reported magnitude in the full run: ~23.7 ms at l=80, ~46.8 ms at l=160 — a sm
 Findings from a line-level pass over the hot paths (no changes made):
 
 1. **Transform pairs all matched rows, then throws away all but one** (§5) — the single largest inefficiency. Surplus cost at l=320 ≈ 1,040 ms.
-2. **Policy re-parsed to MSP on every encrypt** — `Global_Exp/src/adapters.py` re-converts the policy string each call (fixed cost; profiled as non-negligible at small l). Could be cached; Category B, low impact.
+2. **Policy re-parsed to MSP on every encrypt** — `src/experiments/global_exp/src/adapters.py` re-converts the policy string each call (fixed cost; profiled as non-negligible at small l). Could be cached; Category B, low impact.
 3. **Charm `coeff != 0` filter ineffective** (§14) — dead code; harmless but misleading. Category B.
 4. **FX-ABF filter size is data-dependent** (§10) — measurement variance only, ±1.2% ciphertext level. Category B/measurement.
 5. **FABEO's `requiredAttributes` returns a single leaf for OR** — this is FABEO's own implementation asymmetry (§6); it is what makes FABEO's decrypt l-invariant. Not an FXABE inefficiency, but the direct counterpart that makes the ratio look so extreme.

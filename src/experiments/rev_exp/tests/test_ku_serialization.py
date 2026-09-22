@@ -1,5 +1,5 @@
-from Code.fxabe_rev import FXABERev
-from Rev_Exp.src.revocation import measured_rev_key_upt, serialize_ku
+from core.fxabe_rev import FXABERev
+from experiments.rev_exp.src.revocation import measured_rev_key_upt, serialize_ku
 
 
 def test_ku_size_is_canonical_wire_size(group):

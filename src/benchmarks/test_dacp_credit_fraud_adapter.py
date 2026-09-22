@@ -8,12 +8,12 @@ import sys
 import tempfile
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
-from Code.dacp.marketplace import simulate_purchase_and_access
-from Code.dacp.marketplace.adapters import CreditFraudCSVAdapter
+from core.dacp.marketplace import simulate_purchase_and_access
+from core.dacp.marketplace.adapters import CreditFraudCSVAdapter
 
 
 def assert_true(name, condition):
@@ -105,7 +105,7 @@ def test_missing_real_file_skips(tmp):
     output = subprocess.check_output(
         [
             sys.executable,
-            str(ROOT / 'Benchmark' / 'run_dacp_marketplace_credit_fraud.py'),
+            str(ROOT / 'src' / 'benchmarks' / 'run_dacp_marketplace_credit_fraud.py'),
             '--dataset-path',
             str(missing),
             '--output-dir',

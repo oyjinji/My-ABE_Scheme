@@ -1,6 +1,6 @@
-from fx_exp_v2.benchmarks.benchmark_f1_build_space import FIELDS as F1
-from fx_exp_v2.benchmarks.benchmark_f2_transform_scaling import FIELDS as F2
-from fx_exp_v2.benchmarks.benchmark_f3_correctness import FIELDS as F3
+from experiments.index_v2.benchmarks.benchmark_f1_build_space import FIELDS as F1
+from experiments.index_v2.benchmarks.benchmark_f2_transform_scaling import FIELDS as F2
+from experiments.index_v2.benchmarks.benchmark_f3_correctness import FIELDS as F3
 
 
 def test_required_raw_fields_exist():

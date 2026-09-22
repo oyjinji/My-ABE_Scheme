@@ -8,7 +8,7 @@ from pathlib import Path
 
 import yaml
 
-from fx_exp_v2.benchmarks.common import (
+from experiments.index_v2.benchmarks.common import (
     environment_record, set_single_cpu_affinity,
 )
 from .benchmark import run

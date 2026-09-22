@@ -3,8 +3,8 @@
 import random
 from time import perf_counter_ns
 
-from Code.fxabe_rev import FXABERev
-from Code.fxabe_rev.filters import create_index
+from core.fxabe_rev import FXABERev
+from core.fxabe_rev.filters import create_index
 
 from .common import derive_seed
 

@@ -13,22 +13,22 @@ component (~1.2% of the ciphertext).  The CSV below is generated with a fixed
 seed (9) for reproducibility, and the official storage.py total is emitted for
 exact reconciliation.
 
-No Global_Exp result is touched; output goes to Global_Exp/audit/results/.
+No Global_Exp result is touched; output goes to src/experiments/global_exp/audit/results/.
 """
 
 import csv
 import os
 import sys
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 sys.path.insert(0, ROOT)
 
 from charm.toolbox.pairinggroup import PairingGroup
 
-from Global_Exp.src.adapters import create_adapter
-from Global_Exp.src.workloads import build_workload
-from Global_Exp.src.storage import ciphertext_size
-from Code.fxabe_rev.encoding import encode
+from experiments.global_exp.src.adapters import create_adapter
+from experiments.global_exp.src.workloads import build_workload
+from experiments.global_exp.src.storage import ciphertext_size
+from core.fxabe_rev.encoding import encode
 
 GROUP = PairingGroup("MNT224", secparam=512)
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results",

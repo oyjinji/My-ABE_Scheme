@@ -3,7 +3,7 @@ import random
 import pytest
 from charm.toolbox.pairinggroup import PairingGroup
 
-from Code.fxdacp import FXDACP
+from core.fxdacp import FXDACP
 
 
 @pytest.fixture(scope="module")

@@ -7,9 +7,9 @@ import json
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
-from Perf_Exp_05_3.scripts.common import dump_json, read_csv  # noqa: E402
+ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(ROOT / "src"))
+from experiments.perf_05_3.scripts.common import dump_json, read_csv  # noqa: E402
 
 
 def truth(value):
@@ -45,11 +45,11 @@ def main():
     exp12_expected = (exp12v["status"] == "PASS" and exp12v["failed_rows"] == 0 and
                       exp12v["legal_u"] == [80, 160, 320, 640])
     real_fx = correctness.get("success", False) and all(x["no_exact_locator"] for x in exp12v["gates"])
-    revocation = (ROOT / "Perf_Exp_05_3/docs/REVOCATION_SCALING_AUDIT.md").exists()
+    revocation = (ROOT / "src/experiments/perf_05_3/docs/REVOCATION_SCALING_AUDIT.md").exists()
     comparable = any(truth(r["median_ci_overlap"]) for r in stats) and not all(
         float(r["fxabe_over_fabeo"]) < 1 for r in stats)
     gates = {
-        "EXP01_EXP09_accounting_consistent": (ROOT / "Perf_Exp_05_3/docs/EXP01_EXP09_ACCOUNTING_AUDIT.md").exists(),
+        "EXP01_EXP09_accounting_consistent": (ROOT / "src/experiments/perf_05_3/docs/EXP01_EXP09_ACCOUNTING_AUDIT.md").exists(),
         "FABEO_vs_FXABE_interpretation": "COMPARABLE" if comparable else "INCONCLUSIVE",
         "occurrence_reuse": occurrence, "G2_count_is_c_max": g2,
         "transform_pair_invariant": pair, "storage_accounting": storage_ok,
@@ -81,7 +81,7 @@ def main():
              f"11. FULL_READY: **{'YES' if full_ready else 'NO'}**", "",
              "The gate references the frozen Standard raw samples and independent EXP-12 supplemental run. "
              "It does not mutate either raw dataset."]
-    (ROOT / "Perf_Exp_05_3/docs/PRE_FULL_AUDIT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (ROOT / "src/experiments/perf_05_3/docs/PRE_FULL_AUDIT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("PRE_FULL_AUDIT_%s" % ("PASS" if full_ready else "FAIL"))
     if not full_ready:
         raise SystemExit(1)

@@ -10,10 +10,12 @@ DACP currently supports algorithm benchmarks and local protocol simulation with:
 - JSON wire-format simulation
 - Dataset-file scaffold for opaque bytes experiments
 
+All commands below run from the repository root.
+
 The most complete local protocol command is:
 
 ```bash
-python3 Benchmark/run_dacp_protocol.py --oprf blind --sig ed25519 --symmetric aesgcm --wire json
+python3 src/benchmarks/run_dacp_protocol.py --oprf blind --sig ed25519 --symmetric aesgcm --wire json
 ```
 
 This is still a local simulation. There is no HTTP, socket, database, user
@@ -24,7 +26,7 @@ login, production CA, revocation, or data marketplace service.
 Place user-downloaded real datasets in:
 
 ```text
-data/raw/
+shared/data/raw/
 ```
 
 Do not commit real data, encrypted data, recovered data, or large result files
@@ -33,14 +35,14 @@ to Git. The repository `.gitignore` is configured for this.
 Synthetic and temporary files may be placed in:
 
 ```text
-data/work/
+shared/data/work/
 ```
 
 Encrypted outputs and recovered verification files are written under each
 experiment output directory, typically:
 
 ```text
-results/dacp_data/<experiment_name>/
+shared/results/dacp_data/<experiment_name>/
 ```
 
 ## Single File Experiment
@@ -48,12 +50,12 @@ results/dacp_data/<experiment_name>/
 Run a local file as opaque bytes:
 
 ```bash
-python3 Benchmark/run_dacp_dataset_file.py \
-  --dataset-path data/raw/creditcard.csv \
+python3 src/benchmarks/run_dacp_dataset_file.py \
+  --dataset-path shared/data/raw/creditcard.csv \
   --dataset-name creditcard_fraud_sample \
   --domain financial \
   --policy-template credit_fraud \
-  --output-dir results/dacp_data/creditcard_test
+  --output-dir shared/results/dacp_data/creditcard_test
 ```
 
 The script reads bytes, encrypts the file with AES-GCM, encrypts the dataset
@@ -65,12 +67,12 @@ decrypts the file, and checks SHA256 equality.
 For larger files, enable chunk mode:
 
 ```bash
-python3 Benchmark/run_dacp_dataset_file.py \
-  --dataset-path data/raw/creditcard.csv \
+python3 src/benchmarks/run_dacp_dataset_file.py \
+  --dataset-path shared/data/raw/creditcard.csv \
   --dataset-name creditcard_fraud_sample \
   --domain financial \
   --policy-template credit_fraud \
-  --output-dir results/dacp_data/creditcard_test \
+  --output-dir shared/results/dacp_data/creditcard_test \
   --chunk-mode \
   --chunk-size 16777216
 ```
@@ -82,9 +84,9 @@ Each chunk is encrypted independently with AES-GCM and recorded in the manifest.
 Batch configuration uses JSON:
 
 ```bash
-python3 Benchmark/benchmark_dacp_dataset_files.py \
-  --config configs/dacp_datasets.example.json \
-  --summary-csv results/dacp_data/batch_summary.csv
+python3 src/benchmarks/benchmark_dacp_dataset_files.py \
+  --config shared/configs/dacp_datasets.example.json \
+  --summary-csv shared/results/dacp_data/batch_summary.csv
 ```
 
 Missing files are recorded as `skipped=True` with a reason instead of stopping

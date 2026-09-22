@@ -6,9 +6,9 @@ import statistics
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
-from Perf_Exp_05_3.scripts.common import read_csv  # noqa: E402
+ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(ROOT / "src"))
+from experiments.perf_05_3.scripts.common import read_csv  # noqa: E402
 
 
 def main():
@@ -50,7 +50,7 @@ def main():
               "EXP-00 and EXP-05 reuse their validated Standard mechanism results; EXP-12 remains a "
               "20-repeat Standard supplemental experiment. Storage is recomputed on Full workloads "
               "without artificial 50-fold deterministic duplication. No Full repeat was reduced."]
-    (ROOT / "Perf_Exp_05_3/docs/FULL_RUNTIME_ESTIMATE.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (ROOT / "src/experiments/perf_05_3/docs/FULL_RUNTIME_ESTIMATE.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"FULL_RUNTIME_ESTIMATE {total / 3600:.3f} hours")
 
 

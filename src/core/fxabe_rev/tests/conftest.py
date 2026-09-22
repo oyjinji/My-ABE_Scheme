@@ -1,7 +1,7 @@
 import pytest
 from charm.toolbox.pairinggroup import PairingGroup
 
-from Code.fxabe_rev import FXABERev
+from core.fxabe_rev import FXABERev
 
 
 @pytest.fixture(scope="module")

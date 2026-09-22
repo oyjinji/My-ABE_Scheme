@@ -1,4 +1,4 @@
-from fx_exp_v2.benchmarks.workload import f1_workload, transform_attributes
+from experiments.index_v2.benchmarks.workload import f1_workload, transform_attributes
 
 
 def test_f1_shapes_and_canonical_postings():

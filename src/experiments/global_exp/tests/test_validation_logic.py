@@ -6,9 +6,9 @@ import json
 
 import pytest
 
-from Global_Exp.src.planning import point_weight
-from Global_Exp.src.statistics import percentile, summary
-from Global_Exp.scripts.aggregate import _numeric_groups
+from experiments.global_exp.src.planning import point_weight
+from experiments.global_exp.src.statistics import percentile, summary
+from experiments.global_exp.scripts.aggregate import _numeric_groups
 
 
 def test_percentile_interpolation():
@@ -73,7 +73,7 @@ def test_point_weight_scales_with_policy_rows():
 
 
 def test_planning_projection_is_linear():
-    from Global_Exp.src.planning import project
+    from experiments.global_exp.src.planning import project
     import tempfile
     from pathlib import Path
     with tempfile.TemporaryDirectory() as tmp:

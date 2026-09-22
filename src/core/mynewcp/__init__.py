@@ -1,8 +1,9 @@
 '''
-Custom outsourced-decryption CP-ABE skeleton based on /home/jinji_o/ABE-Test/mynewcp.md.
+Custom outsourced-decryption CP-ABE skeleton, derived from the design note
+mynewcp.md (outside this repository).
 
 | Notes: Minimal runnable implementation for the current FABEO-style repository.
-| Notes: Keeps the standard CP-ABE interface used by Benchmark/run_cp_schemes.py
+| Notes: Keeps the standard CP-ABE interface used by src/benchmarks/run_cp_schemes.py
 |        and exposes transform/final_decrypt as explicit helper methods.
 | Notes: Several cryptographic subroutines are placeholders and must be reviewed
 |        before this code is treated as a faithful or secure implementation.

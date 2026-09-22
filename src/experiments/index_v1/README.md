@@ -1,6 +1,6 @@
 # FX-ABF experiment suite
 
-This directory contains all new filter microbenchmarks, Transform-scaling experiments, raw records, summaries, manifests, logs and figures. Algorithm code remains in `Code/fxdacp`; no existing benchmark result is read or overwritten.
+This directory contains all new filter microbenchmarks, Transform-scaling experiments, raw records, summaries, manifests, logs and figures. Algorithm code remains in `src/core/fxdacp`; no existing benchmark result is read or overwritten.
 
 ## Compared backends
 
@@ -10,10 +10,10 @@ This directory contains all new filter microbenchmarks, Transform-scaling experi
 | Exact Hash | Exact SHA-256 token key to compact PStore identifier |
 | Bloom+Exact-PStore | Bloom membership prefilter plus exact retrieval map; Bloom alone does not retrieve a posting list |
 | Attribute-BF (greedy) | 2018-style greedy multi-position XOR assignment adapted to `PStore id + check` |
-| Original-ABF | `ABE-Scheme+.md` random sid, check string, encrypted PStore and full seed rebuild behavior |
+| Original-ABF | external design note `ABE-Scheme+.md` random sid, check string, encrypted PStore and full seed rebuild behavior |
 | as-ACF/Cuckoo | Static fingerprint, three candidate bins, multi-slot/multi-table adapter with an 85% threshold |
 | XOR-Retrieval | Three global hashes, hypergraph peeling and reverse XOR assignment, without fuse segmentation |
-| FX-ABF | The formal `Code.fxdacp.fxabf.FXABF` core with the versioned segmented position profile |
+| FX-ABF | The formal `core.fxdacp.fxabf.FXABF` core with the versioned segmented position profile |
 
 Every backend consumes `token -> posting_list` and returns a hit with the authenticated list or a miss. They use the same generated tokens, lists, AES-GCM nonce/tag sizes, compact row encoding and trial seeds. Size results are canonical serialized/array/PStore byte counts, not `sys.getsizeof`. The filters have different native functions and security properties; the adapters make retrieval costs comparable but do not make their privacy models equivalent.
 

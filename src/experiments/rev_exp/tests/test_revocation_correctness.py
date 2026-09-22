@@ -1,5 +1,5 @@
-from Code.fxabe_rev import FXABERev, TransformMetrics
-from Rev_Exp.src.revocation import measured_rev_key_upt
+from core.fxabe_rev import FXABERev, TransformMetrics
+from experiments.rev_exp.src.revocation import measured_rev_key_upt
 
 
 def _scheme(group, capacity=8, seed=19):

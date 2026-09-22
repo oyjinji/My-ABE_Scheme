@@ -1,12 +1,13 @@
 # FXDACP algorithm prototype
 
-`FXDACP` implements the five algorithms from `ABE-Scheme-FXABF.md`: `Setup`, `KeyGen`, `Encrypt`, `Transform`, and `FinalDec`. It keeps ABE code here and all filter-comparison/benchmark code in `fx_exp`.
+`FXDACP` implements the five algorithms from the external design note
+`ABE-Scheme-FXABF.md` (not in this repository): `Setup`, `KeyGen`, `Encrypt`, `Transform`, and `FinalDec`. It keeps ABE code here and all filter-comparison/benchmark code in `src/experiments/index_v1`.
 
 ## Minimal use
 
 ```python
 from charm.toolbox.pairinggroup import PairingGroup
-from Code.fxdacp import FXDACP
+from core.fxdacp import FXDACP
 
 group = PairingGroup("MNT224")
 scheme = FXDACP(group)

@@ -1,11 +1,12 @@
 '''
-FABESA anonymous CP-A2BE-style CP-ABE based on /home/jinji_o/ABE-Test/a_fabesa_cp.md.
+FABESA anonymous CP-A2BE-style CP-ABE, derived from the design note
+a_fabesa_cp.md (outside this repository).
 
 | Notes: Implements the Type-III pairing flow from FABESA_cp.md and the
 |        partially hidden structure from a_fabesa_cp.md: payload exposes the
 |        MSP rows and attribute names, while attribute values only appear inside
 |        cryptographic group components.
-| Notes: Keeps the standard CP-ABE interface used by Benchmark/run_cp_schemes.py.
+| Notes: Keeps the standard CP-ABE interface used by src/benchmarks/run_cp_schemes.py.
 | Notes: The candidate-message verification tag below is a runner-friendly
 |        placeholder so value mismatches can be rejected during blind trials.
 |        It is NOT a verified authenticated encryption/KEM construction.

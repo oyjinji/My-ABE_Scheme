@@ -1,10 +1,10 @@
 """Workload identity: all schemes consume the same policy, matrix, rho,
 user set and message for every experimental point (requirement 5.1/5.2)."""
 
-from Code.fxabe_rev.lsss import policy_rows
+from core.fxabe_rev.lsss import policy_rows
 
-from Global_Exp.src.common import derive_seed, fingerprint
-from Global_Exp.src.workloads import (
+from experiments.global_exp.src.common import derive_seed, fingerprint
+from experiments.global_exp.src.workloads import (
     build_workload, or_policy, policy_matrix, policy_rho, user_set_for,
 )
 
@@ -69,7 +69,7 @@ def test_shared_workload_cross_scheme(group):
     """
     from charm.toolbox.pairinggroup import GT
 
-    from Global_Exp.src.adapters import create_adapter
+    from experiments.global_exp.src.adapters import create_adapter
     workload = _workload(8, 8)
     hashes = [workload.fingerprints[k] for k in (
         "policy_hash", "matrix_hash", "rho_hash", "user_set_hash",

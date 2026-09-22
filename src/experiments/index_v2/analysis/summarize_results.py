@@ -8,7 +8,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from fx_exp_v2.benchmarks.common import dump_json
+from experiments.index_v2.benchmarks.common import dump_json
 
 
 SPECS = {

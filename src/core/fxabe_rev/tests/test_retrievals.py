@@ -2,7 +2,7 @@ import hashlib
 import inspect
 import random
 
-from Code.fxabe_rev.retrievals import (
+from core.fxabe_rev.retrievals import (
     BloomierRetrieval, CuckooPayloadRetrieval, FXABFRetrieval,
     LegacyABFRetrieval, PlainXorRetrieval, RETRIEVALS, create_retrieval,
     deserialize_retrieval, make_value,

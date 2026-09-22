@@ -8,9 +8,9 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
-from Perf_Exp_05_3.scripts.common import read_csv  # noqa: E402
+ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(ROOT / "src"))
+from experiments.perf_05_3.scripts.common import read_csv  # noqa: E402
 
 
 def med(rows, **criteria):
@@ -86,7 +86,7 @@ def main():
              "15. **Ablation/supplement only.** c_max, NoOccurrence, coupled epoch, original full-system cross-scheme "
              "storage, and detailed primitive/phase diagnostics remain ablations or supplements.",
              "16. **Formal security status.** **CANDIDATE — FORMAL PROOF OPEN**."]
-    (ROOT / "Perf_Exp_05_3/docs/FULL_RESULTS_ANALYSIS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (ROOT / "src/experiments/perf_05_3/docs/FULL_RESULTS_ANALYSIS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     wording = "FXABE-05.3 achieves encryption-core performance comparable to FABEO under the same MNT224/Charm backend."
     summary = ["="*60, "=== FX-ABE 05.3 STANDARD FINAL AUDIT + FULL ===", "="*60,
                "Common curve/backend: MNT224 / Charm-Crypto/PBC", "EXP01/EXP09 accounting: PASS",

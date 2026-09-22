@@ -1,5 +1,5 @@
-from Code.fxabe_rev import TransformMetrics
-from Code.fxabe_rev.revocation import KUNodes
+from core.fxabe_rev import TransformMetrics
+from core.fxabe_rev.revocation import KUNodes
 
 
 def test_cover_boundaries_and_intersections(prepared):

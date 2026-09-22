@@ -8,10 +8,10 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
+ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(ROOT / "src"))
 
-from Perf_Exp_05_3.scripts.common import SCHEMA, dump_json, read_csv  # noqa: E402
+from experiments.perf_05_3.scripts.common import SCHEMA, dump_json, read_csv  # noqa: E402
 
 
 def _int(value):
@@ -98,7 +98,7 @@ def validate(run, require_plots=False):
         lines.extend("- " + x for x in errors + anomaly)
     else:
         lines.extend(["## Result", "", "No unresolved structural or >30% monotonic timing anomaly was detected."])
-    (ROOT / "Perf_Exp_05_3" / "docs" / "STANDARD_ANOMALY_REPORT.md").write_text("\n".join(lines) + "\n")
+    (ROOT / "src/experiments/perf_05_3" / "docs" / "STANDARD_ANOMALY_REPORT.md").write_text("\n".join(lines) + "\n")
     print("VALIDATION_%s" % ("PASS" if report["valid"] and not anomaly else "FAIL"))
     return report
 

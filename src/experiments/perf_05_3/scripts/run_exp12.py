@@ -15,14 +15,14 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from charm.toolbox.pairinggroup import PairingGroup
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
-from Code.fxabe_05_3_exp import FXABE053, OperationCounts, TransformMetrics  # noqa: E402
-from Code.fxabe_05_3_exp.storage import fxabe_ciphertext_bytes  # noqa: E402
-from Perf_Exp_05_3.scripts.aggregate import aggregate_file  # noqa: E402
-from Perf_Exp_05_3.scripts.common import (base_row, derive_seed, dump_json, environment,
+ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(ROOT / "src"))
+from core.fxabe_05_3_exp import FXABE053, OperationCounts, TransformMetrics  # noqa: E402
+from core.fxabe_05_3_exp.storage import fxabe_ciphertext_bytes  # noqa: E402
+from experiments.perf_05_3.scripts.aggregate import aggregate_file  # noqa: E402
+from experiments.perf_05_3.scripts.common import (base_row, derive_seed, dump_json, environment,
                                           load_yaml, write_csv)  # noqa: E402
-from Perf_Exp_05_3.workloads import distinct_token_workload  # noqa: E402
+from experiments.perf_05_3.workloads import distinct_token_workload  # noqa: E402
 
 
 def op_row(row, counts):
@@ -42,7 +42,7 @@ def legal_points(config):
 
 def run(config_path, run_id):
     config = load_yaml(config_path)
-    run_root = ROOT / "Perf_Exp_05_3/results" / run_id
+    run_root = ROOT / "src/experiments/perf_05_3/results" / run_id
     if run_root.exists():
         raise SystemExit(f"result directory exists: {run_root}")
     for child in ("raw", "aggregated", "plots", "logs"):
@@ -204,7 +204,7 @@ def analysis(run_root, rows, validation):
               "workload point rather than as a universal percentage.", "",
               "Occurrence semantics are unchanged: repeated labels receive ranks 1..actual_c_star, and every "
               "benchmarked point satisfies actual_c_star <= c_max."]
-    docs = ROOT / "Perf_Exp_05_3/docs"
+    docs = ROOT / "src/experiments/perf_05_3/docs"
     (docs / "EXP12_POLICY_U_ANALYSIS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 

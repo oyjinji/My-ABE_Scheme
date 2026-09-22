@@ -3,7 +3,7 @@
 import math
 from time import perf_counter_ns
 
-from Code.fxdacp.fxabf import FXABF, SegmentMeta, fuse_positions
+from core.fxdacp.fxabf import FXABF, SegmentMeta, fuse_positions
 
 from .base import (
     FilterBackend, QueryResult, check_bytes, open_pstore, prepare_pstore, size_result,

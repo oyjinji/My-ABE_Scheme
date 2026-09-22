@@ -6,20 +6,20 @@ import sys
 import argparse
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
 from charm.toolbox.pairinggroup import PairingGroup, GT
 
-from Code.dacp import DACPCPABE
-from Code.dacp.components import (
+from core.dacp import DACPCPABE
+from core.dacp.components import (
     AESGCMEnvelope,
     BlindPairingOPRF,
     Ed25519Signature,
     PrototypeCertificateAuthority,
 )
-from Code.dacp.protocol import (
+from core.dacp.protocol import (
     ACCESS_REQUEST,
     CIPHERTEXT_UPLOAD,
     OPRF_REQUEST,

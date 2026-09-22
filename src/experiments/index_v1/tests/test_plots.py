@@ -1,6 +1,6 @@
 import json
 
-from fx_exp.plots.plot_all import plot_run
+from experiments.index_v1.plots.plot_all import plot_run
 
 
 def test_plotter_writes_png_pdf_and_csv(tmp_path):

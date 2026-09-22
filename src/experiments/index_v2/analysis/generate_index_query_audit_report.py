@@ -138,7 +138,7 @@ def generate(input_dir):
 def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--input-dir", default="fx_exp_v2/results/index-query-audit"
+        "--input-dir", default="src/experiments/index_v2/results/index-query-audit"
     )
     args = parser.parse_args(argv)
     generate(args.input_dir)

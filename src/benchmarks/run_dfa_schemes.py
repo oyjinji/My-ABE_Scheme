@@ -5,14 +5,14 @@
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
 from charm.toolbox.pairinggroup import PairingGroup, GT
 from charm.toolbox.DFA import DFA
-from Code.fabeo22dfa import FABEO22DFA
-from Code.waters12dfa import WATERS12DFA
+from core.fabeo22dfa import FABEO22DFA
+from core.waters12dfa import WATERS12DFA
 
 def run_dfa(fe, alphabet, dfaM, x, msg):
     

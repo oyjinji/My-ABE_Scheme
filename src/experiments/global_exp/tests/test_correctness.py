@@ -9,12 +9,12 @@ import pytest
 
 from charm.toolbox.pairinggroup import GT
 
-from Code.fabeo22cp import FABEO22CPABE
-from Code.fxabe_rev import FXABERev, TransformMetrics
+from core.fabeo22cp import FABEO22CPABE
+from core.fxabe_rev import FXABERev, TransformMetrics
 
-from Global_Exp.src.adapters import create_adapter
-from Global_Exp.src.common import derive_seed
-from Global_Exp.src.workloads import build_workload
+from experiments.global_exp.src.adapters import create_adapter
+from experiments.global_exp.src.common import derive_seed
+from experiments.global_exp.src.workloads import build_workload
 
 MS = 20260812
 EPOCH = 1

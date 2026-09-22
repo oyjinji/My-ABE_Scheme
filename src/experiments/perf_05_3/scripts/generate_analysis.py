@@ -8,8 +8,8 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT))
-from Perf_Exp_05_3.scripts.common import read_csv  # noqa:E402
+ROOT=Path(__file__).resolve().parents[4];sys.path.insert(0,str(ROOT/"src"))
+from experiments.perf_05_3.scripts.common import read_csv  # noqa:E402
 
 
 def medians(rows,scheme,phase,x="ell"):
@@ -71,12 +71,12 @@ def main():
         "## Interpretation boundary","",
         "MNT224 is used solely because the audited FABEO repository benchmark fixes it. This is a common-backend performance profile, not a modern security-curve recommendation. The 05.3 construction remains **CANDIDATE — FORMAL PROOF OPEN**.",
     ]
-    target=ROOT/"Perf_Exp_05_3"/"docs"/"STANDARD_RESULTS_ANALYSIS.md";target.write_text("\n".join(lines)+"\n")
+    target=ROOT/"src/experiments/perf_05_3"/"docs"/"STANDARD_RESULTS_ANALYSIS.md";target.write_text("\n".join(lines)+"\n")
     (run/"FULL_GATE.json").write_text(json.dumps({"FULL_READY":"YES" if full_ready else "NO","full_executed":False},indent=2)+"\n")
     summary_lines = [
         "="*60, "=== FX-ABE 05.3 + FABEO COMMON-BACKEND EXPERIMENT ===", "="*60,
         "Reference documents: ABE-Scheme-05.3.md; ABE-Scheme-05.3-Revision.md; ABE-Scheme-05.3-Implementation-Profile.md; IMPLEMENTATION_VALIDATION_05_3.md",
-        "FABEO source: Code/fabeo22cp/__init__.py",
+        "FABEO source: src/core/fabeo22cp/__init__.py",
         "FABEO source provenance: git f2b402a; SHA256 6f72fbe7...",
         "FABEO curve/backend: MNT224 / Charm-Crypto/PBC",
         "FXABE benchmark curve/backend: MNT224 / Charm-Crypto/PBC",
@@ -93,7 +93,7 @@ def main():
     (run/"FINAL_SUMMARY.txt").write_text("\n".join(summary_lines)+"\n")
     print("="*60);print("=== FX-ABE 05.3 + FABEO COMMON-BACKEND EXPERIMENT ===");print("="*60)
     print("Reference documents: ABE-Scheme-05.3.md; ABE-Scheme-05.3-Revision.md; ABE-Scheme-05.3-Implementation-Profile.md; IMPLEMENTATION_VALIDATION_05_3.md")
-    print("FABEO source: Code/fabeo22cp/__init__.py")
+    print("FABEO source: src/core/fabeo22cp/__init__.py")
     print("FABEO source provenance: git f2b402a (file introduction), SHA256 6f72fbe7...")
     print("FABEO curve/backend: MNT224 / Charm-Crypto/PBC")
     print("FXABE benchmark curve/backend: MNT224 / Charm-Crypto/PBC")

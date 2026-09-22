@@ -13,11 +13,11 @@ from collections import deque
 from pathlib import Path
 from time import perf_counter_ns
 
-from Code.fxabe_rev.filters import create_index
-import Code.fxabe_rev.filters.fxabf as fxabf_module
+from core.fxabe_rev.filters import create_index
+import core.fxabe_rev.filters.fxabf as fxabf_module
 
-from fx_exp_v2.benchmarks.common import derive_seed, ns_to_ms, write_csv
-from fx_exp_v2.benchmarks.workload import f1_workload
+from experiments.index_v2.benchmarks.common import derive_seed, ns_to_ms, write_csv
+from experiments.index_v2.benchmarks.workload import f1_workload
 
 
 TARGET_FIELDS = [

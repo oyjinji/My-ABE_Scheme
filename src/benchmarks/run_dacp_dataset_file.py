@@ -9,12 +9,12 @@ import json
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
-from Code.dacp.data import append_summary_csv, run_dataset_file_experiment
-from Code.dacp.data.policies import get_policy, list_policies
+from core.dacp.data import append_summary_csv, run_dataset_file_experiment
+from core.dacp.data.policies import get_policy, list_policies
 
 
 def main():

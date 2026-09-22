@@ -1,7 +1,7 @@
 # FX-ABE Global Performance Complexity Audit — Summary
 
 Audit-only. No scheme modification, no optimization implemented, no re-run of the formal suite.
-Baseline `Global_Exp/results/global_full_20260812_v1/` untouched. All evidence under `Global_Exp/audit/results/` + `profiles/`.
+Baseline `src/experiments/global_exp/results/global_full_20260812_v1/` untouched. All evidence under `src/experiments/global_exp/audit/results/` + `profiles/`.
 
 ## The three gaps, explained without excuses
 

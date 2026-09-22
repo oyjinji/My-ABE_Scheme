@@ -26,7 +26,7 @@ def run_benchmarks(config, run_dir):
     benchmark_f3_correctness.run(
         config, run_dir / "raw" / "f3_correctness.csv"
     )
-    from fx_exp_v2.analysis.summarize_results import summarize_run
+    from experiments.index_v2.analysis.summarize_results import summarize_run
     summarize_run(run_dir)
 
 
@@ -54,17 +54,17 @@ def main(argv=None):
     print("run_dir:", run_dir, flush=True)
     run_benchmarks(config, run_dir)
     if args.validate:
-        from fx_exp_v2.analysis.validate_results import validate
+        from experiments.index_v2.analysis.validate_results import validate
         errors, _ = validate(run_dir)
         if errors:
             for error in errors:
                 print("ERROR:", error)
             raise SystemExit(1)
     if args.plot:
-        from fx_exp_v2.plots.plot_all import plot_all
+        from experiments.index_v2.plots.plot_all import plot_all
         plot_all(run_dir)
     if args.report:
-        from fx_exp_v2.analysis.generate_report import generate
+        from experiments.index_v2.analysis.generate_report import generate
         generate(run_dir)
     print("completed:", run_id)
 

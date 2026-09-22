@@ -11,12 +11,12 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 
 import yaml  # noqa: E402
 
-from Global_Exp.src.common import dump_json, load_config  # noqa: E402
-from Global_Exp.src.planning import project  # noqa: E402
+from experiments.global_exp.src.common import dump_json, load_config  # noqa: E402
+from experiments.global_exp.src.planning import project  # noqa: E402
 
 
 def main():
@@ -25,7 +25,7 @@ def main():
     parser.add_argument("--reference-dir", required=True,
                         help="completed standard run directory")
     parser.add_argument("--candidate-config",
-                        default="Global_Exp/configs/full.yaml")
+                        default="src/experiments/global_exp/configs/full.yaml")
     parser.add_argument("--run-name", default="global_full_20260812_v1")
     args = parser.parse_args()
 
@@ -41,7 +41,7 @@ def main():
     result["candidate_config"] = args.candidate_config
     result["candidate_run_name"] = args.run_name
     result["full_command"] = (
-        "python3 Global_Exp/scripts/run_all.py --config %s --run-name %s"
+        "python3 src/experiments/global_exp/scripts/run_all.py --config %s --run-name %s"
         % (args.candidate_config, args.run_name)
     )
     dump_json(reference_dir / "logs" / "runtime_projection.json", result)

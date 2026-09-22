@@ -2,7 +2,7 @@
 
 ## Source and provenance
 
-- Source path: `Code/fabeo22cp/__init__.py`.
+- Source path: `src/core/fabeo22cp/__init__.py`.
 - Repository remote: `https://github.com/oyjinji/My-ABE_Scheme.git`.
 - Current repository commit at audit: `09e176a7b5553f850c30d9ba9fdcada4a970b4e0`.
 - File-introduction commit: `f2b402afb8776dd9256f268ed5d44fcc5caf1cc4` (2026-06-10, author Jinji).
@@ -14,7 +14,7 @@ The adapter imports `FABEO22CPABE` directly. It does not edit or replace Setup, 
 ## Common benchmark profile
 
 - Pairing library/backend: Charm-Crypto 0.63 using its PBC-backed `PairingGroup` API.
-- Official benchmark instantiation: `Benchmark/measurements_cp.py:145`, `PairingGroup('MNT224')`.
+- Official benchmark instantiation: `src/benchmarks/measurements_cp.py:145`, `PairingGroup('MNT224')`.
 - Curve/group: `MNT224`; order size observed as 224 bits.
 - Pairing orientation used by source: `pair(G1, G2)`.
 - Canonical serialized sizes observed on this machine: G1 42 B, G2 118 B, GT 226 B, ZR 42 B.
@@ -30,7 +30,7 @@ Setup samples `g1 in G1`, `g2 in G2`, `alpha in ZR`, and publishes `e(g1,g2)^alp
 
 KeyGen samples `r`, sets `g2_r=g2^r`, `sk1[attr]=H(attr)^r`, and `sk2=g1^alpha H(ZR+1)^r`.
 
-Encrypt converts the Boolean policy with `Code.msp.MSP`, samples `s1,sprime`, publishes `g2^s1`, `g2^sprime`, and for each MSP row computes `H(ZR+1)^lambda_i H(attr)^sprime`. The KEM component is `e(g1,g2)^(alpha*s1) * msg`.
+Encrypt converts the Boolean policy with `core.msp.MSP`, samples `s1,sprime`, publishes `g2^s1`, `g2^sprime`, and for each MSP row computes `H(ZR+1)^lambda_i H(attr)^sprime`. The KEM component is `e(g1,g2)^(alpha*s1) * msg`.
 
 Decrypt calls the official `MSP.prune(policy,key.attr_list)`. It multiplies only the returned nodes into `prod_sk` and `prod_ct`, then executes exactly three pairings:
 

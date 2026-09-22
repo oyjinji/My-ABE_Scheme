@@ -14,8 +14,8 @@ from time import perf_counter_ns
 import yaml
 
 
-ROOT = Path(__file__).resolve().parents[2]
-EXP_ROOT = ROOT / "Perf_Exp_05_3"
+ROOT = Path(__file__).resolve().parents[4]
+EXP_ROOT = ROOT / "src/experiments/perf_05_3"
 
 SCHEMA = [
     "run_id", "experiment", "scheme", "curve", "backend", "workload", "seed", "replicate",

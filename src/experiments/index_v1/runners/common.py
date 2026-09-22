@@ -16,17 +16,17 @@ from pathlib import Path
 import cryptography
 import yaml
 
-from fx_exp.generators import derive_seed
+from experiments.index_v1.generators import derive_seed
 
 
-ROOT = Path(__file__).resolve().parents[2]
-RESULTS = ROOT / "fx_exp" / "results"
+ROOT = Path(__file__).resolve().parents[4]
+RESULTS = ROOT / "src/experiments/index_v1" / "results"
 
 
 def load_config(profile_or_path):
     candidate = Path(profile_or_path)
     if not candidate.exists():
-        candidate = ROOT / "fx_exp" / "configs" / (profile_or_path + ".yaml")
+        candidate = ROOT / "src/experiments/index_v1" / "configs" / (profile_or_path + ".yaml")
     with candidate.open("r", encoding="utf-8") as handle:
         config = yaml.safe_load(handle)
     if not isinstance(config, dict) or "experiments" not in config:
@@ -49,7 +49,7 @@ class ExperimentRun:
             raise FileExistsError("run directory exists; pass --resume: {0}".format(self.run_dir))
         for child in ("raw", "summary", "plots", "plot_data", "logs"):
             (self.run_dir / child).mkdir(parents=True, exist_ok=True)
-        profile_logs = ROOT / "fx_exp" / "logs" / self.profile
+        profile_logs = ROOT / "src/experiments/index_v1" / "logs" / self.profile
         profile_logs.mkdir(parents=True, exist_ok=True)
         self.log_path = profile_logs / (self.run_id + ".log")
         with self.log_path.open("a", encoding="utf-8") as handle:

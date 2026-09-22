@@ -1,4 +1,4 @@
-from Code.fxdacp import OperationMetrics
+from core.fxdacp import OperationMetrics
 
 
 def test_duplicate_policy_attribute_reuses_token_but_not_rows(scheme):

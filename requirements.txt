@@ -1,1 +1,32 @@
+# Runtime dependencies for the whole repository.
+#
+# This file is authoritative. The per-suite files under
+#   src/experiments/index_v1/requirements.txt
+#   src/experiments/index_v2/requirements.txt
+# are kept only as historical declarations of what each suite asked for when it
+# was written; they are supersets/subsets of this list and are not installed by
+# the reproduction steps in README.md.
+#
+# Verified against Python 3.8.10 (the interpreter used for the measurements in
+# src/experiments/*/results/).
+
+# Pairing backend. Pinned: Charm's MNT224 curve, serialization layout, and
+# element ordering are version-sensitive, and the recorded byte-size results
+# depend on them.
 charm-crypto==0.63
+
+# AEAD (AES-GCM) and hash/KDF primitives used by the DACP and PStore layers.
+cryptography>=2.8
+
+# Dataset/config loading.
+PyYAML>=5.3
+
+# Result aggregation and table generation.
+numpy>=1.24
+pandas>=2.0
+
+# Figure generation for the experiment reports.
+matplotlib>=3.7
+
+# Test suite. pytest.ini sets `pythonpath = src`, which requires pytest >= 7.
+pytest>=8.0

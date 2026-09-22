@@ -4,7 +4,7 @@ Small run (3 warm-ups, 5 reps) to distinguish fixed vs per-row encryption
 cost.  Also micro-benchmarks the raw group operations (pair, G1/G2/GT exp,
 hash-to-group) that feed the operation ledger.
 
-No Global_Exp result is touched; output goes to Global_Exp/audit/results/.
+No Global_Exp result is touched; output goes to src/experiments/global_exp/audit/results/.
 """
 
 import csv
@@ -12,13 +12,13 @@ import os
 import sys
 from time import perf_counter_ns
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 sys.path.insert(0, ROOT)
 
 from charm.toolbox.pairinggroup import PairingGroup, G1, G2, GT, ZR, pair
 
-from Global_Exp.src.adapters import create_adapter
-from Global_Exp.src.workloads import build_workload
+from experiments.global_exp.src.adapters import create_adapter
+from experiments.global_exp.src.workloads import build_workload
 
 GROUP = PairingGroup("MNT224", secparam=512)
 OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results")

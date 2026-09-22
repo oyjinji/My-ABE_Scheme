@@ -1,7 +1,7 @@
 """Shared configuration, run-directory, CSV/JSON I/O and environment capture.
 
-Mirrors the conventions of ``Rev_Exp/src/common.py`` and
-``fx_exp_v2/benchmarks/common.py`` so Global_Exp stays consistent with the
+Mirrors the conventions of ``src/experiments/rev_exp/src/common.py`` and
+``src/experiments/index_v2/benchmarks/common.py`` so Global_Exp stays consistent with the
 existing experiment suites.
 """
 
@@ -18,10 +18,10 @@ from pathlib import Path
 
 import yaml
 
-from Code.fxabe_rev.serialization import dumps
+from core.fxabe_rev.serialization import dumps
 
-ROOT = Path(__file__).resolve().parents[2]
-GLOBAL_ROOT = ROOT / "Global_Exp"
+ROOT = Path(__file__).resolve().parents[4]
+GLOBAL_ROOT = ROOT / "src/experiments/global_exp"
 RESULTS_ROOT = GLOBAL_ROOT / "results"
 
 # Metrics that are algorithmically N/A for a scheme and must stay blank/NaN
@@ -66,7 +66,7 @@ def load_config(path):
 
 
 def create_results_dir(mode, run_name=None):
-    """Create a non-overwriting run directory under Global_Exp/results."""
+    """Create a non-overwriting run directory under src/experiments/global_exp/results."""
     if run_name is None:
         stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S.%fZ")
         run_name = "%s_%s" % (str(mode), stamp)

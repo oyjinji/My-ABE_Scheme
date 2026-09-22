@@ -2,14 +2,14 @@
 """Run the Global ABE end-to-end performance experiments.
 
 Usage:
-    python3 Global_Exp/scripts/run_all.py --config Global_Exp/configs/smoke.yaml \
+    python3 src/experiments/global_exp/scripts/run_all.py --config src/experiments/global_exp/configs/smoke.yaml \
         --run-name global_smoke_20260812_v1
-    python3 Global_Exp/scripts/run_all.py --config Global_Exp/configs/standard.yaml \
+    python3 src/experiments/global_exp/scripts/run_all.py --config src/experiments/global_exp/configs/standard.yaml \
         --run-name global_standard_20260812_v1
-    python3 Global_Exp/scripts/run_all.py --config Global_Exp/configs/full.yaml \
+    python3 src/experiments/global_exp/scripts/run_all.py --config src/experiments/global_exp/configs/full.yaml \
         --run-name global_full_20260812_v1 [--experiments exp03,exp06]
 
-Writes the run directory ``Global_Exp/results/<run_name>/`` with metadata.json,
+Writes the run directory ``src/experiments/global_exp/results/<run_name>/`` with metadata.json,
 config_snapshot.yaml, environment.json, correctness.json, raw/, summary/,
 plots/ and logs/.
 """
@@ -20,15 +20,15 @@ import sys
 import time
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 
 from charm.toolbox.pairinggroup import PairingGroup  # noqa: E402
 
-from Global_Exp.src.common import (  # noqa: E402
+from experiments.global_exp.src.common import (  # noqa: E402
     dump_json, dump_yaml, environment_record, load_config,
     results_paths, set_single_cpu_affinity, create_results_dir,
 )
-from Global_Exp.src.experiments import (  # noqa: E402
+from experiments.global_exp.src.experiments import (  # noqa: E402
     RUNNERS, run_correctness_check, run_experiments,
 )
 

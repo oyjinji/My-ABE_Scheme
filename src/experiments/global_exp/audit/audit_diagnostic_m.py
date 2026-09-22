@@ -12,12 +12,12 @@ import os
 import sys
 from time import perf_counter_ns
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 sys.path.insert(0, ROOT)
 
 from charm.toolbox.pairinggroup import PairingGroup
 
-from Global_Exp.src.adapters import create_adapter
+from experiments.global_exp.src.adapters import create_adapter
 
 GROUP = PairingGroup("MNT224", secparam=512)
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results",

@@ -258,7 +258,7 @@ def analyze(output_dir):
         "Bloom membership bitmap followed by an SHA-256 exact locator and the "
         "common encrypted PStore. It is now displayed as `Bloom+Locator`. It "
         "is not the legacy greedy XOR retrieval ABF in "
-        "`fx_exp/filters/original_abf.py`; no traditional ABF comparison is "
+        "`src/experiments/index_v1/filters/original_abf.py`; no traditional ABF comparison is "
         "claimed.", "",
         "## Code-level root cause", "",
         "The pre-fix profile held segment length at 64. The segment count "

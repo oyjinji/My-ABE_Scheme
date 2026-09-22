@@ -7,11 +7,11 @@ import csv
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
-from Code.dacp.marketplace import (
+from core.dacp.marketplace import (
     ProductCatalog,
     SimpleCSVSlicer,
     SliceRule,
@@ -130,8 +130,8 @@ def main():
     args = parser.parse_args()
 
     output_dir = Path(args.output_dir)
-    product_dir = ROOT / 'data' / 'products' / 'synthetic_nyc'
-    dataset_path = ROOT / 'data' / 'work' / 'synthetic_nyc_marketplace.csv'
+    product_dir = ROOT / 'shared' / 'data' / 'products' / 'synthetic_nyc'
+    dataset_path = ROOT / 'shared' / 'data' / 'work' / 'synthetic_nyc_marketplace.csv'
     write_synthetic_nyc(dataset_path, args.num_rows)
 
     products = SimpleCSVSlicer().slice(dataset_path, make_rules(), product_dir)

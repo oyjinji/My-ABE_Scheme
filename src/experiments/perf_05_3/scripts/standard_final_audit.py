@@ -14,10 +14,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
-from Code.fxabe_05_3_exp.encoding import encode  # noqa: E402
-from Perf_Exp_05_3.scripts.common import read_csv  # noqa: E402
+ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(ROOT / "src"))
+from core.fxabe_05_3_exp.encoding import encode  # noqa: E402
+from experiments.perf_05_3.scripts.common import read_csv  # noqa: E402
 
 
 TARGET_ELL = (40, 80, 160, 320, 640)
@@ -329,7 +329,7 @@ def main():
     parser.add_argument("run_dir")
     args = parser.parse_args()
     run = Path(args.run_dir).resolve()
-    docs = ROOT / "Perf_Exp_05_3/docs"
+    docs = ROOT / "src/experiments/perf_05_3/docs"
     accounting_audit(run, docs)
     interpretation, _ = statistical_audit(run, docs)
     operation_audit(run, docs)

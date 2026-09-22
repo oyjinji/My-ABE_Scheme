@@ -4,8 +4,8 @@ import hashlib
 import math
 from time import perf_counter_ns
 
-from Code.fxdacp.encoding import encode
-from Code.fxdacp.crypto_utils import random_bytes
+from core.fxdacp.encoding import encode
+from core.fxdacp.crypto_utils import random_bytes
 
 from .base import (
     FilterBackend, QueryResult, check_bytes, open_pstore, prepare_pstore, size_result,

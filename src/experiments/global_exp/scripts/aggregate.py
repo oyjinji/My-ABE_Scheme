@@ -12,11 +12,11 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 
-from Global_Exp.src.common import results_paths  # noqa: E402
-from Global_Exp.src.experiments import RAW_FILENAMES  # noqa: E402
-from Global_Exp.src.statistics import summary  # noqa: E402
+from experiments.global_exp.src.common import results_paths  # noqa: E402
+from experiments.global_exp.src.experiments import RAW_FILENAMES  # noqa: E402
+from experiments.global_exp.src.statistics import summary  # noqa: E402
 
 EXPERIMENT_METRICS = {
     "exp01": ["setup_ms", "crypto_setup_ms", "aux_setup_ms"],

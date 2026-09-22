@@ -4,7 +4,7 @@ import hashlib
 import math
 from time import perf_counter_ns
 
-from Code.fxdacp.encoding import encode
+from core.fxdacp.encoding import encode
 
 from .base import FilterBackend, QueryResult, open_pstore, prepare_pstore, size_result
 

@@ -7,9 +7,9 @@ import math
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
-from Perf_Exp_05_3.scripts.common import SCHEMA, dump_json, read_csv  # noqa: E402
+ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(ROOT / "src"))
+from experiments.perf_05_3.scripts.common import SCHEMA, dump_json, read_csv  # noqa: E402
 
 
 EXPECTED = {"exp01_encrypt.csv", "exp02_storage.csv", "exp03_transform_vs_J.csv",

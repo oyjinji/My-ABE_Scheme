@@ -15,8 +15,8 @@ from pathlib import Path
 import yaml
 
 
-ROOT = Path(__file__).resolve().parents[2]
-RESULTS_ROOT = ROOT / "fx_exp_v2" / "results"
+ROOT = Path(__file__).resolve().parents[4]
+RESULTS_ROOT = ROOT / "src/experiments/index_v2" / "results"
 
 
 def derive_seed(master_seed, *parts):

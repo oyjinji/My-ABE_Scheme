@@ -7,16 +7,16 @@ import sys
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[4]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
-os.environ.setdefault("MPLCONFIGDIR", str(ROOT / "Rev_Exp" / ".mplconfig"))
+    sys.path.insert(0, str(ROOT / "src"))
+os.environ.setdefault("MPLCONFIGDIR", str(ROOT / "src/experiments/rev_exp" / ".mplconfig"))
 
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from Rev_Exp.src.common import read_csv, results_paths
+from experiments.rev_exp.src.common import read_csv, results_paths
 
 
 FILES = {

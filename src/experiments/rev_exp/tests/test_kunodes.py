@@ -1,7 +1,7 @@
 import random
 
-from Code.fxabe_rev.revocation import BinaryRevocationTree
-from Rev_Exp.src.revocation import kunodes
+from core.fxabe_rev.revocation import BinaryRevocationTree
+from experiments.rev_exp.src.revocation import kunodes
 
 
 def _registered(count, capacity=64):

@@ -7,21 +7,21 @@ import subprocess
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
 from charm.toolbox.pairinggroup import PairingGroup, G1, G2, GT, ZR
 
-from Code.dacp import DACPCPABE
-from Code.dacp.components import (
+from core.dacp import DACPCPABE
+from core.dacp.components import (
     AESGCMEnvelope,
     BlindPairingOPRF,
     Ed25519Signature,
     PrototypeCertificateAuthority,
 )
-from Code.dacp.protocol import MessageEnvelope, WireCodec, make_message
-from Code.dacp.protocol.messages import OPRF_REQUEST, OPRF_RESPONSE
+from core.dacp.protocol import MessageEnvelope, WireCodec, make_message
+from core.dacp.protocol.messages import OPRF_REQUEST, OPRF_RESPONSE
 
 
 def assert_true(name, condition):
@@ -161,7 +161,7 @@ def test_protocol_script():
     output = subprocess.check_output(
         [
             sys.executable,
-            str(ROOT / 'Benchmark' / 'run_dacp_protocol.py'),
+            str(ROOT / 'src' / 'benchmarks' / 'run_dacp_protocol.py'),
             '--oprf',
             'blind',
             '--sig',

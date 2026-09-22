@@ -1,6 +1,6 @@
 import json
 
-from fx_exp.runners import common
+from experiments.index_v1.runners import common
 
 
 def test_profiles_parse_and_full_grid_is_nonempty():

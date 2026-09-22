@@ -7,11 +7,11 @@ import sys
 import tempfile
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
-from Code.dacp.data import (
+from core.dacp.data import (
     AuditLog,
     ChunkRecord,
     DatasetManifest,
@@ -25,9 +25,9 @@ from Code.dacp.data import (
     sha256_bytes,
     sha256_file,
 )
-from Code.dacp.data.chunk_crypto import decrypt_chunks_to_file, encrypt_file_in_chunks
-from Code.dacp.data.manifest import utc_now_iso
-from Code.dacp.data.policies import get_policy
+from core.dacp.data.chunk_crypto import decrypt_chunks_to_file, encrypt_file_in_chunks
+from core.dacp.data.manifest import utc_now_iso
+from core.dacp.data.policies import get_policy
 
 
 def assert_true(name, condition):

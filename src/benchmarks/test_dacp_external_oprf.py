@@ -5,14 +5,14 @@ Tests for feeding protocol OPRF tokens into DACPCPABE.encrypt().
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
 from charm.toolbox.pairinggroup import PairingGroup, GT
 
-from Code.dacp import DACPCPABE
-from Code.dacp.components import BlindPairingOPRF
+from core.dacp import DACPCPABE
+from core.dacp.components import BlindPairingOPRF
 
 
 def assert_true(name, condition):

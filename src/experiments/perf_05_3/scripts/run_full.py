@@ -9,11 +9,11 @@ import sys
 from pathlib import Path
 from time import perf_counter_ns
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
+ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(ROOT / "src"))
 from charm.toolbox.pairinggroup import PairingGroup  # noqa: E402
-from Perf_Exp_05_3.scripts.common import dump_json, environment, load_yaml  # noqa: E402
-from Perf_Exp_05_3.scripts.run_suite import (run_exp01, run_exp02, run_exp03, run_exp04,
+from experiments.perf_05_3.scripts.common import dump_json, environment, load_yaml  # noqa: E402
+from experiments.perf_05_3.scripts.run_suite import (run_exp01, run_exp02, run_exp03, run_exp04,
                                              run_exp06, run_exp07, run_exp08_09,
                                              run_exp10, run_exp11, write_feature_table)  # noqa: E402
 
@@ -40,7 +40,7 @@ def main():
     gate = json.loads((standard / "PRE_FULL_GATE.json").read_text())
     if not gate.get("FULL_READY"):
         raise SystemExit("PRE_FULL gate is not ready")
-    run_root = ROOT / "Perf_Exp_05_3/results" / args.run_id
+    run_root = ROOT / "src/experiments/perf_05_3/results" / args.run_id
     if run_root.exists() and not args.resume:
         raise SystemExit(f"result directory exists: {run_root}")
     for child in ("raw", "aggregated", "plots", "logs"):
@@ -54,7 +54,7 @@ def main():
     if not args.resume or not (run_root / "correctness.json").exists():
         dump_json(run_root / "environment.json", environment(group, args.config))
         shutil.copy2(args.config, run_root / "config_snapshot.yaml")
-        test = subprocess.run([sys.executable, "-m", "pytest", "-q", "Perf_Exp_05_3/tests/test_correctness.py"],
+        test = subprocess.run([sys.executable, "-m", "pytest", "-q", "src/experiments/perf_05_3/tests/test_correctness.py"],
                               cwd=str(ROOT), text=True, capture_output=True)
         dump_json(run_root / "correctness.json", {"success": test.returncode == 0,
                                                    "stdout": test.stdout, "stderr": test.stderr})

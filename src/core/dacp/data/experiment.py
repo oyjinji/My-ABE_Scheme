@@ -11,14 +11,14 @@ from pathlib import Path
 
 from charm.toolbox.pairinggroup import PairingGroup
 
-from Code.dacp import DACPCPABE
-from Code.dacp.components import (
+from core.dacp import DACPCPABE
+from core.dacp.components import (
     AESGCMEnvelope,
     BlindPairingOPRF,
     Ed25519Signature,
     PrototypeCertificateAuthority,
 )
-from Code.dacp.protocol import (
+from core.dacp.protocol import (
     ACCESS_REQUEST,
     CIPHERTEXT_UPLOAD,
     OPRF_REQUEST,

@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 def repo_root():
-    return Path(__file__).resolve().parents[3]
+    return Path(__file__).resolve().parents[4]
 
 
 def ensure_dir(path):
@@ -16,8 +16,8 @@ def ensure_dir(path):
 
 
 def default_results_dir():
-    return repo_root() / 'results' / 'dacp_data'
+    return repo_root() / 'shared' / 'results' / 'dacp_data'
 
 
 def default_data_dir(name):
-    return repo_root() / 'data' / name
+    return repo_root() / 'shared' / 'data' / name

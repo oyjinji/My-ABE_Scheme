@@ -15,7 +15,7 @@ for every experimental point.
 Policy size is defined by ``l = number of LSSS policy rows`` (requirement
 5.2).  We use a monotone OR policy over ``l`` distinct attributes, which the
 repository's MSP conversion maps to exactly ``l`` unit rows (verified against
-``Code/msp`` and ``Code/fxabe_rev/lsss.py``).
+``src/core/msp`` and ``src/core/fxabe_rev/lsss.py``).
 """
 
 import hashlib

@@ -21,11 +21,11 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 
-from Global_Exp.src.common import results_paths  # noqa: E402
-from Global_Exp.src.experiments import RAW_FILENAMES  # noqa: E402
-from Global_Exp.scripts.aggregate import EXPERIMENT_METRICS  # noqa: E402
+from experiments.global_exp.src.common import results_paths  # noqa: E402
+from experiments.global_exp.src.experiments import RAW_FILENAMES  # noqa: E402
+from experiments.global_exp.scripts.aggregate import EXPERIMENT_METRICS  # noqa: E402
 
 # Metrics each (experiment, scheme) must carry on every status=ok row.
 REQUIRED_METRICS = {

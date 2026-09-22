@@ -10,16 +10,16 @@ import itertools
 import os
 import sys
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
 import pytest
 from charm.toolbox.pairinggroup import PairingGroup, ZR
 
-from Global_Exp.src.adapters import create_adapter
-from Global_Exp.src.workloads import build_workload
-from Code.fxabe_rev.lsss import solve_reconstruction
+from experiments.global_exp.src.adapters import create_adapter
+from experiments.global_exp.src.workloads import build_workload
+from core.fxabe_rev.lsss import solve_reconstruction
 
 
 @pytest.fixture(scope="module")
@@ -72,7 +72,7 @@ def test_fxabe_transform_pair_count_equals_2_plus_2_matched(group):
 
 
 def test_fabeo_prune_selects_single_node(group):
-    from Code.fabeo22cp import FABEO22CPABE
+    from core.fabeo22cp import FABEO22CPABE
     scheme = FABEO22CPABE(group)
     pk, msk = scheme.setup()
     w = _workload(8, group)

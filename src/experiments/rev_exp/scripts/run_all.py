@@ -8,25 +8,25 @@ import sys
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[4]
 sys.dont_write_bytecode = True
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
-from Rev_Exp.scripts.aggregate import SPECS, aggregate_all
-from Rev_Exp.scripts.plot_all import main as plot_main
-from Rev_Exp.src.common import (
+from experiments.rev_exp.scripts.aggregate import SPECS, aggregate_all
+from experiments.rev_exp.scripts.plot_all import main as plot_main
+from experiments.rev_exp.src.common import (
     create_results_dir, dump_json, environment_metadata, load_config, results_paths,
 )
-from Rev_Exp.src.experiments import run_selected
-from Rev_Exp.src.planning import format_plan, plan_totals, workload_plan
+from experiments.rev_exp.src.experiments import run_selected
+from experiments.rev_exp.src.planning import format_plan, plan_totals, workload_plan
 
 
 def _correctness_gate():
     test_env = dict(os.environ)
     test_env["PYTHONDONTWRITEBYTECODE"] = "1"
     subprocess.run(
-        [sys.executable, "-m", "pytest", "Rev_Exp/tests", "-q",
+        [sys.executable, "-m", "pytest", "src/experiments/rev_exp/tests", "-q",
          "-p", "no:cacheprovider"],
         cwd=str(ROOT), check=True, env=test_env,
     )
@@ -36,7 +36,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", required=True)
     parser.add_argument("--run-name",
-                        help="non-overwriting subdirectory under Rev_Exp/results")
+                        help="non-overwriting subdirectory under src/experiments/rev_exp/results")
     parser.add_argument("--dry-run", action="store_true",
                         help="print tiered workload only; execute no crypto")
     parser.add_argument("--skip-tests", action="store_true")
@@ -73,7 +73,7 @@ def main(argv=None):
     aggregate_all(run_dir, names if args.experiments else None)
     if not args.experiments:
         subprocess.run(
-            [sys.executable, "Rev_Exp/scripts/validate_results.py",
+            [sys.executable, "src/experiments/rev_exp/scripts/validate_results.py",
              "--results-dir", str(run_dir)],
             cwd=str(ROOT), check=True,
         )

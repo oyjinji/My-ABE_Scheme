@@ -1,6 +1,6 @@
 """Encrypt / Transform operation ledgers.
 
-Static counts derived by reading the real code (Code/fabeo22cp, Code/fxabe_rev)
+Static counts derived by reading the real code (src/core/fabeo22cp, src/core/fxabe_rev)
 combined with measured per-operation costs (results/operation_costs.csv) from
 this MNT224 backend.  Writes:
 

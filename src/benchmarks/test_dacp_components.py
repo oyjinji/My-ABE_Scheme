@@ -5,14 +5,14 @@ Smoke tests for DACP prototype components.
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
 from charm.toolbox.pairinggroup import PairingGroup, GT, ZR
 
-from Code.dacp import DACPCPABE
-from Code.dacp.components import (
+from core.dacp import DACPCPABE
+from core.dacp.components import (
     BlindPairingOPRF,
     PrototypeABF,
     PrototypeCertificateAuthority,

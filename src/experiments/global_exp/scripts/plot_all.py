@@ -16,9 +16,9 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 
-from Global_Exp.src.common import results_paths  # noqa: E402
+from experiments.global_exp.src.common import results_paths  # noqa: E402
 
 SCHEME_COLORS = {
     "FABEO22": "#1f77b4",

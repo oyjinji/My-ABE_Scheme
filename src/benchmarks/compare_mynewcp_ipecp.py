@@ -6,15 +6,15 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
 from charm.toolbox.pairinggroup import PairingGroup, GT
 
-from Code.ipecp import IPECPABE
-from Code.mynewcp import MyNewCPABE
-from Code.msp import MSP
+from core.ipecp import IPECPABE
+from core.mynewcp import MyNewCPABE
+from core.msp import MSP
 
 
 def estimate_value_size(group, value):

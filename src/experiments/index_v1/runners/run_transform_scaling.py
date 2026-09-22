@@ -5,9 +5,9 @@ from time import perf_counter_ns
 
 from charm.toolbox.pairinggroup import PairingGroup, pair
 
-from Code.fxdacp import FXDACP
-from fx_exp.filters import create_backends
-from fx_exp.generators import fixed_match_or_policy, user_attributes
+from core.fxdacp import FXDACP
+from experiments.index_v1.filters import create_backends
+from experiments.index_v1.generators import fixed_match_or_policy, user_attributes
 from .common import ExperimentRun, configure, parser
 
 

@@ -1,9 +1,9 @@
 from pathlib import Path
 
-from fx_exp_v2.analysis.summarize_results import summarize_run
-from fx_exp_v2.analysis.validate_results import validate
-from fx_exp_v2.benchmarks.common import dump_json, dump_yaml
-from fx_exp_v2.benchmarks.run_suite import run_benchmarks
+from experiments.index_v2.analysis.summarize_results import summarize_run
+from experiments.index_v2.analysis.validate_results import validate
+from experiments.index_v2.benchmarks.common import dump_json, dump_yaml
+from experiments.index_v2.benchmarks.run_suite import run_benchmarks
 
 
 def test_tiny_real_suite(tmp_path):

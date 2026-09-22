@@ -5,16 +5,16 @@
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(ROOT / "src"))
 
 from charm.toolbox.pairinggroup import PairingGroup, GT
-from Code.abgw17kp import ABGW17KPABE
-from Code.ac17kp import AC17KPABE
-from Code.cgw15kp import CGW15KPABE
-from Code.fabeo22kp import FABEO22KPABE
-from Code.gpsw06kp import GPSW06KPABE
+from core.abgw17kp import ABGW17KPABE
+from core.ac17kp import AC17KPABE
+from core.cgw15kp import CGW15KPABE
+from core.fabeo22kp import FABEO22KPABE
+from core.gpsw06kp import GPSW06KPABE
 
 
 def run_kpabe(abe, attr_list, policy_str, msg):

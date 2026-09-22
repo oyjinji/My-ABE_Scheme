@@ -11,16 +11,16 @@ import csv
 import os
 import sys
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 sys.path.insert(0, ROOT)
 
 from charm.toolbox.pairinggroup import PairingGroup
 
-from Global_Exp.src.adapters import create_adapter
-from Global_Exp.src.workloads import build_workload
-from Global_Exp.audit.audit_reconstruction import matched_rows, nonzero
-from Code.fxabe_rev.lsss import solve_reconstruction
-from Code.fabeo22cp import FABEO22CPABE
+from experiments.global_exp.src.adapters import create_adapter
+from experiments.global_exp.src.workloads import build_workload
+from experiments.global_exp.audit.audit_reconstruction import matched_rows, nonzero
+from core.fxabe_rev.lsss import solve_reconstruction
+from core.fabeo22cp import FABEO22CPABE
 
 GROUP = PairingGroup("MNT224", secparam=512)
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results",

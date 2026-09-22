@@ -3,9 +3,9 @@ import copy
 import pytest
 from charm.toolbox.pairinggroup import GT
 
-from Code.fabeo22cp import FABEO22CPABE
-from Code.fxabe_05_3_exp import FXABE053, NoOccurrenceFXABE, TransformMetrics
-from Code.fxabe_05_3_exp.lsss import policy_rows
+from core.fabeo22cp import FABEO22CPABE
+from core.fxabe_05_3_exp import FXABE053, NoOccurrenceFXABE, TransformMetrics
+from core.fxabe_05_3_exp.lsss import policy_rows
 
 
 def threshold_policy(n, k):

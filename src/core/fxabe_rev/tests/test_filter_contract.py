@@ -1,6 +1,6 @@
 import random
 
-from Code.fxabe_rev.filters import FILTERS, AnonymousIndex
+from core.fxabe_rev.filters import FILTERS, AnonymousIndex
 
 
 def test_all_filters_share_retrieval_contract():

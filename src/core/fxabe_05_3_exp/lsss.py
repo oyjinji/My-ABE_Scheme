@@ -2,7 +2,7 @@
 
 from charm.toolbox.pairinggroup import ZR
 
-from Code.msp import MSP
+from core.msp import MSP
 
 
 def policy_rows(group, policy):

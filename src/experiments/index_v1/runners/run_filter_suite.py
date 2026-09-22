@@ -3,8 +3,8 @@
 import random
 from time import perf_counter_ns
 
-from fx_exp.filters import create_backends
-from fx_exp.generators import nonmember_tokens, token_entries
+from experiments.index_v1.filters import create_backends
+from experiments.index_v1.generators import nonmember_tokens, token_entries
 from .common import ExperimentRun, configure, parser
 
 

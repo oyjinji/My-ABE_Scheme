@@ -4,8 +4,8 @@ import hashlib
 import math
 from time import perf_counter_ns
 
-from Code.fxdacp.crypto_utils import aead_decrypt, aead_encrypt, kdf, random_bytes
-from Code.fxdacp.encoding import decode_posting_list, encode, encode_posting_list
+from core.fxdacp.crypto_utils import aead_decrypt, aead_encrypt, kdf, random_bytes
+from core.fxdacp.encoding import decode_posting_list, encode, encode_posting_list
 
 from .attribute_bf_2018 import _xor
 from .base import FilterBackend, QueryResult, size_result

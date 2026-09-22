@@ -15,12 +15,12 @@ from collections import defaultdict
 from pathlib import Path
 from time import perf_counter_ns
 
-from Code.fxabe_rev.crypto_utils import aead_decrypt, equal, kdf
-from Code.fxabe_rev.encoding import decode_posting_list, encode
-from Code.fxabe_rev.filters import create_index
-from Code.fxabe_rev.filters.fxabf import PROFILE, plan_segments
+from core.fxabe_rev.crypto_utils import aead_decrypt, equal, kdf
+from core.fxabe_rev.encoding import decode_posting_list, encode
+from core.fxabe_rev.filters import create_index
+from core.fxabe_rev.filters.fxabf import PROFILE, plan_segments
 
-from fx_exp_v2.benchmarks.common import derive_seed
+from experiments.index_v2.benchmarks.common import derive_seed
 
 
 INDEX_NAMES = (
@@ -310,7 +310,7 @@ def _profile_query(name, state, token, context):
 
 def _exact_system_query(state, token, context):
     """System-level exact-map query using the real locator and PStore code."""
-    from Code.fxabe_rev.filters.base import (
+    from core.fxabe_rev.filters.base import (
         open_pstore_profiled, profiled_locator_query,
     )
     metrics = {phase: 0 for phase in PHASES}
@@ -500,7 +500,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--output-dir",
-        default="fx_exp_v2/results/index-query-audit",
+        default="src/experiments/index_v2/results/index-query-audit",
     )
     parser.add_argument("--master-seed", type=int, default=20260729)
     parser.add_argument("--independent-workloads", type=int, default=30)

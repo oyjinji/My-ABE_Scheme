@@ -17,14 +17,14 @@ import itertools
 import os
 import sys
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 sys.path.insert(0, ROOT)
 
 from charm.toolbox.pairinggroup import PairingGroup
 
-from Global_Exp.src.adapters import create_adapter
-from Global_Exp.src.workloads import build_workload
-from Code.fxabe_rev.lsss import solve_reconstruction
+from experiments.global_exp.src.adapters import create_adapter
+from experiments.global_exp.src.workloads import build_workload
+from core.fxabe_rev.lsss import solve_reconstruction
 
 GROUP = PairingGroup("MNT224", secparam=512)
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -105,7 +105,7 @@ def trace_or_policy(l):
 
 def trace_fabeo(l):
     """What FABEO22 decrypt actually uses (prune -> node list -> 3 pairings)."""
-    from Code.fabeo22cp import FABEO22CPABE
+    from core.fabeo22cp import FABEO22CPABE
     scheme = FABEO22CPABE(GROUP)
     pk, msk = scheme.setup()
     w = workload(l)
@@ -159,7 +159,7 @@ def main():
     # --- threshold contrast: 2-of-3 ---
     print("\n[CONTRAST] 2-of-3 threshold policy (not OR):")
     th_policy = "(P0000 and P0001) or (P0000 and P0002) or (P0001 and P0002)"
-    from Code.fxabe_rev.lsss import policy_rows
+    from core.fxabe_rev.lsss import policy_rows
     t_matrix, t_rho = policy_rows(GROUP, th_policy)
     print("  matrix:", t_matrix, "rho:", t_rho)
     t_ids = list(range(1, len(t_matrix) + 1))
