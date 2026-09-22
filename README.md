@@ -24,8 +24,8 @@ My-ABE_Scheme/
 │   ├── configs/        dataset descriptors shared between suites
 │   ├── data/           DACP dataset workspace (raw → work → encrypted →
 │   │                   recovered → products); bulk contents not committed
-│   ├── docs/           cross-suite experiment guides and report templates
-│   └── results/        DACP output trees; bulk contents not committed
+│   └── results/        DACP output trees, created at runtime by the scripts
+│                       that write them; bulk contents not committed
 ├── pytest.ini          test discovery; sets `pythonpath = src`
 ├── requirements.txt    authoritative dependency list
 └── README.md           this file
@@ -41,17 +41,21 @@ My-ABE_Scheme/
 | FX-ABE prototypes | `fxabe_rev` (dual-epoch revocable, anonymous index), `fxabe_05_3_exp` (frozen 05.3 algebra) |
 | DACP prototype | `dacp` (data-access-control protocol: `components`, `data`, `marketplace`, `protocol`) |
 | FXDACP prototype | `fxdacp` (FX-ABF + DACP) |
-| Comparison skeletons | `fabesa`, `ipecp`, `lacsprp`, `mynewcp`, `newcp2.0` |
+| Comparison skeletons | `fabesa`, `ipecp`, `lacsprp`, `mynewcp`, `newcp20` |
 | Shared | `msp` (LSSS/MSP policy conversion) |
 
 The comparison skeletons under `fabesa`, `ipecp`, `lacsprp`, `mynewcp` and
-`newcp2.0` are **structural placeholders** kept so the benchmark runners have
+`newcp20` are **structural placeholders** kept so the benchmark runners have
 something to time. Their own docstrings say which subroutines are not faithful
 implementations; read those before citing anything measured on them.
 
-`newcp2.0` cannot be imported as a package (a `.` is not a valid identifier
-character). Four scripts in `src/benchmarks/compare_*newcp20*.py` load it
-through an explicit `importlib` shim under the alias `core.newcp20_dynamic`.
+`newcp20` was named `newcp2.0` until the 2026-09 layout refactor. The `.` is not
+a valid identifier character, so it could not be imported as a package, and the
+four `src/benchmarks/compare_*newcp20*.py` scripts each carried an `importlib`
+shim to load it from its file path under the alias `core.newcp20_dynamic`. The
+directory is now `newcp20`, so it imports normally as `core.newcp20` and the
+shims are gone. The scheme's own name is unchanged: `NewCP20CPABE` still reports
+`legacy_name = "newcp2.0"`.
 
 ### `src/benchmarks` — measurement scripts
 
@@ -148,16 +152,19 @@ python3 -m pytest -q
 Expected on this machine:
 
 ```
-138 tests collected
-120 passed, 18 errors
+138 passed
 ```
 
-The 18 errors are **pre-existing and unrelated to layout**: 13 request a `tmp`
-fixture, 4 a `group` fixture, and 1 a `codec` fixture, none of which exist
-anywhere in the repository. They are all in `src/benchmarks/test_dacp_*.py`.
-They are left as-is deliberately — fixing them would require inventing fixture
-semantics, and changing them would destroy the before/after equivalence signal
-used to verify this layout.
+All 138 pass. Until the 2026-09 layout refactor, 18 of them errored: the five
+`src/benchmarks/test_dacp_*.py` modules double as runnable scripts whose
+`main()` builds its inputs inline, and the fixtures their test functions take
+(`tmp`, `group`, `codec`, `product`) were defined nowhere. They now come from
+`src/benchmarks/conftest.py`, which supplies exactly what the matching `main()`
+supplies — `tmp` is a temporary directory, `group` is
+`PairingGroup("MNT224")`, `codec` is `WireCodec(group)`, and `product` is the
+product the marketplace catalog test builds. No test was added, removed, or
+changed in intent; the collected count is still 138, and each module still runs
+standalone.
 
 Per-suite runs:
 
@@ -191,25 +198,31 @@ reason: `src/experiments/index_v1/CHANGELOG.md`,
 `src/experiments/perf_05_3/docs/RUN_LEDGER.md`, and
 `src/experiments/index_v2/docs/repository_audit.md`.
 
-`shared/data/**` and `shared/results/**` hold a DACP dataset workspace. Its
-bulk contents are git-ignored (only `.gitkeep` placeholders are committed);
-`shared/data/README.md` describes the directory roles.
+`shared/data/**` and `shared/results/**` hold a DACP dataset workspace. Their
+bulk contents are git-ignored. Only `shared/data/**` keeps committed `.gitkeep`
+placeholders; `shared/results/**` carries none — the scripts that write there
+(`src/core/dacp/data/paths.py` and the `src/benchmarks/run_dacp_*` runners)
+create the directories as needed, so a fresh clone has no `shared/results/`
+until something writes to it. `shared/data/README.md` describes its roles.
 
-## Known footguns
+## Writing to tracked artifacts
 
-Several scripts write to **fixed paths inside the repository** rather than to
-the run directory you passed on the command line. Running them rewrites tracked
-artifacts. This is pre-existing behaviour, not a consequence of the layout.
+Some scripts write to **fixed paths inside the repository** rather than to the
+run directory you passed, so running them rewrites tracked artifacts. Two of
+those were outright bugs and are fixed; the rest are now redirectable.
 
-| Script | Rewrites |
-| --- | --- |
-| `perf_05_3/scripts/run_pipeline.py` | `perf_05_3/docs/STANDARD_RESULTS_ANALYSIS.md` — for **any** profile, including `smoke` |
-| `global_exp/audit/audit_storage.py`, `audit_row_selection.py`, `audit_reconstruction.py`, `audit_encrypt_scaling.py`, `audit_diagnostic_m.py` | tracked CSVs under `global_exp/audit/results/` |
-| `global_exp/audit/audit_profile.py` | tracked profiler dumps under `global_exp/audit/profiles/` |
-| `index_v1/tests/test_runner_io.py` | appends to the tracked `index_v1/logs/smoke/resume-test.log` |
+| Script | Writes | Running it safely |
+| --- | --- | --- |
+| `perf_05_3/scripts/run_pipeline.py`, via `generate_analysis.py` | `perf_05_3/docs/STANDARD_RESULTS_ANALYSIS.md` | **Fixed.** Only a `standard`-tier run writes the tracked report. `smoke` (and any other mode) now writes `STANDARD_RESULTS_ANALYSIS.md` into the run directory instead — previously a smoke run overwrote the recorded Standard analysis with smoke-tier numbers. |
+| `global_exp/audit/audit_{storage,row_selection,reconstruction,encrypt_scaling,diagnostic_m,ledgers}.py` | tracked CSVs under `audit/results/` | Set `GLOBAL_EXP_AUDIT_OUT=<dir>` and outputs go there, leaving the committed files alone. `audit_ledgers.py` still *reads* `operation_costs.csv` from the committed directory, so a redirected run stays consistent. |
+| `global_exp/audit/audit_profile.py` | tracked profiler dumps under `audit/profiles/` | Same: set `GLOBAL_EXP_AUDIT_OUT=<dir>`. |
+| `index_v1/tests/test_runner_io.py` | appended to the tracked `index_v1/logs/smoke/resume-test.log` on every `pytest` run | **Fixed.** `ExperimentRun` now takes its log root from the module-level `common.LOGS`; the test redirects it next to `common.RESULTS`. Anything that redirects `RESULTS` must redirect `LOGS` too, or the run still logs into the repository. |
 
-Before running any of these, know which files you are about to overwrite; after
-running them, `git checkout HEAD -- <path>` restores the recorded version.
+If you do overwrite a recorded artifact, `git checkout HEAD -- <path>` restores
+it. Note that the audit CSVs record **wall-clock measurements** and are
+therefore not byte-reproducible: two consecutive runs of the same unmodified
+script already differ in their timing columns. Treat the committed copies as the
+record, not as something you can regenerate exactly.
 
 Scratch runs are best kept out of the way: `configs/smoke.yaml` runs written
 with a `scratch*` run id are git-ignored (`src/**/results/scratch*/`). Suites

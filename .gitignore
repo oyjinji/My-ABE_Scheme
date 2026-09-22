@@ -10,7 +10,10 @@ __pycache__/
 src/**/results/scratch*/
 src/**/logs/*.tmp
 
-# 根级共享工作区（DACP 数据集实验），内容不入库，仅保留目录占位
+# 根级共享工作区（DACP 数据集实验），内容不入库。
+# shared/data/ 保留 .gitkeep 目录占位；shared/results/ 不保留——写出方
+# （src/core/dacp/data/paths.py 及各 run_dacp_* 脚本）运行时会自建目录，
+# 故此处只忽略内容，不设反忽略规则。
 shared/data/raw/*
 shared/data/work/*
 shared/data/encrypted/*
@@ -18,15 +21,12 @@ shared/data/recovered/*
 shared/data/products/*
 shared/results/dacp_data/*
 shared/results/dacp_marketplace/*
+shared/results/dacp_marketplace/credit_fraud/*
 !shared/data/raw/.gitkeep
 !shared/data/work/.gitkeep
 !shared/data/encrypted/.gitkeep
 !shared/data/recovered/.gitkeep
 !shared/data/products/.gitkeep
-!shared/results/dacp_data/.gitkeep
-!shared/results/dacp_marketplace/.gitkeep
-!shared/results/dacp_marketplace/credit_fraud/
-shared/results/dacp_marketplace/credit_fraud/*
 !shared/results/dacp_marketplace/credit_fraud/.gitkeep
 
 # matplotlib 字体缓存（曾误入库）

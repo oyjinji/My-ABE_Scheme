@@ -2,6 +2,17 @@
 
 This directory contains all new filter microbenchmarks, Transform-scaling experiments, raw records, summaries, manifests, logs and figures. Algorithm code remains in `src/core/fxdacp`; no existing benchmark result is read or overwritten.
 
+> **Legacy / supplemental.** This suite is where the filter constructions the
+> later suites build on originated: `filters/original_abf.py` is the greedy XOR
+> retrieval construction that `index_v2`'s *Legacy ABF* was adapted from. Its
+> backend table below mixes pure retrieval structures with membership structures
+> that carry their own exact locator, so it is **not** a
+> functionally-equivalent ranking of filter algorithms. The primary
+> algorithm-level comparison now lives in
+> `src/experiments/index_v2/retrieval_exp/`. Read the raw records, manifests and
+> `CHANGELOG.md` in this directory as the authoritative account of what was
+> measured, and when.
+
 ## Compared backends
 
 | Plot label | Unified retrieval adaptation |
