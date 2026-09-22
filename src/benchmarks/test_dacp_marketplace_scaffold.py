@@ -71,7 +71,13 @@ def write_csv(path):
         writer.writerows(rows)
 
 
-def test_product_catalog_policy(tmp):
+def build_product(tmp):
+    """Build the sample product in tmp, check the catalog round trip, return it.
+
+    Deliberately not a test: pytest treats a value returned from a test function
+    as an error in waiting, and both main() below and the pytest ``product``
+    fixture need the object. test_product_catalog_policy drives it.
+    """
     dataset = tmp / 'nyc.csv'
     write_csv(dataset)
     rules = [SliceRule(
@@ -105,6 +111,10 @@ def test_product_catalog_policy(tmp):
     assert_true('ProductCatalog save/load', loaded_catalog.find_by_id(product.product_id).product_name == product.product_name)
     assert_true('ProductCatalog find_by_domain', len(loaded_catalog.find_by_domain('transportation')) == 1)
     return product
+
+
+def test_product_catalog_policy(tmp):
+    build_product(tmp)
 
 
 def test_filters(tmp):
@@ -147,7 +157,7 @@ def test_purchase(tmp, product):
 def main():
     with tempfile.TemporaryDirectory() as work:
         tmp = Path(work)
-        product = test_product_catalog_policy(tmp)
+        product = build_product(tmp)
         test_filters(tmp)
         test_purchase(tmp, product)
         assert_true('marketplace policy template', get_marketplace_policy('teaching_open') == 'teaching_use or student_research')
