@@ -6,6 +6,9 @@ Legacy NewCP2.0 wrapper for the DACP prototype.
 |        and flow align with prompt_doc/ABE-Scheme.md.
 | Notes: This remains a prototype / benchmark-oriented implementation; see
 |        src/core/dacp/__init__.py for placeholder details.
+| Notes: The directory was renamed newcp2.0 -> newcp20 in the 2026-09 layout
+|        refactor so it can be imported as `core.newcp20`; the scheme's own
+|        name is unchanged.
 |
 | type:           ciphertext-policy attribute-based encryption
 | setting:        Pairing

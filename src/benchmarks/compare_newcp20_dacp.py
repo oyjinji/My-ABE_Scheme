@@ -2,7 +2,6 @@
 Coarse benchmark comparison for legacy NewCP2.0 and DACP.
 '''
 
-import importlib.util
 import sys
 import time
 from pathlib import Path
@@ -14,18 +13,7 @@ if str(ROOT) not in sys.path:
 from charm.toolbox.pairinggroup import PairingGroup, GT
 
 from core.dacp import DACPCPABE
-
-
-def load_newcp20_class():
-    module_path = ROOT / 'src' / 'core' / 'newcp2.0' / '__init__.py'
-    spec = importlib.util.spec_from_file_location(
-        'core.newcp20_dynamic',
-        str(module_path),
-        submodule_search_locations=[str(module_path.parent)],
-    )
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module.NewCP20CPABE
+from core.newcp20 import NewCP20CPABE
 
 
 def estimate_value_size(group, value):
@@ -134,7 +122,6 @@ def main():
     attr_list = ['1', '2', '3', '5', '6', '9']
     policy_str = '(((1 and 3) and (2 OR 4)) and ((5 and 6) OR (7 and 8)) and (9 OR 10))'
 
-    NewCP20CPABE = load_newcp20_class()
     newcp20 = NewCP20CPABE(group)
     dacp = DACPCPABE(group)
 
