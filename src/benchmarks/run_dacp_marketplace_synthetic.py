@@ -123,7 +123,7 @@ def buyer_attrs_for(product_name, authorized):
 
 def main():
     parser = argparse.ArgumentParser(description='Run synthetic DACP marketplace demo.')
-    parser.add_argument('--output-dir', default='results/dacp_marketplace/synthetic_nyc')
+    parser.add_argument('--output-dir', default='shared/results/dacp_marketplace/synthetic_nyc')
     parser.add_argument('--num-rows', type=int, default=1000)
     parser.add_argument('--chunk-mode', action='store_true')
     parser.add_argument('--chunk-size', type=int, default=4096)

@@ -78,9 +78,9 @@ SUMMARY_FIELDS = [
 
 def main():
     parser = argparse.ArgumentParser(description='Benchmark CreditFraud DACP data products.')
-    parser.add_argument('--dataset-path', default='data/raw/creditcard.csv')
-    parser.add_argument('--output-dir', default='results/dacp_marketplace/credit_fraud_benchmark')
-    parser.add_argument('--products-dir', default='data/products/credit_fraud')
+    parser.add_argument('--dataset-path', default='shared/data/raw/creditcard.csv')
+    parser.add_argument('--output-dir', default='shared/results/dacp_marketplace/credit_fraud_benchmark')
+    parser.add_argument('--products-dir', default='shared/data/products/credit_fraud')
     parser.add_argument('--chunk-sizes', default='4096,65536,1048576')
     parser.add_argument('--high-amount-threshold', type=float, default=100.0)
     parser.add_argument('--repeat', type=int, default=3)

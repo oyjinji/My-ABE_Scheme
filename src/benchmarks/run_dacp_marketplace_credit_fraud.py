@@ -21,9 +21,9 @@ from core.dacp.marketplace.adapters import CreditFraudCSVAdapter
 
 def main():
     parser = argparse.ArgumentParser(description='Run CreditFraud DACP marketplace experiment.')
-    parser.add_argument('--dataset-path', default='data/raw/creditcard.csv')
-    parser.add_argument('--output-dir', default='results/dacp_marketplace/credit_fraud')
-    parser.add_argument('--products-dir', default='data/products/credit_fraud')
+    parser.add_argument('--dataset-path', default='shared/data/raw/creditcard.csv')
+    parser.add_argument('--output-dir', default='shared/results/dacp_marketplace/credit_fraud')
+    parser.add_argument('--products-dir', default='shared/data/products/credit_fraud')
     parser.add_argument('--chunk-mode', action='store_true')
     parser.add_argument('--chunk-size', type=int, default=4096)
     parser.add_argument('--high-amount-threshold', type=float, default=100.0)

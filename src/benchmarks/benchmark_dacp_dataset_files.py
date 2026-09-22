@@ -31,7 +31,7 @@ def main():
     results = []
     for entry in config.get('experiments', []):
         dataset_path = Path(entry['dataset_path'])
-        output_dir = Path(entry.get('output_dir', 'results/dacp_data/' + entry['dataset_name']))
+        output_dir = Path(entry.get('output_dir', 'shared/results/dacp_data/' + entry['dataset_name']))
         if not dataset_path.exists():
             summary = normalize_summary({
                 'dataset_id': None,
