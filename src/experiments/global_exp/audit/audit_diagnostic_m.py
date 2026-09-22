@@ -20,7 +20,10 @@ from charm.toolbox.pairinggroup import PairingGroup
 from experiments.global_exp.src.adapters import create_adapter
 
 GROUP = PairingGroup("MNT224", secparam=512)
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results",
+# GLOBAL_EXP_AUDIT_OUT redirects the output directory, so this can be run
+# without rewriting the committed CSV; unset, it writes where it always has.
+OUT = os.path.join(os.environ.get("GLOBAL_EXP_AUDIT_OUT")
+                   or os.path.join(os.path.dirname(os.path.abspath(__file__)), "results"),
                    "diagnostic_m_sweep.csv")
 
 L = 32

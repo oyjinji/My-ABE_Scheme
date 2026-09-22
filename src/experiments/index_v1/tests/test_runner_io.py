@@ -12,7 +12,11 @@ def test_profiles_parse_and_full_grid_is_nonempty():
 
 
 def test_result_append_and_resume(tmp_path, monkeypatch):
+    # Both roots must be redirected: ExperimentRun writes its run directory under
+    # RESULTS and its per-profile log under LOGS. Patching only RESULTS leaves the
+    # test appending to the tracked logs/<profile>/<run_id>.log.
     monkeypatch.setattr(common, "RESULTS", tmp_path)
+    monkeypatch.setattr(common, "LOGS", tmp_path / "logs")
     config = common.load_config("smoke")
     run = common.ExperimentRun(config, "resume-test")
     run.record("example", "key-1", {"value": 1})

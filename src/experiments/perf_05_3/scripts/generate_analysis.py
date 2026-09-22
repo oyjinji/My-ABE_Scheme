@@ -71,7 +71,18 @@ def main():
         "## Interpretation boundary","",
         "MNT224 is used solely because the audited FABEO repository benchmark fixes it. This is a common-backend performance profile, not a modern security-curve recommendation. The 05.3 construction remains **CANDIDATE — FORMAL PROOF OPEN**.",
     ]
-    target=ROOT/"src/experiments/perf_05_3"/"docs"/"STANDARD_RESULTS_ANALYSIS.md";target.write_text("\n".join(lines)+"\n")
+    # The tracked report describes the Standard tier. run_pipeline.py invokes this
+    # for every non-Full profile, so writing the fixed path unconditionally let a
+    # smoke run overwrite the recorded Standard analysis with smoke-tier numbers.
+    # Only a Standard run updates the tracked document; anything else writes its
+    # analysis into its own run directory.
+    mode=validation.get("mode","")
+    if mode=="standard":
+        target=ROOT/"src/experiments/perf_05_3"/"docs"/"STANDARD_RESULTS_ANALYSIS.md"
+    else:
+        target=run/"STANDARD_RESULTS_ANALYSIS.md"
+    target.write_text("\n".join(lines)+"\n")
+    print("analysis written: %s (mode=%s)"%(target,mode))
     (run/"FULL_GATE.json").write_text(json.dumps({"FULL_READY":"YES" if full_ready else "NO","full_executed":False},indent=2)+"\n")
     summary_lines = [
         "="*60, "=== FX-ABE 05.3 + FABEO COMMON-BACKEND EXPERIMENT ===", "="*60,

@@ -21,7 +21,11 @@ from experiments.global_exp.src.adapters import create_adapter
 from experiments.global_exp.src.workloads import build_workload
 
 GROUP = PairingGroup("MNT224", secparam=512)
-PROF_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "profiles")
+# GLOBAL_EXP_AUDIT_OUT redirects the output directory, so this can be run
+# without rewriting the committed profiler dumps; unset, it writes where it
+# always has.
+PROF_DIR = os.environ.get("GLOBAL_EXP_AUDIT_OUT") or os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), "profiles")
 L = 160
 
 

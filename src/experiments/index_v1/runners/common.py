@@ -21,6 +21,12 @@ from experiments.index_v1.generators import derive_seed
 
 ROOT = Path(__file__).resolve().parents[4]
 RESULTS = ROOT / "src/experiments/index_v1" / "results"
+# Per-profile run logs live outside the run directory, under the suite's tracked
+# `logs/`. Kept as a module-level constant (not inlined at the call site) so it
+# can be redirected the same way RESULTS is, e.g. by tests. Anything that
+# redirects RESULTS must redirect LOGS too, or it will still write into the
+# repository.
+LOGS = ROOT / "src/experiments/index_v1" / "logs"
 
 
 def load_config(profile_or_path):
@@ -49,7 +55,7 @@ class ExperimentRun:
             raise FileExistsError("run directory exists; pass --resume: {0}".format(self.run_dir))
         for child in ("raw", "summary", "plots", "plot_data", "logs"):
             (self.run_dir / child).mkdir(parents=True, exist_ok=True)
-        profile_logs = ROOT / "src/experiments/index_v1" / "logs" / self.profile
+        profile_logs = LOGS / self.profile
         profile_logs.mkdir(parents=True, exist_ok=True)
         self.log_path = profile_logs / (self.run_id + ".log")
         with self.log_path.open("a", encoding="utf-8") as handle:

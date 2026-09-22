@@ -28,6 +28,9 @@ from core.fxabe_rev.lsss import solve_reconstruction
 
 GROUP = PairingGroup("MNT224", secparam=512)
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
+# GLOBAL_EXP_AUDIT_OUT redirects the output directory, so this can be run
+# without rewriting the committed CSV; unset, it writes where it always has.
+RESULTS_DIR = os.environ.get("GLOBAL_EXP_AUDIT_OUT") or os.path.join(OUT_DIR, "results")
 
 
 def workload(l, master_seed=20260813):
@@ -178,7 +181,7 @@ def main():
                   r["policy_rows"], r["matched_rows"], r["reconstruction_rows"],
                   r["actual_pair_count"], r["transform_ms"], r["transform_status"]))
 
-    out = os.path.join(OUT_DIR, "results", "reconstruction_trace.csv")
+    out = os.path.join(RESULTS_DIR, "reconstruction_trace.csv")
     with open(out, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         writer.writeheader()

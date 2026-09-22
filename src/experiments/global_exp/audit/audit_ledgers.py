@@ -14,12 +14,17 @@ These are attribution tables, not a formal benchmark.  Counts marked
 import csv
 import os
 
-OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results")
+# Inputs are always read from the committed results directory; only the
+# outputs follow GLOBAL_EXP_AUDIT_OUT, so this can be run without rewriting the
+# committed ledgers. Unset, it writes where it always has.
+HERE = os.path.dirname(os.path.abspath(__file__))
+IN_DIR = os.path.join(HERE, "results")
+OUT_DIR = os.environ.get("GLOBAL_EXP_AUDIT_OUT") or IN_DIR
 
 
 def load_costs():
     costs = {}
-    p = os.path.join(OUT_DIR, "operation_costs.csv")
+    p = os.path.join(IN_DIR, "operation_costs.csv")
     for r in csv.DictReader(open(p)):
         costs[r["operation"]] = float(r["ms_per_op"])
     return costs
