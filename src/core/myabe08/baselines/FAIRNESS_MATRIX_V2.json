@@ -1,0 +1,50 @@
+{
+  "phase": "PHASE_5D_R",
+  "metric_pairs": [
+    {
+      "pair": "MYABE_CORE_ENCRYPT_VS_ROW_ABLATION",
+      "status": "DIRECTLY_COMPARABLE",
+      "condition": "formal local paired all-sample dataset complete and frozen-source validated"
+    },
+    {
+      "pair": "MYABE_CORE_TRANSFORM_VS_ROW_ABLATION",
+      "status": "DIRECTLY_COMPARABLE",
+      "condition": "formal local paired all-sample dataset complete and frozen-source validated"
+    },
+    {
+      "pair": "MYABE_FULL_CT_BYTES_VS_ROW_ABLATION",
+      "status": "STRUCTURAL_ONLY",
+      "condition": "40 correctness-checked EMULATED TEST public CT constructions; 20 paired AF shapes match; no timing distribution"
+    },
+    {
+      "pair": "MYABE_CORE_VS_FABEO_TAU1_BLS",
+      "status": "DIRECTLY_COMPARABLE",
+      "condition": "same BLS12-381/py_ecc host, unique-attribute AND workload, timer and samples; distinct function and key-placement caveats apply"
+    },
+    {
+      "pair": "MYABE_FULL_VS_FABEO_DIRECT_DECRYPT",
+      "status": "NOT_COMPARABLE",
+      "condition": "different full-system functionality"
+    },
+    {
+      "pair": "FABEO_MNT224_VS_FABEO_BLS",
+      "status": "STRUCTURAL_ONLY",
+      "condition": "no cross-curve timing ratio"
+    },
+    {
+      "pair": "MYABE_REAL_SGX_VS_HRABE_TYPEA",
+      "status": "PAPER_REPORTED_ONLY",
+      "condition": "Type-III port blocked"
+    },
+    {
+      "pair": "MYABE_REAL_SGX_VS_LUAR_SIMULATION",
+      "status": "PAPER_REPORTED_ONLY",
+      "condition": "LUAR correctness blocked"
+    }
+  ],
+  "validated_runs": {
+    "ablation": "artifacts/myabe08/baselines/phase5d_r/ablation/20260927T112557Z-389ead9f765c",
+    "core": "artifacts/myabe08/baselines/phase5d_r/core/20260927T154528Z-fd1052f3416d",
+    "public_ct_size": "artifacts/myabe08/baselines/phase5d_r/public_ct/20260927T165759Z"
+  }
+}

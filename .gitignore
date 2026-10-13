@@ -32,3 +32,4 @@ shared/results/dacp_marketplace/credit_fraud/*
 # matplotlib 字体缓存（曾误入库）
 .mplconfig/
 src/**/.mplconfig/
+/artifacts/myabe08/

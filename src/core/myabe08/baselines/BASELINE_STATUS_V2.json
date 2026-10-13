@@ -1,0 +1,55 @@
+{
+  "phase": "PHASE_5D_R",
+  "global_blocker_policy": "Only MyABE correctness, benchmark fairness/provenance, specification mutation, or common BLS backend failure can stop all tracks",
+  "baselines": {
+    "MYABE08_BLS12381_FULL": {
+      "status": "READY_STRUCTURAL_ONLY",
+      "reason": "Supported public facade and prior Phase 5A/5C full-profile data; no paired Phase 5D-R full-system common-backend latency set"
+    },
+    "MYABE08_BLS12381_CORE": {
+      "status": "READY_COMMON_BACKEND",
+      "reason": "Six same-backend AND configurations, 30 samples per scheme, frozen-source validation PASS",
+      "measurement_status": "LOCAL_MEASURED_COMPLETE_VALIDATED",
+      "source_run": "artifacts/myabe08/baselines/phase5d_r/core/20260927T154528Z-fd1052f3416d"
+    },
+    "MYABE08_NO_OCCURRENCE_REUSE_BLS12381": {
+      "status": "READY_COMMON_BACKEND",
+      "implementation_origin": "INTERNAL_ABLATION",
+      "reason": "Same MyABE-08 algebra with independent row D components; formal core benchmark and TEST public E2E/CT serialization completed",
+      "measurement_status": "LOCAL_MEASURED_COMPLETE_VALIDATED",
+      "source_run": "artifacts/myabe08/baselines/phase5d_r/ablation/20260927T112557Z-389ead9f765c",
+      "public_ct_status": "EMULATED_TEST_SINGLE_CONSTRUCTION_SIZE_VALIDATED"
+    },
+    "FABEO22_CP_BLS12381_TAU1": {
+      "status": "READY_COMMON_BACKEND",
+      "implementation_origin": "COMMON_BACKEND_PORT",
+      "reason": "BLS12-381 tau=1 correctness/native structural cross-check and same-backend AND core benchmark complete",
+      "measurement_status": "LOCAL_MEASURED_COMPLETE_VALIDATED",
+      "source_run": "artifacts/myabe08/baselines/phase5d_r/core/20260927T154528Z-fd1052f3416d"
+    },
+    "FABEO22_PAPER_MULTIUSE_BLS12381_V1": {
+      "status": "PAPER_REIMPLEMENTATION",
+      "implementation_origin": "PAPER_REIMPLEMENTATION",
+      "reason": "Paper-formula multi-use correctness tested; native released source cannot serve as tau>1 oracle"
+    },
+    "FABEO22_SOURCE_TAU1_REFERENCE": {
+      "status": "UPSTREAM_NATIVE_ONLY",
+      "implementation_origin": "UPSTREAM_SOURCE",
+      "reason": "Charm/MNT224 reference; no direct timing ratio against BLS12-381"
+    },
+    "HRABE2024_BLS12381_PERFORMANCE_PORT_V1": {
+      "status": "BLOCKED_TYPE_MAPPING",
+      "implementation_origin": "PAPER_REIMPLEMENTATION",
+      "reason": "Type-III paired attribute hash cancellation lacks secure paper-faithful construction"
+    },
+    "LUAR2026_COMMON_BLS12381_V1": {
+      "status": "BLOCKED_CORRECTNESS",
+      "measurement_status": "LITERATURE_REFERENCE_ONLY",
+      "reason": "Published LSSS reconstruction fails a valid two-row AND; authoritative correction not located"
+    },
+    "BSW07_COMMON_BLS12381_SUPPORTING": {
+      "status": "LITERATURE_REFERENCE_ONLY",
+      "reason": "Optional supporting line not ported in this phase"
+    }
+  }
+}
